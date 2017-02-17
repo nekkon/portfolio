@@ -1,0 +1,1 @@
+export { mainModule } from './main/main.module';

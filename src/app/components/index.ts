@@ -1,0 +1,1 @@
+export { toolbarModule } from './toolbar/toolbar.module';
