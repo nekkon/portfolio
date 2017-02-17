@@ -1,7 +1,6 @@
 # Portfolio
 
 This portfolio is live on www.nekkon.com
-Due to the fact that most projects I have implemented so far are copyrighted, I can not show my code and prove my knowledge and skills.
 
 The goal of this project is:
 * Prove dev skills
@@ -12,6 +11,8 @@ The goal of this project is:
 * Prove e2e testing knowledge
 * Display high quality of code
 * Display high knowledge of front-end development
+
+Due to the fact that most projects I have implemented so far are copyrighted, I can not show my code and prove my knowledge and skills.
 
 ## Features
 
