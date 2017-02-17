@@ -10,6 +10,7 @@ All changes to this project are documented in this file.
 - Lazy Loading
 - Fonts
 - Loading bar during initialization
+- Menu
 
 ### Fixed
 - Readme

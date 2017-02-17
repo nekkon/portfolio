@@ -5,10 +5,10 @@ import { RouterModule } from '@angular/router';
 
 import { mainView } from './main';
 
-import { toolbarModule } from './../../components';
+import { menuModule } from './../../components';
 
 @NgModule({
-    imports: [ CommonModule , toolbarModule , RouterModule.forChild([
+    imports: [ CommonModule , menuModule , RouterModule.forChild([
         {
             path: '',
             component: mainView

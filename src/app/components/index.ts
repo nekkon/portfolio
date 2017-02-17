@@ -1,1 +1,1 @@
-export { toolbarModule } from './toolbar/toolbar.module';
+export { menuModule } from './menu/menu.module';
