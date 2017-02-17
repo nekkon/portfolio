@@ -6,3 +6,6 @@ All changes to this project are documented in this file.
 - Material Framework
 - Angular-CLI build (1.0.0-beta.31)
 - Changelog
+
+### Fixed
+- Readme

@@ -1,17 +1,31 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.31.
+This portfolio is live on www.nekkon.com
+Due to the fact that most projects I have implemented so far are copyrighted, I can not show my code and prove my knowledge and skills.
 
-## Development server
+The goal of this project is:
+* Prove dev skills
+* Prove good knowledge of git
+* Prove best practices are followed
+* Prove Angular2+ knowledge and skills
+* Prove Unit testing knowledge
+* Prove e2e testing knowledge
+* Display high quality of code
+* Display high knowledge of front-end development
+
+## Features
+
+* Custom one page
+* Animations
+* Lazy loading
+* Aot Compatible code
+* Unit tests
+* e2e tests
+
+This project can NOT be used for any purpose without written permission by me.
+
+## Run locally
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
@@ -21,7 +35,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
