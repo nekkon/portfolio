@@ -4,5 +4,5 @@ declare var window:any;
 
 @Injectable()
 export class Globals {
-    private texts;
+    public texts;
 }

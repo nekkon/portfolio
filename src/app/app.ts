@@ -24,7 +24,7 @@ export class App{
                       console.log('Countries Loaded');
                       console.log(data);
                       $this.zone.run(()=>{
-                          $this.portfolio = data.countries;
+                          $this.portfolio.texts = data;
                       })
                   },
                   err => console.error(err)
