@@ -8,6 +8,8 @@ import { App } from './app';
 
 import { Routing } from './app.routes';
 
+import { Globals } from './app.globals';
+
 @NgModule({
   declarations: [
     App
@@ -18,7 +20,7 @@ import { Routing } from './app.routes';
     HttpModule,
     RouterModule.forRoot( Routing )
   ],
-  providers: [],
+  providers: [Globals],
   bootstrap: [App]
 })
 export class AppModule {}

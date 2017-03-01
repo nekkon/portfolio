@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Globals } from './../../app.globals';
+
 @Component({
     selector: 'menu',
     templateUrl: './menu.html',
@@ -9,29 +11,8 @@ export class menuComponent {
     private menuItems:any;
     private hovered:any;
 
-    constructor(){
-        this.menuItems = [
-            {
-                name: 'About me',
-                link: 'about'
-            },
-            {
-                name: 'Education',
-                link: 'education'
-            },
-            {
-                name: 'Portfolio',
-                link: 'portfolio'
-            },
-            {
-                name: 'Experience',
-                link: 'experience'
-            },
-            {
-                name: 'Contact me',
-                link: 'contact'
-            }
-        ]
+    constructor(private portfolio:Globals){
+        
     }
 
     onHover(link){

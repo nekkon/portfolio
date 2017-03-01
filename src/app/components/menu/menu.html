@@ -1,5 +1,5 @@
 <nav >
     <div>
-        <a *ngFor="let item of menuItems" [ngClass]="{'unhovered':( hovered && hovered!==item.link )}" (mousemove)="onHover(item.link)" (mouseout)="onMouseOut()" href="main#{{item.link}}">{{ item.name }}</a>
+        <a *ngFor="let item of (portfolio.texts)?.menu" [ngClass]="{'unhovered':( hovered && hovered!==item.link )}" (mousemove)="onHover(item.link)" (mouseout)="onMouseOut()" href="main#{{item.link}}">{{ item.name }}</a>
     </div>
 </nav>
