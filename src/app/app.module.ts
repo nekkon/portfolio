@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { App } from './app';
 
@@ -18,7 +19,8 @@ import { Globals } from './app.globals';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot( Routing )
+    RouterModule.forRoot( Routing ),
+    FlexLayoutModule.forRoot(),
   ],
   providers: [Globals],
   bootstrap: [App]
