@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule , ErrorHandler } from '@angular/core';
+import * as Raven from 'raven-js';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
@@ -10,6 +11,16 @@ import { App } from './app';
 import { Routing } from './app.routes';
 
 import { Globals } from './app.globals';
+
+Raven
+  .config('https://<key>@sentry.io/<project>')
+  .install();
+
+export class RavenErrorHandler implements ErrorHandler {
+  handleError(err:any) : void {
+    Raven.captureException(err.originalError);
+  }
+}
 
 @NgModule({
   declarations: [
