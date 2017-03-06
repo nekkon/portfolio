@@ -8,7 +8,6 @@ import { Globals } from './../../app.globals';
     styleUrls: ['./menu.scss']
 })
 export class menuComponent {
-    private menuItems:any;
     private hovered:any;
 
     constructor(private portfolio:Globals){
