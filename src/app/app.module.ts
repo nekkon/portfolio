@@ -11,6 +11,7 @@ import { App } from './app';
 import { Routing } from './app.routes';
 
 import { Globals } from './app.globals';
+import { scrollTrigger } from './services/scrollTrigger';
 
 Raven
   .config('https://4cbb01e3731e4f0bbf13b4ce25b16fba@sentry.io/145646')
