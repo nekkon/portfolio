@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { Globals } from './../../app.globals';
 
 @Component({
-    selector: 'about',
-    templateUrl: './about.html',
-    styleUrls: ['./about.scss']
+    selector: 'contact',
+    templateUrl: './contact.html',
+    styleUrls: ['./contact.scss']
 })
-export class aboutComponent {
+export class contactComponent {
 
     constructor(private portfolio:Globals){
         
