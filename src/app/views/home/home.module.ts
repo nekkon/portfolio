@@ -5,15 +5,17 @@ import { RouterModule } from '@angular/router';
 
 import { homeView } from './home';
 
-import { menuModule } from './../../components';
+import { menuModule , aboutModule , backgroundModule , contactModule , educationModule , experienceModule , videoModule } from './../../components';
 
 @NgModule({
-    imports: [ CommonModule , menuModule , RouterModule.forChild([
-        {
-            path: '',
-            component: homeView
-        }])
-    ],
+    imports: [ CommonModule , 
+        menuModule , aboutModule , backgroundModule , contactModule , educationModule , experienceModule , videoModule,
+        RouterModule.forChild([
+            {
+                path: '',
+                component: homeView
+            }])
+        ],
     declarations: [ homeView ],
     exports:      [ homeView ]
 })
