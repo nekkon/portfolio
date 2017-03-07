@@ -12,7 +12,7 @@ import { Globals } from './app.globals';
 export class App{
 
     constructor(private http:Http,private zone:NgZone,private portfolio:Globals){
-        this.getTexts() 
+        this.getTexts();
     }
   
     getTexts(){

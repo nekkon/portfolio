@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+import { scrollTrigger } from './../../services/scrollTrigger';
+
 import { homeView } from './home';
 
 import { menuModule , aboutModule , backgroundModule , contactModule , educationModule , experienceModule , videoModule } from './../../components';
@@ -17,7 +19,8 @@ import { menuModule , aboutModule , backgroundModule , contactModule , education
             }])
         ],
     declarations: [ homeView ],
-    exports:      [ homeView ]
+    exports:      [ homeView ],
+    providers: [ scrollTrigger ]
 })
 
 export class homeModule {};
