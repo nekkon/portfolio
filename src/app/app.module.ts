@@ -13,7 +13,7 @@ import { Routing } from './app.routes';
 import { Globals } from './app.globals';
 
 Raven
-  .config('https://<key>@sentry.io/<project>')
+  .config('https://4cbb01e3731e4f0bbf13b4ce25b16fba@sentry.io/145646')
   .install();
 
 export class RavenErrorHandler implements ErrorHandler {
@@ -33,7 +33,7 @@ export class RavenErrorHandler implements ErrorHandler {
     RouterModule.forRoot( Routing ),
     FlexLayoutModule.forRoot(),
   ],
-  providers: [Globals],
+  providers: [ Globals , { provide: ErrorHandler, useClass: RavenErrorHandler } ],
   bootstrap: [App]
 })
 export class AppModule {}
