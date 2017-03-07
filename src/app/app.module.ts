@@ -34,6 +34,6 @@ export class RavenErrorHandler implements ErrorHandler {
     FlexLayoutModule.forRoot(),
   ],
   providers: [ Globals , { provide: ErrorHandler, useClass: RavenErrorHandler } ],
-  bootstrap: [App]
+  bootstrap: [ App ]
 })
 export class AppModule {}

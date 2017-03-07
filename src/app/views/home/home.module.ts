@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { mainView } from './main';
+import { homeView } from './home';
 
 import { menuModule } from './../../components';
 
@@ -11,13 +11,13 @@ import { menuModule } from './../../components';
     imports: [ CommonModule , menuModule , RouterModule.forChild([
         {
             path: '',
-            component: mainView
+            component: homeView
         }])
     ],
-    declarations: [ mainView ],
-    exports:      [ mainView ]
+    declarations: [ homeView ],
+    exports:      [ homeView ]
 })
 
-export class mainModule {};
+export class homeModule {};
 
 

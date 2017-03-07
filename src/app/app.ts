@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 import { Globals } from './app.globals';
 
 @Component({
-  selector: 'portfolio',
+  selector: 'app',
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
