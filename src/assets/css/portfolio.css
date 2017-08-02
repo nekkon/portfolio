@@ -1,26 +1,26 @@
  body{
         margin: 0;
         font-size: 16px;
-        font-family: Roboto,sans-serif;
+        font-family: 'DejaVuSans',sans-serif;
         background-color: #eee;
     }
 
 /* Fonts */
 
 	@font-face {
-		font-family: 'Roboto';
-		src: url('/assets/fonts/Roboto-Regular.eot');
-		src: local('Roboto Regular'), local('Roboto-Regular'), url('/assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Roboto-Regular.woff2') format('woff2'), url('/assets/fonts/Roboto-Regular.woff') format('woff'), url('/assets/fonts/Roboto-Regular.ttf') format('truetype'), url('/assets/fonts/Roboto-Regular.svg#Roboto') format('svg');
-		font-weight: 400;
-		font-style: normal;
+		font-family: 'DejaVuSans';
+		src: url('/assets/fonts/DejaVuSans-Bold.eot');
+		src: local('DejaVuSans-Bold'), local('DejaVuSans-Bold'), url('/assets/fonts/DejaVuSans-Bold.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/DejaVuSans-Bold.woff') format('woff'), url('/assets/fonts/DejaVuSans-Bold.ttf') format('truetype'), url('/assets/fonts/DejaVuSans-Bold.svg') format('svg');
+		font-weight: 700;
+		font-style: bold;
 	}
 
 	@font-face {
-		font-family: 'Roboto';
-		src: url('/assets/fonts/Roboto-Bold.eot');
-		src: local('Roboto Bold'), local('Roboto-Bold'), url('/assets/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Roboto-Bold.woff2') format('woff2'), url('/assets/fonts/Roboto-Bold.woff') format('woff'), url('/assets/fonts/Roboto-Bold.ttf') format('truetype'), url('/assets/fonts/Roboto-Bold.svg#Roboto') format('svg');
-		font-weight: 700;
-		font-style: bold;
+		font-family: 'DejaVuSans';
+		src: url('/assets/fonts/DejaVuSans-ExtraLight.eot');
+		src: local('DejaVuSans-ExtraLight'), local('DejaVuSans-ExtraLight'), url('/assets/fonts/DejaVuSans-ExtraLight.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/DejaVuSans-ExtraLight.woff') format('woff'), url('/assets/fonts/DejaVuSans-ExtraLight.ttf') format('truetype'), url('/assets/fonts/DejaVuSans-ExtraLight.svg') format('svg');
+		font-weight: 400;
+		font-style: normal;
 	}
 
 	@font-face {
