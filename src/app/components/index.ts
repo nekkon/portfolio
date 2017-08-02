@@ -1,6 +1,5 @@
 export { MenuModule } from './menu/menu.module';
 export { VideoModule } from './video/video.module';
-export { BackgroundModule } from './background/background.module';
 
 export { AboutModule } from './about/about.module';
 export { ContactModule } from './contact/contact.module';

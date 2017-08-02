@@ -1,22 +1,20 @@
-import { HttpModule } from '@angular/http';
+
 import { FormsModule } from '@angular/forms';
-
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
-
 import { HomeView } from './home';
+import { MdIconModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-import { MenuModule , AboutModule , BackgroundModule , ContactModule , EducationModule , ExperienceModule , VideoModule, PortfolioModule } from './../../components';
+import { MenuModule , AboutModule , ContactModule , EducationModule , ExperienceModule , VideoModule, PortfolioModule } from './../../components';
 import { scrollTrigger } from "app/providers/scrollTrigger";
 
 @NgModule({
-    imports: [ CommonModule, FlexLayoutModule, FormsModule, HttpModule,
-        MenuModule, AboutModule, BackgroundModule, ContactModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule,
+    imports: [ CommonModule, FlexLayoutModule, FormsModule, BrowserAnimationsModule,
+        MdIconModule,
+        MenuModule, AboutModule, ContactModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule,
         RouterModule.forChild([
             {
                 path: '',
