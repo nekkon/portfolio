@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-
-import { Globals } from './../../app.globals';
+import { Shared } from "app/providers/shared";
 
 @Component({
     selector: 'menu',
@@ -10,7 +9,7 @@ import { Globals } from './../../app.globals';
 export class MenuComponent {
     public hovered:any;
 
-    constructor(public portfolio:Globals){
+    constructor(public portfolio:Shared){
         
     }
 

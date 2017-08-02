@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-
-import { Globals } from './../../app.globals';
+import { Shared } from "app/providers/shared";
 
 @Component({
     selector: 'about',
@@ -9,7 +8,7 @@ import { Globals } from './../../app.globals';
 })
 export class AboutComponent {
 
-    constructor(private portfolio:Globals){
+    constructor(private portfolio:Shared){
         
     }
 

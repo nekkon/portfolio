@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { Shared } from "app/providers/shared";
 
-import { Globals } from './../../app.globals';
 
 @Component({
     selector: 'contact',
@@ -9,7 +9,7 @@ import { Globals } from './../../app.globals';
 })
 export class ContactComponent {
 
-    constructor(private portfolio:Globals){
+    constructor(private portfolio:Shared){
         
     }
 

@@ -1,23 +1,22 @@
 import { Component , NgZone } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { Shared } from "app/providers/shared";
 
-import { Globals } from './app.globals';
 
 @Component({
   selector: 'app',
-  templateUrl: './app.html',
-  styleUrls: ['./app.scss']
+  templateUrl: './app.html'
 })
 export class App{
 
-    constructor(private http:Http,private zone:NgZone,private portfolio:Globals){
+    constructor(private http:Http,private zone:NgZone,private portfolio:Shared){
         this.getTexts();
     }
   
     getTexts(){
           let $this = this;
-          this.http.get('/assets/json/texts.json')
+          this.http.get('/assets/json/texts_en.json')
               .map((res:Response) => res.json())
               .subscribe(
                   data => { 

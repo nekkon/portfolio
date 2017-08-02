@@ -1,16 +1,21 @@
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { scrollTrigger } from './../../services/scrollTrigger';
 
 import { HomeView } from './home';
 
+
 import { MenuModule , AboutModule , BackgroundModule , ContactModule , EducationModule , ExperienceModule , VideoModule, PortfolioModule } from './../../components';
+import { scrollTrigger } from "app/providers/scrollTrigger";
 
 @NgModule({
-    imports: [ CommonModule , 
+    imports: [ CommonModule, FlexLayoutModule, FormsModule, HttpModule,
         MenuModule, AboutModule, BackgroundModule, ContactModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule,
         RouterModule.forChild([
             {

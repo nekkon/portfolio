@@ -1,54 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
-
-	body{
-		background-color: #FFFFFF;
-		font-family: 'dejavu',sans-serif;
-		color: #070b1e;
-	}
-	
-/****** Loading Bar ******/
-
-    .show{
-        display: block!important;
+ body{
+        margin: 0;
+        font-size: 16px;
+        font-family: Roboto,sans-serif;
+        background-color: #eee;
     }
 
-	.loadingWrapper {
-		position: absolute;
-		width: 100%;
-		height: 100%;
+/* Fonts */
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('/assets/fonts/Roboto-Regular.eot');
+		src: local('Roboto Regular'), local('Roboto-Regular'), url('/assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Roboto-Regular.woff2') format('woff2'), url('/assets/fonts/Roboto-Regular.woff') format('woff'), url('/assets/fonts/Roboto-Regular.ttf') format('truetype'), url('/assets/fonts/Roboto-Regular.svg#Roboto') format('svg');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('/assets/fonts/Roboto-Bold.eot');
+		src: local('Roboto Bold'), local('Roboto-Bold'), url('/assets/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Roboto-Bold.woff2') format('woff2'), url('/assets/fonts/Roboto-Bold.woff') format('woff'), url('/assets/fonts/Roboto-Bold.ttf') format('truetype'), url('/assets/fonts/Roboto-Bold.svg#Roboto') format('svg');
+		font-weight: 700;
+		font-style: bold;
+	}
+
+	@font-face {
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: 400;
+		src: url('/assets/fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
+		src: local('Material Icons'),
+			local('MaterialIcons-Regular'),
+			url('/assets/fonts/MaterialIcons-Regular.woff2') format('woff2'),
+			url('/assets/fonts/MaterialIcons-Regular.woff') format('woff'),
+			url('/assets/fonts/MaterialIcons-Regular.ttf') format('truetype');
+	}
+
+	.material-icons {
+		font-family: 'Material Icons';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 24px;  /* Preferred icon size */
+		display: inline-block;
+		line-height: 1;
+		text-transform: none;
+		letter-spacing: normal;
+		word-wrap: normal;
+		white-space: nowrap;
+		direction: ltr;
+
+		/* Support for all WebKit browsers. */
+		-webkit-font-smoothing: antialiased;
+		/* Support for Safari and Chrome. */
+		text-rendering: optimizeLegibility;
+
+		/* Support for Firefox. */
+		-moz-osx-font-smoothing: grayscale;
+
+		/* Support for IE. */
+		font-feature-settings: 'liga';
+	}
+
+/* Progress Bar */
+
+	.loading-screen{
+		width: 100vw;
 		height: 100vh;
-		overflow: auto;
-		background-color: #FFFFFF;
+		position: absolute;
 		left: 0;
 		top: 0;
-		display: none;
-		z-index: 10000;
+		z-index: 1000;
 	}
-	.loadingWrapper .loadingText {
-		color: #2B2D42;
-		width: 110px;
-		font-size: 14px;
-		margin: 30vh auto 0 auto;
-		margin-bottom: 0px;
-		position: relative;
-		text-align: left;
-	}
-	.loadingWrapper .loadingProgress {
-		position: relative;
-		height: 4px;
+
+	.progress {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 8px;
 		display: block;
-		width: 110px;
-		background-color: #070b1e;
-		border-radius: 2px;
+		width: 100vw;
+		background-color: rgba(244,54,76,1);
+		border-radius: 0px;
 		background-clip: padding-box;
-		margin: 20px auto;
+		margin: 0;
 		overflow: hidden;
+		z-index: 1001;
+		opacity: 0.75;
 	}
-	.loadingWrapper .loadingProgress .indeterminate {
-		background-color: #5686FF;
+	.hide{
+		display: none!important;
 	}
-	.loadingWrapper .loadingProgress .indeterminate:before {
+	.progress .indeterminate {
+		background-color: #ffffff;
+    	z-index: 10100;
+	}
+	.progress .indeterminate:before {
 		content: '';
+		z-index: 1002;
 		position: absolute;
 		background-color: inherit;
 		top: 0;
@@ -56,62 +103,78 @@
 		bottom: 0;
 		will-change: left, right;
 		-webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
-		animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+				animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 	}
-	.loadingWrapper .loadingProgress .indeterminate:after {
+	.progress .indeterminate:after {
 		content: '';
 		position: absolute;
+		z-index: 1002;
 		background-color: inherit;
 		top: 0;
 		left: 0;
 		bottom: 0;
 		will-change: left, right;
 		-webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-		animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+				animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 		-webkit-animation-delay: 1.15s;
-		animation-delay: 1.15s;
+				animation-delay: 1.15s;
 	}
 
 	@-webkit-keyframes indeterminate {
 		0% {
 			left: -35%;
-			right: 100%; }
+			right: 100%; 
+		}
 		60% {
 			left: 100%;
-			right: -90%; }
+			right: -90%; 
+		}
 		100% {
 			left: 100%;
-			right: -90%; }
+			right: -90%; 
+		}
 	}
+
 	@keyframes indeterminate {
 		0% {
 			left: -35%;
-			right: 100%; }
+			right: 100%; 
+		}
 		60% {
 			left: 100%;
-			right: -90%; }
+			right: -90%; 
+		}
 		100% {
 			left: 100%;
-			right: -90%; } }
+			right: -90%; 
+		}
+	}
+
 	@-webkit-keyframes indeterminate-short {
 		0% {
 			left: -200%;
-			right: 100%; }
+			right: 100%; 
+		}
 		60% {
 			left: 107%;
-			right: -8%; }
+			right: -8%; 
+		}
 		100% {
 			left: 107%;
-			right: -8%; }
+			right: -8%; 
+		}
 	}
 	@keyframes indeterminate-short {
 		0% {
 			left: -200%;
-			right: 100%; }
+			right: 100%; 
+		}
 		60% {
 			left: 107%;
-			right: -8%; }
+			right: -8%; 
+		}
 		100% {
 			left: 107%;
-			right: -8%; }
+			right: -8%; 
+		}
 	}

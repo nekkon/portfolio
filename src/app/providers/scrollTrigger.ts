@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-
-import { Globals } from './../app.globals';
+import { Shared } from "app/providers/shared";
 
 @Injectable()
 export class scrollTrigger {
 
-    constructor(private portfolio:Globals){
+    constructor(private portfolio:Shared){
         
     }
 
