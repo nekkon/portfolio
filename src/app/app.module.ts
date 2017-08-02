@@ -24,14 +24,14 @@ export class RavenErrorHandler implements ErrorHandler {
 
 @NgModule({
   declarations: [
-    App
+      App
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    RouterModule.forRoot( Routing ),
-    FlexLayoutModule.forRoot(),
+      BrowserModule,
+      FormsModule,
+      HttpModule,
+      RouterModule.forRoot( Routing ),
+      FlexLayoutModule,
   ],
   providers: [ Globals , { provide: ErrorHandler, useClass: RavenErrorHandler } ],
   bootstrap: [ App ]

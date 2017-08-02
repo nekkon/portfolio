@@ -1,1 +1,1 @@
-export { mainModule } from './main/main.module';
+export { homeModule } from './home/home.module';
