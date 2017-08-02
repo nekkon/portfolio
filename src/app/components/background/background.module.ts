@@ -2,12 +2,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { backgroundComponent } from './background';
+import { BackgroundComponent } from './background';
 
 @NgModule({
     imports: [ CommonModule ],
-    declarations: [ backgroundComponent ],
-    exports:      [ backgroundComponent ]
+    declarations: [ BackgroundComponent ],
+    exports:      [ BackgroundComponent ]
 })
 
-export class backgroundModule {};
+export class BackgroundModule {};

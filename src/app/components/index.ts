@@ -1,8 +1,10 @@
-export { menuModule } from './menu/menu.module';
-export { videoModule } from './video/video.module';
+export { MenuModule } from './menu/menu.module';
+export { VideoModule } from './video/video.module';
+export { BackgroundModule } from './background/background.module';
 
-export { aboutModule } from './about/about.module';
-export { backgroundModule } from './background/background.module';
-export { contactModule } from './contact/contact.module';
-export { experienceModule } from './experience/experience.module';
-export { educationModule } from './education/education.module';
+export { AboutModule } from './about/about.module';
+export { ContactModule } from './contact/contact.module';
+
+export { PortfolioModule } from './portfolio/portfolio.module';
+export { ExperienceModule } from './experience/experience.module';
+export { EducationModule } from './education/education.module';

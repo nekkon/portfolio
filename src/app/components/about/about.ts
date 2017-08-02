@@ -7,7 +7,7 @@ import { Globals } from './../../app.globals';
     templateUrl: './about.html',
     styleUrls: ['./about.scss']
 })
-export class aboutComponent {
+export class AboutComponent {
 
     constructor(private portfolio:Globals){
         

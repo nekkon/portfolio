@@ -2,12 +2,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { experienceComponent } from './experience';
+import { ExperienceComponent } from './experience';
 
 @NgModule({
     imports: [ CommonModule ],
-    declarations: [ experienceComponent ],
-    exports:      [ experienceComponent ]
+    declarations: [ ExperienceComponent ],
+    exports:      [ ExperienceComponent ]
 })
 
-export class experienceModule {};
+export class ExperienceModule {};

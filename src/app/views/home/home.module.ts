@@ -5,24 +5,24 @@ import { RouterModule } from '@angular/router';
 
 import { scrollTrigger } from './../../services/scrollTrigger';
 
-import { homeView } from './home';
+import { HomeView } from './home';
 
-import { menuModule , aboutModule , backgroundModule , contactModule , educationModule , experienceModule , videoModule } from './../../components';
+import { MenuModule , AboutModule , BackgroundModule , ContactModule , EducationModule , ExperienceModule , VideoModule, PortfolioModule } from './../../components';
 
 @NgModule({
     imports: [ CommonModule , 
-        menuModule , aboutModule , backgroundModule , contactModule , educationModule , experienceModule , videoModule,
+        MenuModule, AboutModule, BackgroundModule, ContactModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule,
         RouterModule.forChild([
             {
                 path: '',
-                component: homeView
+                component: HomeView
             }])
         ],
-    declarations: [ homeView ],
-    exports:      [ homeView ],
+    declarations: [ HomeView ],
+    exports:      [ HomeView ],
     providers: [ scrollTrigger ]
 })
 
-export class homeModule {};
+export class HomeModule {};
 
 

@@ -2,12 +2,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { educationComponent } from './education';
+import { EducationComponent } from './education';
 
 @NgModule({
     imports: [ CommonModule ],
-    declarations: [ educationComponent ],
-    exports:      [ educationComponent ]
+    declarations: [ EducationComponent ],
+    exports:      [ EducationComponent ]
 })
 
-export class educationModule {};
+export class EducationModule {};

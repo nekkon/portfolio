@@ -7,7 +7,7 @@ import { Globals } from './../../app.globals';
     templateUrl: './contact.html',
     styleUrls: ['./contact.scss']
 })
-export class contactComponent {
+export class ContactComponent {
 
     constructor(private portfolio:Globals){
         

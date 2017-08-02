@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     templateUrl: './experience.html',
     styleUrls: ['./experience.scss']
 })
-export class experienceComponent {
+export class ExperienceComponent {
 
     constructor(){
 

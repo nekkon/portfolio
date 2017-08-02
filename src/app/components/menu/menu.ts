@@ -7,10 +7,10 @@ import { Globals } from './../../app.globals';
     templateUrl: './menu.html',
     styleUrls: ['./menu.scss']
 })
-export class menuComponent {
-    private hovered:any;
+export class MenuComponent {
+    public hovered:any;
 
-    constructor(private portfolio:Globals){
+    constructor(public portfolio:Globals){
         
     }
 

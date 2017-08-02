@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     templateUrl: './video.html',
     styleUrls: ['./video.scss']
 })
-export class videoComponent {
+export class VideoComponent {
 
     constructor(){
 
