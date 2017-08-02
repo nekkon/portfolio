@@ -6,14 +6,12 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeView } from './home';
 import { MdIconModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MenuModule , AboutModule , ContactModule , EducationModule , ExperienceModule , VideoModule, PortfolioModule } from './../../components';
 import { scrollTrigger } from "app/providers/scrollTrigger";
 
 @NgModule({
-    imports: [ CommonModule, FlexLayoutModule, FormsModule, BrowserAnimationsModule,
-        MdIconModule,
+    imports: [ CommonModule, FlexLayoutModule, FormsModule, 
         MenuModule, AboutModule, ContactModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule,
         RouterModule.forChild([
             {
@@ -22,7 +20,7 @@ import { scrollTrigger } from "app/providers/scrollTrigger";
             }])
         ],
     declarations: [ HomeView ],
-    exports:      [ HomeView ],
+    exports:      [ RouterModule ],
     providers: [ scrollTrigger ]
 })
 

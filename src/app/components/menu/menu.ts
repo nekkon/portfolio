@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Shared } from "app/providers/shared";
 
 @Component({
@@ -6,11 +6,18 @@ import { Shared } from "app/providers/shared";
     templateUrl: './menu.html',
     styleUrls: ['./menu.scss']
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
     public hovered:any;
+    public visible:boolean = false;
 
     constructor(public portfolio:Shared){
         
+    }
+
+    ngOnInit(){
+        this.portfolio.menu.subscribe( value =>{
+            this.visible = value;
+        })
     }
 
     onHover(link){
@@ -19,5 +26,7 @@ export class MenuComponent {
     onMouseOut(){
         this.hovered = '';
     }
+    
+
 
 }
