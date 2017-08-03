@@ -26,7 +26,9 @@ export class MenuComponent implements OnInit {
     onMouseOut(){
         this.hovered = '';
     }
-    
 
+    showMenu(){
+        this.portfolio.toggleMenu(true);
+    }
 
 }

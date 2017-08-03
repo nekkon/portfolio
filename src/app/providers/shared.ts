@@ -6,11 +6,16 @@ declare var window:any;
 export class Shared {
     @Output() menu: EventEmitter<any> = new EventEmitter<any>();
 
-    showMenu(){
-        this.menu.emit(true);
-    }
-    hideMenu(){
-        this.menu.emit(false);
+    menuVisible:boolean = false;
+
+    toggleMenu(value?){
+        if(value){
+            this.menuVisible = value;
+        } else {
+            this.menuVisible != this.menuVisible;
+        }
+    
+        this.menu.emit(this.menuVisible);
     }
 
     public texts;

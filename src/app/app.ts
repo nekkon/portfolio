@@ -1,12 +1,13 @@
-import { Component , NgZone } from '@angular/core';
+import { ChangeDetectionStrategy, Component, NgZone } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Shared } from "app/providers/shared";
 
 
 @Component({
-  selector: 'app',
-  templateUrl: './app.html'
+    selector: 'app',
+    templateUrl: './app.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class App{
 
