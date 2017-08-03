@@ -1,10 +1,11 @@
+
+<div class="MenuButton">
+    <md-icon>subject</md-icon>
+</div>
 <div *ngIf="visible" class="MenuVisible">
     <nav >
         <div>
             <a *ngFor="let item of (portfolio.texts)?.menu" [ngClass]="{'unhovered':( hovered && hovered!==item.link )}" (mousemove)="onHover(item.link)" (mouseout)="onMouseOut()" href="main#{{item.link}}">{{ item.name }}</a>
         </div>
     </nav>
-</div>
-<div *ngIf="!visible" class="MenuButton">
-    <md-icon>subject</md-icon>
 </div>
