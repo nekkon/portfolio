@@ -1,23 +1,31 @@
 {
     "menu" : [
             {
-                "name": "About me",
+                "name": "ABOUT ME",
                 "link": "about"
             },
             {
-                "name": "Education",
-                "link": "education"
+                "name": "EXPERT IN",
+                "link": "expert in"
             },
             {
-                "name": "Portfolio",
+                "name": "PORTFOLIO",
                 "link": "portfolio"
             },
             {
-                "name": "Experience",
+                "name": "ACCOMPLISHMENTS",
+                "link": "accomplishments"
+            },
+            {
+                "name": "EXPERIENCE",
                 "link": "experience"
             },
             {
-                "name": "Contact me",
+                "name": "EDUCATION",
+                "link": "education"
+            },
+            {
+                "name": "CONTACT ME",
                 "link": "contact"
             }
         ]

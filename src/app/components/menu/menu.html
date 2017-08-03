@@ -1,9 +1,12 @@
 
-<div (click)="showMenu()" class="MenuButton">
-    <md-icon>subject</md-icon>
-</div>
+
+<md-icon (click)="toggleMenu(true)" class="MenuButton">subject</md-icon>
+
 <div *ngIf="visible" class="MenuFullscreen">
+    <md-icon (click)="toggleMenu(false)" class="MenuButton">close</md-icon>
     <nav >
-        <a *ngFor="let item of (portfolio.texts)?.menu" [ngClass]="{'unhovered':( hovered && hovered!==item.link )}" (mousemove)="onHover(item.link)" (mouseout)="onMouseOut()" href="main#{{item.link}}">{{ item.name }}</a>
+        <div *ngFor="let item of (portfolio.texts)?.menu">
+            <a [ngClass]="{'unhovered':( hovered && hovered!==item.link )}" (mousemove)="onHover(item.link)" (mouseout)="onMouseOut()" href="main#{{item.link}}">{{ item.name }}</a>
+        </div>
     </nav>
 </div>

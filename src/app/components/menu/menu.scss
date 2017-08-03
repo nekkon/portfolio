@@ -2,9 +2,10 @@
 .MenuButton{
     display: block;
     position: absolute;
-    right: 140px;
-    top: 200px;
+    right: 10%;
+    top: 5%;
     cursor: pointer;
+    font-size: 40px;
 }
 
 .MenuFullscreen{
@@ -17,11 +18,12 @@
     height: 100%;
     overflow: auto;
 
+    nav div{
+        margin: 16px 0;
+    }
     nav a {
         color: #252E38;
         text-decoration: none;
-        display: table-cell;
-        vertical-align: middle;
         font-size: 24px;
         cursor: pointer;
     }
@@ -32,7 +34,16 @@
         color: #bababa;
     }
     nav{
-        text-align: center;
         width: 100%;
+        height: 100%;
+        overflow: auto;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-direction: column;
+        flex-direction: column;
     }
 }
