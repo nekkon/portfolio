@@ -2,7 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import { Shared } from "app/providers/shared";
 
 @Component({
-    selector: 'menu',
+    selector: 'component-menu',
     templateUrl: './menu.html',
     styleUrls: ['./menu.scss']
 })

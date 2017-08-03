@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'experience',
+    selector: 'section-experience',
     templateUrl: './experience.html',
     styleUrls: ['./experience.scss']
 })

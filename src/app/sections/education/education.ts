@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'education',
+    selector: 'section-education',
     templateUrl: './education.html',
     styleUrls: ['./education.scss']
 })

@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { Shared } from "app/providers/shared";
 
-
 @Component({
-    selector: 'contact',
-    templateUrl: './contact.html',
-    styleUrls: ['./contact.scss']
+    selector: 'section-about',
+    templateUrl: './about.html',
+    styleUrls: ['./about.scss']
 })
-export class ContactComponent {
+export class AboutComponent {
 
     constructor(private portfolio:Shared){
         
