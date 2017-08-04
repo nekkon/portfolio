@@ -9,7 +9,7 @@ export class Shared {
     menuVisible:boolean = false;
 
     toggleMenu(value?){
-        if(value){
+        if(value || value == false){
             this.menuVisible = value;
         } else {
             this.menuVisible != this.menuVisible;

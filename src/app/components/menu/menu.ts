@@ -28,6 +28,7 @@ export class MenuComponent implements OnInit {
     }
 
     toggleMenu(value){
+        console.log(value);
         this.portfolio.toggleMenu(value);
     }
 

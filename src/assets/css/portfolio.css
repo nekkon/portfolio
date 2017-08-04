@@ -9,22 +9,22 @@
 
 	@font-face {
 		font-family: 'dejavu_sansbold';
-		src: url('DejaVuSans-Bold.eot');
-		src: url('DejaVuSans-Bold.eot?#iefix') format('embedded-opentype'),
-			url('DejaVuSans-Bold.woff') format('woff'),
-			url('DejaVuSans-Bold.ttf') format('truetype'),
-			url('DejaVuSans-Bold.svg#dejavu_sansbold') format('svg');
+		src: url('/assets/fonts/DejaVuSans-Bold.eot');
+		src: url('/assets/fonts/DejaVuSans-Bold.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/DejaVuSans-Bold.woff') format('woff'),
+			url('/assets/fonts/DejaVuSans-Bold.ttf') format('truetype'),
+			url('/assets/fonts/DejaVuSans-Bold.svg#dejavu_sansbold') format('svg');
 		font-weight: normal;
 		font-style: normal;
 	}
 
 	@font-face {
 		font-family: 'dejavu_sansextralight';
-		src: url('DejaVuSans-ExtraLight.eot');
-		src: url('DejaVuSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
-			url('DejaVuSans-ExtraLight.woff') format('woff'),
-			url('DejaVuSans-ExtraLight.ttf') format('truetype'),
-			url('DejaVuSans-ExtraLight.svg#dejavu_sansextralight') format('svg');
+		src: url('/assets/fonts/DejaVuSans-ExtraLight.eot');
+		src: url('/assets/fonts/DejaVuSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/DejaVuSans-ExtraLight.woff') format('woff'),
+			url('/assets/fonts/DejaVuSans-ExtraLight.ttf') format('truetype'),
+			url('/assets/fonts/DejaVuSans-ExtraLight.svg#dejavu_sansextralight') format('svg');
 		font-weight: normal;
 		font-style: normal;
 	}
