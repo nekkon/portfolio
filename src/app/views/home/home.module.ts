@@ -7,13 +7,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeView } from './home';
 import { MdIconModule } from '@angular/material';
 
-import { AboutModule , ContactModule , EducationModule , ExperienceModule , VideoModule, PortfolioModule } from './../../sections';
+import { AboutModule, ContactModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule, ExpertinModule, AccomplishmentsModule } from './../../sections';
 import { scrollTrigger } from "app/providers/scrollTrigger";
 import { MenuModule } from "app/components";
 
 @NgModule({
     imports: [ CommonModule, FlexLayoutModule, FormsModule, 
-        MenuModule, AboutModule, ContactModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule,
+        MenuModule, AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule,
         RouterModule.forChild([
             {
                 path: '',
