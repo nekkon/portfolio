@@ -23,6 +23,10 @@
                 "link": "contact"
             }
         ],
+    "video" : {
+        "title": "NEKTARIOS KONSTANTINIDIS",
+        "subtitle": "Web Developer"
+    }, 
     "about" : {
         "title": "ABOUT ME",
         "content": [

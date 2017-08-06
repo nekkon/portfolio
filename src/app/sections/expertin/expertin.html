@@ -1,9 +1,12 @@
 
 <div class="expertin">
     <div>
-        
+        <div>{{(shared.expertin)?.title}}</div>
     </div>
     <div>
-        <div>EXPERT IN</div>
+        <component-mastery item="mastery" *ngFor="let mastery of (shared.expertin)?.masteries"></list>
+    </div>
+    <div>
+        <button>{{(shared.expertin)?.button}}</button>
     </div>
 </div>
