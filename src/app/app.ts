@@ -11,7 +11,7 @@ import { Shared } from "app/providers/shared";
 })
 export class App{
 
-    constructor(private http:Http,private zone:NgZone,private portfolio:Shared){
+    constructor(private http:Http, private zone:NgZone, private portfolio:Shared){
         this.getTexts();
     }
   
