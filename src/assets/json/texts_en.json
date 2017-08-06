@@ -3,30 +3,261 @@
             {
                 "name": "ABOUT ME",
                 "link": "about"
-            },
-            {
+            },{
                 "name": "EXPERT IN",
-                "link": "expert in"
-            },
-            {
+                "link": "expertin"
+            },{
                 "name": "PORTFOLIO",
                 "link": "portfolio"
-            },
-            {
+            },{
                 "name": "ACCOMPLISHMENTS",
                 "link": "accomplishments"
-            },
-            {
+            },{
                 "name": "EXPERIENCE",
                 "link": "experience"
-            },
-            {
+            },{
                 "name": "EDUCATION",
                 "link": "education"
-            },
-            {
+            },{
                 "name": "CONTACT ME",
                 "link": "contact"
             }
+        ],
+    "about" : {
+        "title": "ABOUT ME",
+        "content": [
+                "As confirmed by my portfolio, I combine my advanced knowledge, experience and skills with technology in order to develop professional and innovative web applications which help companies grow.",
+                "I use test-driven development principles and Agile methodologies with after-release error monitoring to produce professional and bug-free applications. I follow best practices and produce 'clean code' which is comprehensive, easy to debug and maintain."
+        ],
+        "button": "Download my resume"
+    },
+    "expertin" : {
+        "title": "EXPERT IN",
+        "content": "",
+        "button": "Download my resume",
+        "masteries": [
+            {
+                "label": "Angular",
+                "img": ""
+            },{
+                "label": "TypeScript",
+                "img": ""
+            },{
+                "label": "jQuery",
+                "img": ""
+            },{
+                "label": "Javascript",
+                "img": ""
+            },{
+                "label": "Git",
+                "img": ""
+            },{
+                "label": "Gulp",
+                "img": ""
+            },{
+                "label": "Karma",
+                "img": ""
+            },{
+                "label": "Facebook SDK",
+                "img": ""
+            },{
+                "label": "Google API",
+                "img": ""
+            },{
+                "label": "Bootstrap",
+                "img": ""
+            },{
+                "label": "Foundation",
+                "img": ""
+            },{
+                "label": "CSS3",
+                "img": ""
+            },{
+                "label": "HTML5",
+                "img": ""
+            },{
+                "label": "PHP",
+                "img": ""
+            },{
+                "label": "MongoDB",
+                "img": ""
+            },{
+                "label": "MySQL",
+                "img": ""
+            },{
+                "label": "Photoshop",
+                "img": ""
+            },{
+                "label": "Illustrator",
+                "img": ""
+            }
         ]
+    },
+    "portfolio" : {
+        "title": "PORTFOLIO",
+        "projects": [
+            {
+                "label": "Or-co.gr",
+                "img": ""
+            },{
+                "label": "Book'n'Bloom",
+                "img": ""
+            },{
+                "label": "Media Ram",
+                "img": ""
+            },{
+                "label": "Inrealty.gr",
+                "img": ""
+            },{
+                "label": "Swinburne",
+                "img": ""
+            },{
+                "label": "Help!!!",
+                "img": ""
+            },{
+                "label": "Tap it right!",
+                "img": ""
+            },{
+                "label": "Sonon website",
+                "img": ""
+            },{
+                "label": "Thesis",
+                "img": ""
+            }
+        ],
+        "button": "Load more"
+    },
+    "accomplishments" : {
+        "title": "ACCOMPLISHMENTS",
+        "content": [
+            {
+                "title": "2015-2017",
+                "paragraph": "Developed the Front End of a startup’s application which enabled it to attract one of the largest investments for Greece and in Europe (11.5 Million Euros for Book’n’Bloom)."
+            },{
+                "title": "2014",
+                "paragraph": "Solely Developed a web application used as a Service Management tool by Media Ram and Media Markt (one of Europe’s largest retailer of consumer electronics)."
+            },{
+                "title": "2008",
+                "paragraph": "Presented my thesis on a new data compression algorithm in the 2nd Panhellenic Conference of Computer Science in Samos called “Eureka”, which was acknowledged for its efficiency."
+            }
+        ]
+    },
+    "experience" : {
+        "title": "EXPERIENCE",
+        "content": [
+            {
+                "title":"Front-End Software Developer",
+                "subtitle":"JUL 2015 - PRESENT, S2 Development LTD.",
+                "intro": [
+                    "Worked in a multidisciplinary Scrum team to build a cutting edge Facebook App for Appointment Bookings. Contributed to a motivated team which co-operated successfully in an ambitious and innovative environment. Used Git and collaborated following continuous deployment principles."
+                ],
+                "list": [
+                    "Lowest record of bugs in company with immediate rectification when needed. Used sentry.io for error monitoring.",
+                    "Trained on Agile methodologies (Scrum theory and product management) by Agile Actors (https://www.agileactors.com/).",
+                    "Developed a custom Registration Process that installed a Facebook app in a user’s Facebook Business page ( created a Facebook + email login, used Graph  API, Facebook and Google Analytics reporting ) In this custom implementation HTML5, CSS, javascript, jQuery and bootstrap/material were used. Also migrated the custom implementation to angular2+. Rebuilt code to Typescript, HTML5, SCSS.",
+                    "Developed the Admin area of the company's site in angular2+ with Unit Tests and E2E testing. Used recurly.js and developed the front-end of credit-card and paypal payment methods.",
+                    "Developed the push script which updated production environment by using Gulp.",
+                    "Developed the Front-End for the Book’n’Bloom Facebook Application.",
+                    "All implementations used company’s restful API.",
+                    "Improved efficiency of internal processes by optimizing the update script used for translated texts from 40 minutes to 4secs ( 100x faster ) by using bulk processing and the latest libraries of MongoDB and Python.",
+                    "Participated in decision making and provided counselling for the company’s projects."
+                ],
+                "closing":"Used: javascript, jQuery, Angular, TypeScript, Facebook SDK, Google API, Gulp, RecurlyJS, Bootstrap, HTML5, CSS3, php, python, MongoDB"
+            },{
+                "title":"Full-Stack Software Developer & Designer",
+                "subtitle":"JAN 2015 - JUN 2015, Freelance",
+                "intro": [
+                    "Designed and Developed a web application used as a Service management tool by Media Ram. The web application included a custom dashboard and CRM."
+                ],
+                "list": [],
+                "closing":"Used: php, HTML5, CSS, javascript and jQuery (select2 and datatables)."
+            },{
+                "title":"Full-Stack Software Developer & Designer",
+                "subtitle":"SEP 2014 - DEC 2014, Inrealty.gr",
+                "intro": [
+                    "Rebranded, Designed and Developed the website for a Real Estate agency. The website managed and displayed properties on Google maps with photos."
+                ],
+                "list": [],
+                "closing":"Used: Illustrator, Photoshop, php, mySQL, HTML5, CSS, javascript, Google Maps API and jQuery."
+            },{
+                "title":"Full-Stack Software Developer & Designer",
+                "subtitle":"OCT 2010 - JUN 2013, Freelance",
+                "intro": [
+                    "Developed and Designed Websites, Mobile and Desktop applications for businesses."
+                ],
+                "list": [],
+                "closing":"Used: XCode and Objective-C (iphone apps), Html, CSS and javascript (custom sites and wordpress), VB.Net (Desktop application)."
+            },{
+                "title":"Full-Stack Software Developer & Designer",
+                "subtitle":"SEP 2004 - AUG 2007, International Real Estate",
+                "intro": [
+                    "Designed and Developed the agency’s website. Designed and Developed a Property management application ( with photos, database )"
+                ],
+                "list": [],
+                "closing":"Used: php, mySQL, HTML and VB.NET."
+            }
+        ],
+        "button": "Download my resume"
+    },
+    "education": {
+        "title": "EDUCATION",
+        "content": [
+            {
+                "title": "Bachelor Degree in Applied Informatics",
+                "subtitle": "University of Macedonia, Greece",
+                "year": "2002 - 2008"
+            },{
+                "title": "Diploma of Graphic Design",
+                "subtitle": "Swinburne University, Australia",
+                "year": "2014"
+            },{
+                "title": "ITL Foundation (IT Service Management)",
+                "subtitle": "ItFutures, Australia",
+                "year": "2012"
+            },{
+                "title": "Certificate VI in Small Business Management",
+                "subtitle": "RMIT University, Australia",
+                "year": ""
+            }
+        ]
+    },
+    "conferences": {
+        "title": "CONFERENCES",
+        "content": [
+            {
+                "list": [
+                    "DEVit - The 360° Web Development Conference (Thessaloniki)"
+                ],
+                "year": "2017"
+            },{
+                "list": [
+                    "ng-europe - The Original European Angular.js Conference (Paris)",
+                    "DEVit - The 360° Web Development Conference (Thessaloniki)"
+                ],
+                "year": "2016"
+            },{
+                "list": [
+                    "AgIdeas - Design Festival (Australia, Melbourne)"
+                ],
+                "year": "2014"
+            },{
+                "list": [
+                    "“Eureka” - Panhellenic Computer Science Conference (Samos)"
+                ],
+                "year": "2008"
+            }
+        ]
+    },
+    "contact": {
+        "intro": "Feel free to contact me for feedback, project cooperation or any other matter. I will reply as soon as possible...",
+        "input": [
+            "NAME","EMAIL","MESSAGE"
+        ],
+        "button":"Send message"
+    },
+    "footer": {
+        "img": "",
+        "content": "All righs reserved. Copyrights 2017"
+    }
+    
 }
