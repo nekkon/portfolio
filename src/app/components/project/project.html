@@ -1,6 +1,10 @@
-
 <div>
-    <div></div>
-    <div>{{ label }}</div>
+    <div *ngFor="let project of (portfolio.texts.portfolio)?.projects">
+        <div></div>
+        <div>{{ project.title }}</div>
+    </div>
+</div>
+<div>
+
 </div>
 

@@ -4,7 +4,7 @@
         <div>{{(portfolio.texts.expertin)?.title}}</div>
     </div>
     <div>
-        <component-mastery item="mastery" *ngFor="let mastery of (portfolio.texts.expertin)?.masteries"></component-mastery>
+        <component-mastery [item]="mastery" *ngFor="let mastery of (portfolio.texts.expertin)?.masteries"></component-mastery>
     </div>
     <div>
         <button>{{(portfolio.texts.expertin)?.button}}</button>

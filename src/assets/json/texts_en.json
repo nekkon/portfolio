@@ -41,58 +41,58 @@
         "button": "Download my resume",
         "masteries": [
             {
-                "label": "Angular",
+                "title": "Angular",
                 "img": ""
             },{
-                "label": "TypeScript",
+                "title": "TypeScript",
                 "img": ""
             },{
-                "label": "jQuery",
+                "title": "jQuery",
                 "img": ""
             },{
-                "label": "Javascript",
+                "title": "Javascript",
                 "img": ""
             },{
-                "label": "Git",
+                "title": "Git",
                 "img": ""
             },{
-                "label": "Gulp",
+                "title": "Gulp",
                 "img": ""
             },{
-                "label": "Karma",
+                "title": "Karma",
                 "img": ""
             },{
-                "label": "Facebook SDK",
+                "title": "Facebook SDK",
                 "img": ""
             },{
-                "label": "Google API",
+                "title": "Google API",
                 "img": ""
             },{
-                "label": "Bootstrap",
+                "title": "Bootstrap",
                 "img": ""
             },{
-                "label": "Foundation",
+                "title": "Foundation",
                 "img": ""
             },{
-                "label": "CSS3",
+                "title": "CSS3",
                 "img": ""
             },{
-                "label": "HTML5",
+                "title": "HTML5",
                 "img": ""
             },{
-                "label": "PHP",
+                "title": "PHP",
                 "img": ""
             },{
-                "label": "MongoDB",
+                "title": "MongoDB",
                 "img": ""
             },{
-                "label": "MySQL",
+                "title": "MySQL",
                 "img": ""
             },{
-                "label": "Photoshop",
+                "title": "Photoshop",
                 "img": ""
             },{
-                "label": "Illustrator",
+                "title": "Illustrator",
                 "img": ""
             }
         ]
@@ -101,31 +101,31 @@
         "title": "PORTFOLIO",
         "projects": [
             {
-                "label": "Or-co.gr",
+                "title": "Or-co.gr",
                 "img": ""
             },{
-                "label": "Book'n'Bloom",
+                "title": "Book'n'Bloom",
                 "img": ""
             },{
-                "label": "Media Ram",
+                "title": "Media Ram",
                 "img": ""
             },{
-                "label": "Inrealty.gr",
+                "title": "Inrealty.gr",
                 "img": ""
             },{
-                "label": "Swinburne",
+                "title": "Swinburne",
                 "img": ""
             },{
-                "label": "Help!!!",
+                "title": "Help!!!",
                 "img": ""
             },{
-                "label": "Tap it right!",
+                "title": "Tap it right!",
                 "img": ""
             },{
-                "label": "Sonon website",
+                "title": "Sonon website",
                 "img": ""
             },{
-                "label": "Thesis",
+                "title": "Thesis",
                 "img": ""
             }
         ],
