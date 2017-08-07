@@ -1,12 +1,12 @@
 
 <div class="expertin">
     <div>
-        <div>{{(shared.expertin)?.title}}</div>
+        <div>{{(portfolio.texts.expertin)?.title}}</div>
     </div>
     <div>
-        <component-mastery item="mastery" *ngFor="let mastery of (shared.expertin)?.masteries"></list>
+        <component-mastery item="mastery" *ngFor="let mastery of (portfolio.texts.expertin)?.masteries"></component-mastery>
     </div>
     <div>
-        <button>{{(shared.expertin)?.button}}</button>
+        <button>{{(portfolio.texts.expertin)?.button}}</button>
     </div>
 </div>

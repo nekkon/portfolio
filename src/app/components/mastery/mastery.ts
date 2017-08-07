@@ -6,8 +6,7 @@ import { Component, OnInit, Input} from '@angular/core';
     styleUrls: ['./mastery.scss']
 })
 export class MasteryComponent implements OnInit {
-    @Input() label;
-    @Input() img;
+    @Input() item;
 
     constructor(){
         

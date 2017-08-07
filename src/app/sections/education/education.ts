@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Shared } from "app/providers/shared";
 
 @Component({
     selector: 'section-education',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class EducationComponent {
 
-    constructor(){
+    constructor(private portfolio:Shared){
 
     }
 }

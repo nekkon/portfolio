@@ -1,9 +1,9 @@
 
 <div class="education">
     <div>
-        <div>{{(shared.education)?.title}}</div>
+        <div>{{(portfolio.texts.education)?.title}}</div>
     </div>
     <div>
-        <component-list item="education" type="education" *ngFor="let education of (shared.education)?.content"></list>
+        <component-list [item]="education" type="education" *ngFor="let education of (portfolio.texts.education)?.content"></component-list>
     </div>
 </div>

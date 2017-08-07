@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Shared } from "app/providers/shared";
 
 @Component({
     selector: 'section-video',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class VideoComponent {
 
-    constructor(){
+    constructor(private portfolio:Shared){
 
     }
 }
