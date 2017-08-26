@@ -1,0 +1,21 @@
+.about{
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
+    width: 100wh;
+}
+.title{
+    float: left;
+    width: 30%;
+    margin-top: 32px;
+}
+.content{
+    float: right;
+    width: 70%;
+    margin-top: 32px;
+}
+.content button{
+    margin-top: 24px;
+}
