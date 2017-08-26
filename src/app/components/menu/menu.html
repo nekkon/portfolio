@@ -1,8 +1,8 @@
 
 
-<md-icon (click)="toggleMenu(true)" class="MenuButton">subject</md-icon>
+<md-icon (click)="toggleMenu(true)" class="MenuButton" >subject</md-icon>
 
-<div *ngIf="visible" class="MenuFullscreen">
+<div *ngIf="visible" class="MenuFullscreen" >
     <md-icon (click)="toggleMenu(false)" class="MenuButton">close</md-icon>
     <nav >
         <div *ngFor="let item of (portfolio.texts)?.menu">

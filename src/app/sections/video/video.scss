@@ -1,4 +1,26 @@
 
 .video{
     background-color: #4280F7;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
+    width: 100wh;
+}
+.title{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.subtitle{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    margin: 16px 0 0 0;
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
 }
