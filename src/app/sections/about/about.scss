@@ -10,11 +10,16 @@
     float: left;
     width: 30%;
     margin-top: 32px;
+    font-weight: bold;
+    box-sizing: border-box
 }
 .content{
     float: right;
     width: 70%;
     margin-top: 32px;
+    padding: 24px 10%;
+    box-sizing: border-box;
+    color: #4E6AA2;
 }
 .content button{
     margin-top: 24px;

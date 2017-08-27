@@ -1,12 +1,9 @@
 
 <div class="expertin">
-    <div>
+    <div class="title">
         <div>{{(portfolio.texts.expertin)?.title}}</div>
     </div>
-    <div>
+    <div class="content" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
         <component-mastery [item]="mastery" *ngFor="let mastery of (portfolio.texts.expertin)?.masteries"></component-mastery>
-    </div>
-    <div>
-        <button>{{(portfolio.texts.expertin)?.button}}</button>
     </div>
 </div>
