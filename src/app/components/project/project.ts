@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Shared } from "app/providers/shared";
 
 @Component({
@@ -7,6 +7,7 @@ import { Shared } from "app/providers/shared";
     styleUrls: ['./project.scss']
 })
 export class ProjectComponent implements OnInit {
+    @Input('project') project;
 
     constructor(public portfolio:Shared){
         

@@ -1,12 +1,12 @@
 
 <div class="portfolio">
-    <div>
-        <div>{{(portfolio.texts.portfolio)?.title}}</div>
+    <div class="title">
+        {{(portfolio.texts.portfolio)?.title}}
     </div>
-    <div>
-        <component-project ></component-project>
+    <div class="content" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
+        <component-project [project]="project" *ngFor="let project of (portfolio.texts.portfolio)?.projects"></component-project>
     </div>
-    <div>
-        <button>{{(portfolio.texts.portfolio)?.button}}</button>
+    <div class="actions">
+        <button md-raised-button>{{(portfolio.texts.portfolio)?.button}}</button>
     </div>
 </div>

@@ -1,0 +1,27 @@
+.project{
+    width: 150px;
+    height: 120px;
+    margin: 8px;
+}
+.logo{
+    width: 150px;
+    height: 120px;
+}
+.hover{
+    width: 150px;
+    height: 120px;
+    padding: 24px;
+    display: none;
+    box-sizing: border-box;
+}
+.project:hover .hover{
+    display: table-cell;
+    position: absolute;
+    text-align: center;
+}
+.title{
+
+}
+.subtitle{
+
+}
