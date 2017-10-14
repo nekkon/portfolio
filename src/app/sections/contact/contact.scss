@@ -1,9 +1,7 @@
 .contact{
     background-color: #263038;
-    height: 100%;
     width: 100%;
     overflow: auto;
-    height: 100vh;
     width: 100wh;
     color: #FFFFFF;
 }
@@ -13,4 +11,43 @@
     box-sizing: border-box;
     width: 100%;
     text-align: ceannter;
+}
+.right{
+    width: 60%;
+    float: right;
+}
+.placeholders{
+    float: left;
+    width: 20%;
+}
+.placeholders div{
+    margin-top: 32px;
+    text-align: right;
+}
+.inputs{
+    float: right;
+    width: 80%;
+}
+.input{
+    width: 100%;
+}
+.example-form{
+    padding: 24px;
+}
+.message{
+    margin-top: 24px;
+}
+.mat-input-underline{
+    background-color: #596167;
+}
+.horizontal-line{
+    width: 80%;
+    border-top: #9FA4A7;
+    height: 0px;
+}
+.logo{
+    float: left;
+}
+.copyrights{
+    float: right;
 }

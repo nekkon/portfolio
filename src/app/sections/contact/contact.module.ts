@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ContactComponent } from './contact';
-import { MdInputModule } from "@angular/material";
+import { MatInputModule, MatButtonModule } from "@angular/material";
 
 @NgModule({
-    imports: [ CommonModule, MdInputModule ],
+    imports: [ CommonModule, MatInputModule, MatButtonModule ],
     declarations: [ ContactComponent ],
     exports:      [ ContactComponent ]
 })

@@ -1,12 +1,12 @@
 
 
-<button md-fab class="MenuButton" (click)="toggleMenu(true)">
-    <md-icon >subject</md-icon>
+<button mat-fab class="MenuButton" (click)="toggleMenu(true)">
+    <mat-icon >subject</mat-icon>
 </button>
 
 <div *ngIf="visible" class="MenuFullscreen" >
-    <button md-fab class="MenuButton" (click)="toggleMenu(false)">
-        <md-icon >close</md-icon>
+    <button mat-fab class="MenuButton" (click)="toggleMenu(false)">
+        <mat-icon >close</mat-icon>
     </button>
     <nav >
         <div *ngFor="let item of (portfolio.texts)?.menu">

@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeView } from './home';
-import { MdIconModule } from '@angular/material';
 
 import { AboutModule, ContactModule, EducationModule, ExperienceModule, VideoModule, PortfolioModule, ExpertinModule, AccomplishmentsModule } from './../../sections';
 import { scrollTrigger } from "app/providers/scrollTrigger";

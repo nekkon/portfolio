@@ -1,27 +1,35 @@
 
 <div class="contact">
 
-    <div class="intro">{{(portfolio.texts.contact)?.intro}}</div>
+    <div class="right">
+        <div class="intro">{{(portfolio.texts.contact)?.intro}}</div>
 
-    <div class="placeholders">
-        <div>{{(portfolio.texts.contact)?.input[0]}}</div>
-        <div>{{(portfolio.texts.contact)?.input[1]}}</div>
-        <div>{{(portfolio.texts.contact)?.input[2]}}</div>
+        <div class="placeholders">
+            <div>{{(portfolio.texts.contact)?.input[0]}}</div>
+            <div>{{(portfolio.texts.contact)?.input[1]}}</div>
+            <div>{{(portfolio.texts.contact)?.input[2]}}</div>
+        </div>
+        <div class="inputs">
+            <form class="example-form">
+                <mat-form-field class="input">                    
+                    <input matInput value="">
+                </mat-form-field>
+                <mat-form-field class="input">
+                    <input matInput value="">
+                </mat-form-field>
+                <mat-form-field class="input">
+                    <textarea matInput placeholder=""></textarea>
+                </mat-form-field>
+
+                <button class="message" mat-raised-button>{{(portfolio.texts.contact)?.button}}</button>
+            </form>
+        </div>
     </div>
-    <div class="inputs">
-        <form class="example-form">
-            <md-input-container class="">
-                <input mdInput value="">
-            </md-input-container>
-            <md-input-container class="">
-                <input mdInput value="">
-            </md-input-container>
-            <md-input-container class="">
-                <textarea mdInput placeholder=""></textarea>
-            </md-input-container>
-        </form>
-    </div>
-    <div>
-        <button md-raised-button>{{(portfolio.texts.contact)?.button}}</button>
+    <div class="horizontal-line"></div>
+    <div class="footer">
+        <img class="logo" src="{{(portfolio.texts.footer)?.img">
+        <div class="copyrights">
+            {{(portfolio.texts.footer)?.content}}
+        </div>
     </div>
 </div>
