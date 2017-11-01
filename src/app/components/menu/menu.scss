@@ -10,6 +10,11 @@
     background-color: #FFFFFF;
     color: #000000;
 }
+.MenuButton.default{
+    background-color: transparent;
+    color: #FFFFFF;
+    box-shadow: none;
+}
 .MenuButton mat-icon{
     padding: 0;
     line-height: 56px;

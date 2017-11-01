@@ -5,3 +5,8 @@ button.mat-raised-button{
     background-color: #0084FB;
     color: #FFFFFF;
 }
+
+.MenuButton.mat-fab .mat-button-wrapper{
+    padding: 0;
+    line-height: 56px;
+}

@@ -31,9 +31,9 @@
         "title": "ABOUT ME",
         "content": [
                 "As confirmed by my portfolio, I combine my advanced knowledge, experience and skills with technology in order to develop professional and innovative web applications which help companies grow.",
-                "I use test-driven development principles and Agile methodologies with after-release error monitoring to produce professional and bug-free applications. I follow best practices and produce 'clean code' which is comprehensive, easy to debug and maintain."
+                "I use test-driven development principles and Agile methodologies with after-release error monitoring to produce professional and bug-free applications. I follow best practices and produce “clean code” which is comprehensive, easy to debug and maintain."
         ],
-        "button": "Download my resume"
+        "button": "Download my CV/Resume"
     },
     "expertin" : {
         "title": "EXPERT IN",

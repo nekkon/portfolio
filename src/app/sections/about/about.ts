@@ -8,7 +8,7 @@ import { Shared } from "app/providers/shared";
 })
 export class AboutComponent {
 
-    constructor(private portfolio:Shared){
+    constructor(public portfolio:Shared){
         
     }
 

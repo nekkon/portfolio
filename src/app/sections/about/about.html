@@ -4,7 +4,7 @@
         <div>{{(portfolio.texts.about)?.title}}</div>
     </div>
     <div class="content">
-        <div>{{(portfolio.texts.about)?.content}}</div>
+        <p *ngFor="let paragraph of (portfolio.texts.about)?.content" >{{ paragraph }}</p>
         <button mat-raised-button>{{(portfolio.texts.about)?.button}}</button>
     </div>
 </div>
