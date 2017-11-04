@@ -25,7 +25,7 @@
         ],
     "video" : {
         "title": "Nektarios Konstantinidis",
-        "subtitle": "Web Developer (Front-End)"
+        "subtitle": "Senior Web Developer (Front-End)"
     }, 
     "about" : {
         "title": "ABOUT ME",
@@ -42,58 +42,58 @@
         "masteries": [
             {
                 "title": "Angular",
-                "img": ""
+                "img": "/assets/img/angular.png"
             },{
                 "title": "TypeScript",
-                "img": ""
-            },{
-                "title": "jQuery",
-                "img": ""
+                "img": "/assets/img/typescript.png"
             },{
                 "title": "Javascript",
-                "img": ""
+                "img": "/assets/img/javascript.png"
             },{
-                "title": "Git",
-                "img": ""
-            },{
-                "title": "Gulp",
-                "img": ""
-            },{
-                "title": "Karma",
-                "img": ""
-            },{
-                "title": "Facebook SDK",
-                "img": ""
-            },{
-                "title": "Google API",
-                "img": ""
-            },{
-                "title": "Bootstrap",
-                "img": ""
-            },{
-                "title": "Foundation",
-                "img": ""
+                "title": "jQuery",
+                "img": "/assets/img/jquery.png"
             },{
                 "title": "CSS3",
-                "img": ""
+                "img": "/assets/img/css.png"
+            },{
+                "title": "Git",
+                "img": "/assets/img/git.png"
+            },{
+                "title": "Gulp",
+                "img": "/assets/img/gulp.png"
+            },{
+                "title": "Karma",
+                "img": "/assets/img/karma.png"
+            },{
+                "title": "Facebook SDK",
+                "img": "/assets/img/facebook.png"
+            },{
+                "title": "Google API",
+                "img": "/assets/img/google.png"
+            },{
+                "title": "Bootstrap",
+                "img": "/assets/img/bootstrap.png"
+            },{
+                "title": "Foundation",
+                "img": "/assets/img/foundation.png"
             },{
                 "title": "HTML5",
-                "img": ""
+                "img": "/assets/img/html.png"
             },{
                 "title": "PHP",
-                "img": ""
+                "img": "/assets/img/php.png"
             },{
                 "title": "MongoDB",
-                "img": ""
+                "img": "/assets/img/mongo.png"
             },{
                 "title": "MySQL",
-                "img": ""
+                "img": "/assets/img/mysql.png"
             },{
                 "title": "Photoshop",
-                "img": ""
+                "img": "/assets/img/photoshop.png"
             },{
                 "title": "Illustrator",
-                "img": ""
+                "img": "/assets/img/illustrator.png"
             }
         ]
     },
