@@ -1,8 +1,8 @@
 
 <div class="education">
-    <div>
-        <div>{{(portfolio.texts.education)?.title}}</div>
-    </div>
+
+    <div class="title">{{(portfolio.texts.education)?.title}}</div>
+
     <div>
         <component-list [item]="education" type="education" *ngFor="let education of (portfolio.texts.education)?.content"></component-list>
     </div>

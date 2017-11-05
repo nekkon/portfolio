@@ -33,7 +33,7 @@
                 "As confirmed by my portfolio, I combine my advanced knowledge, experience and skills with technology in order to develop professional and innovative web applications which help companies grow.",
                 "I use test-driven development principles and Agile methodologies with after-release error monitoring to produce professional and bug-free applications. I follow best practices and produce “clean code” which is comprehensive, easy to debug and maintain."
         ],
-        "button": "Download my CV/Resume"
+        "button": "Download CV/Resume"
     },
     "expertin" : {
         "title": "EXPERT IN",
@@ -102,31 +102,40 @@
         "projects": [
             {
                 "title": "Or-co.gr",
-                "img": ""
+                "subtitle": "2017 / 3 web applications / website",
+                "img": "/assets/img/or_co.png"
             },{
                 "title": "Book'n'Bloom",
-                "img": ""
+                "subtitle": "2017 / web application",
+                "img": "/assets/img/booknbloom.png"
             },{
                 "title": "Media Ram",
-                "img": ""
+                "subtitle": "2016 / web application",
+                "img": "/assets/img/media_ram.png"
             },{
                 "title": "Inrealty.gr",
-                "img": ""
+                "subtitle": "2016 / web application / branding",
+                "img": "/assets/img/inrealty.png"
             },{
-                "title": "Swinburne",
-                "img": ""
-            },{
-                "title": "Help!!!",
-                "img": ""
-            },{
-                "title": "Tap it right!",
-                "img": ""
+                "title": "Swinburne ",
+                "subtitle": "2014 / designs",
+                "img": "/assets/img/swinburne.png"
             },{
                 "title": "Sonon website",
-                "img": ""
+                "subtitle": "2013 / website",
+                "img": "/assets/img/sonon.jpg"
+            },{
+                "title": "Tap it right!",
+                "subtitle": "2012 / iphone game",
+                "img": "/assets/img/tapitright.png"
+            },{
+                "title": "Help!!!",
+                "subtitle": "2011 / iphone app",
+                "img": "/assets/img/help.png"
             },{
                 "title": "Thesis",
-                "img": ""
+                "subtitle": "2008 / research / innovation",
+                "img": "/assets/img/thesis.jpg"
             }
         ],
         "button": "Load more"
@@ -260,7 +269,6 @@
         "button":"Send message"
     },
     "footer": {
-        "img": "",
         "content": "All righs reserved. Copyrights 2017"
     }
     

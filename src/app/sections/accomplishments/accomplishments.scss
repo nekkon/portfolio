@@ -1,0 +1,29 @@
+.accomplishments{
+    padding-top: 64px;
+    background-color: #FFFFFF;
+}
+.accomplishmentIcon{
+    text-align: center;
+    padding: 32px 0 16px 0;
+}
+.accomplishment.one{
+    position: absolute;
+    left: 50%;
+    margin: 16px 0 0 -40%;
+    width: 25%;
+    text-align: right;
+}
+.accomplishment.two{
+    position: absolute;
+    left: 50%;
+    margin: 180px 0 0 18.5%;
+    width: 20%;
+    text-align: left;
+}
+.accomplishment.three{
+    position: absolute;
+    left: 50%;
+    margin: 325px 0 0 -38.5%;
+    width: 20%;
+    text-align: right;
+}

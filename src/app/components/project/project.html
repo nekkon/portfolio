@@ -1,8 +1,9 @@
 <div class="project">
-    <div class="logo"></div>
-    <div class="hover">
-        <div class="title">{{ (project)?.title }}</div>
-        <div class="subtitle">{{ (project)?.subtitle }}</div>
+    <div class="logo" [ngStyle]="{'background-image': 'url(' + project.img + ')'}">
+        <div class="hover">
+            <div class="title">{{ (project)?.title }}</div>
+            <div class="subtitle">{{ (project)?.subtitle }}</div>
+        </div>
     </div>
 </div>
 

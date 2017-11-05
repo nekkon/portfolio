@@ -22,10 +22,10 @@
         {{(portfolio.texts.portfolio)?.title}}
     </div>
     <div class="content" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
-        <component-project [project]="project" *ngFor="let project of (portfolio.texts.portfolio)?.projects"></component-project>
+        <component-project fxFlex="25" [project]="project" *ngFor="let project of (portfolio.texts.portfolio)?.projects | slice:0:projectsNumber"></component-project>
     </div>
-    <div class="actions">
-        <button mat-raised-button>{{(portfolio.texts.portfolio)?.button}}</button>
+    <div [hidden]="showMore" class="actions">
+        <button (click)="moreProjects()" mat-raised-button>{{(portfolio.texts.portfolio)?.button}}</button>
     </div>
 </div>
 

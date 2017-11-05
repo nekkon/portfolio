@@ -6,7 +6,9 @@
     right: 10%;
     top: 5%;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 0;
+    padding-top: 11px;
+    z-index: 1000;
     background-color: #FFFFFF;
     color: #000000;
 }
@@ -15,18 +17,16 @@
     color: #FFFFFF;
     box-shadow: none;
 }
-.MenuButton mat-icon{
-    padding: 0;
-    line-height: 56px;
-    height: 56px;
-    width: 56px;
-    font-size: 32px;
-    box-sizing: border-box;
+.MenuButton.default .icon{
+    fill: #FFFFFF;
+}
+.MenuButton .icon{
+    fill: #4280F7;
 }
 .MenuFullscreen{
     display: block;
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
     background-color: #F8FAFF;
     left: 0;
     top: 0;

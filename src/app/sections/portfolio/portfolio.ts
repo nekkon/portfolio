@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { Shared } from "app/providers/shared";
 
 @Component({
@@ -7,8 +7,16 @@ import { Shared } from "app/providers/shared";
     styleUrls: ['./portfolio.scss']
 })
 export class PortfolioComponent {
+    public showMore:boolean = false;
+    public projectsNumber = 8;
+    constructor(public portfolio:Shared,public zone:NgZone){
 
-    constructor(public portfolio:Shared){
-
+    }
+    moreProjects(){
+        this.zone.run(()=>{
+            this.showMore = true;
+            this.projectsNumber = this.portfolio.texts.portfolio.projects.length;
+            console.log(this.showMore);
+        })
     }
 }

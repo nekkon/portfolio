@@ -27,9 +27,8 @@ export class MenuComponent implements OnInit {
         this.hovered = '';
     }
 
-    toggleMenu(value){
-        console.log(value);
-        this.portfolio.toggleMenu(value);
+    toggleMenu(){
+        this.portfolio.toggleMenu(!this.visible);
     }
 
 }
