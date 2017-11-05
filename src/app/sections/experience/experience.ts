@@ -8,7 +8,7 @@ import { Shared } from "app/providers/shared";
 })
 export class ExperienceComponent {
 
-    constructor(private portfolio:Shared){
+    constructor(public portfolio:Shared){
 
     }
 }

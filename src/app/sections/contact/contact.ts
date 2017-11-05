@@ -9,7 +9,7 @@ import { Shared } from "app/providers/shared";
 })
 export class ContactComponent {
 
-    constructor(private portfolio:Shared){
+    constructor(public portfolio:Shared){
         
     }
 
