@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio ( Angular version 5 )
 
 This portfolio is live on www.nekkon.com
 
@@ -6,11 +6,15 @@ The goal of this project is:
 * Prove dev skills
 * Prove good knowledge of git
 * Prove best practices are followed
-* Prove Angular2+ knowledge and skills
+* Prove Angular knowledge and skills
 * Prove Unit testing knowledge
 * Prove e2e testing knowledge
 * Display high quality of code
 * Display high knowledge of front-end development
+* Display of Material components use
+* Display of importing and using various libraries ( Typescript / Javascript )
+* Display of FlexLayout skills
+* Display of good CSS ( Responsive / Animations )
 
 Due to the fact that most projects I have implemented so far are copyrighted, I can not show my code and prove my knowledge and skills.
 
