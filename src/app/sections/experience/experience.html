@@ -4,6 +4,6 @@
     <div class="title">{{(portfolio.texts.experience)?.title}}</div>
 
     <div>
-        <component-project ></component-project>
+        <component-timeline [job]="job" *ngFor="let job of (portfolio.texts.experience)?.content"></component-timeline>
     </div>
 </div>
