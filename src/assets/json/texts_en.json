@@ -159,21 +159,55 @@
         "title": "EXPERIENCE",
         "content": [
             {
-                "title":"Front-End Software Developer",
-                "subtitle":"JUL 2015 - PRESENT, S2 Development LTD.",
+                "title":"Senior Web Developer (Front End)",
+                "subtitle":"May 2017 - PRESENT, OR-CO LTD.",
                 "intro": [
-                    "Worked in a multidisciplinary Scrum team to build a cutting edge Facebook App for Appointment Bookings. Contributed to a motivated team which co-operated successfully in an ambitious and innovative environment. Used Git and collaborated following continuous deployment principles."
+                    "Developed a number of web applications used by most private and public hospitals throughout Greece. They were either rebuilt based on existing implementation ( Powerbuilder ) or created from scratch (using Angular and Java)."
                 ],
-                "list": [
-                    "Lowest record of bugs in company with immediate rectification when needed. Used sentry.io for error monitoring.",
-                    "Trained on Agile methodologies (Scrum theory and product management) by Agile Actors (https://www.agileactors.com/).",
-                    "Developed a custom Registration Process that installed a Facebook app in a user’s Facebook Business page ( created a Facebook + email login, used Graph  API, Facebook and Google Analytics reporting ) In this custom implementation HTML5, CSS, javascript, jQuery and bootstrap/material were used. Also migrated the custom implementation to angular2+. Rebuilt code to Typescript, HTML5, SCSS.",
-                    "Developed the Admin area of the company's site in angular2+ with Unit Tests and E2E testing. Used recurly.js and developed the front-end of credit-card and paypal payment methods.",
-                    "Developed the push script which updated production environment by using Gulp.",
-                    "Developed the Front-End for the Book’n’Bloom Facebook Application.",
-                    "All implementations used company’s restful API.",
-                    "Improved efficiency of internal processes by optimizing the update script used for translated texts from 40 minutes to 4secs ( 100x faster ) by using bulk processing and the latest libraries of MongoDB and Python.",
-                    "Participated in decision making and provided counselling for the company’s projects."
+                "elements":[
+                    {
+                        "type":"list",
+                        "header":"Key Responsibilities included but were not limited to:",
+                        "list": [
+                            "Supervision and management of team members on a daily basis.",
+                            "Delegating tasks and setting deadlines for internal team (trello)",
+                            "Setting up the Front-End development environment (Angular) and processes ( Team of 2 Developers at beginning, with plan to add 3 more later on )",
+                            "Researching and selecting helpful Libraries and Frameworks",
+                            "Developing Components, by following modular logic and principles, which would be used by the rest of the developers throughout all apps"
+                        ]
+                    },{
+                        "type":"list",
+                        "header":"Co-Developed the 3 following Web Applications:",
+                        "list": [
+                            "Admin: Admin app which manages the platform. Consists of a login view, list of apps and useful links view, management view for user roles, groups and permissions. User settings view for custom theming and user keyboard shortcuts.",
+                            "Docman: Document management application based on public sector requirements. Manages the process of creating documents checked and signed by a group of users. Uses Websockets to develop an instant notification system to notify changes instantly during usage. Presentation module with live presentations of the app's functionality.",
+                            "Protocol: Based on a previous implementation of the company. Used by the majority of the public sector in Greece. An application which manages the process of creating and validating all official Government documents. It consists of many tables, views, display of Big Data and components that could handle thousands of records in an optimized and fast way."
+                        ]
+                    }
+                ],
+                "closing":"Used: Angular, TypeScript, Websockets, Material2, PrimeNG, CSS3, Html5"
+            },{
+                "title":"Web Developer (Front End)",
+                "subtitle":"July 2015 - April 2017, S2 Development LTD.",
+                "intro": [
+                    "Worked in a multidisciplinary Scrum team to build a cutting edge Facebook App for Appointment Bookings. A member of a motivated team which co-operated successfully in an ambitious and innovative environment. Used Git and collaborated following continuous deployment principles and achieved:"
+                ],
+                "elements":[
+                    {
+                        "type":"list",
+                        "header":"Key Responsibilities included but were not limited to:",
+                        "list": [
+                            "Lowest record of bugs in company with immediate rectification when needed. Used sentry.io for error monitoring.",
+                            "Trained on Agile methodologies (Scrum theory and product management) by Agile Actors (https://www.agileactors.com/).",
+                            "Developed a custom Registration Process that installed a Facebook app in a user’s Facebook Business page ( created a Facebook + email login, used Graph  API, Facebook and Google Analytics reporting ) In this custom implementation HTML5, CSS, javascript, jQuery and bootstrap/material were used. Also migrated the custom implementation to angular2+. Rebuilt code to Typescript, HTML5, SCSS.",
+                            "Developed the Admin area of the company's site in angular2+ with Unit Tests and E2E testing. Used recurly.js and developed the front-end of credit-card and paypal payment methods.",
+                            "Developed the push script which updated production environment by using Gulp.",
+                            "Developed the Front-End for the Book’n’Bloom Facebook Application.",
+                            "All implementations used company’s restful API.",
+                            "Improved efficiency of internal processes by optimizing the update script used for translated texts from 40 minutes to 4secs ( 100x faster ) by using bulk processing and the latest libraries of MongoDB and Python.",
+                            "Participated in decision making and provided counselling for the company’s projects."
+                        ]
+                    }
                 ],
                 "closing":"Used: javascript, jQuery, Angular, TypeScript, Facebook SDK, Google API, Gulp, RecurlyJS, Bootstrap, HTML5, CSS3, php, python, MongoDB"
             },{
@@ -182,7 +216,6 @@
                 "intro": [
                     "Designed and Developed a web application used as a Service management tool by Media Ram. The web application included a custom dashboard and CRM."
                 ],
-                "list": [],
                 "closing":"Used: php, HTML5, CSS, javascript and jQuery (select2 and datatables)."
             },{
                 "title":"Full-Stack Software Developer & Designer",
@@ -190,7 +223,6 @@
                 "intro": [
                     "Rebranded, Designed and Developed the website for a Real Estate agency. The website managed and displayed properties on Google maps with photos."
                 ],
-                "list": [],
                 "closing":"Used: Illustrator, Photoshop, php, mySQL, HTML5, CSS, javascript, Google Maps API and jQuery."
             },{
                 "title":"Full-Stack Software Developer & Designer",
@@ -198,7 +230,6 @@
                 "intro": [
                     "Developed and Designed Websites, Mobile and Desktop applications for businesses."
                 ],
-                "list": [],
                 "closing":"Used: XCode and Objective-C (iphone apps), Html, CSS and javascript (custom sites and wordpress), VB.Net (Desktop application)."
             },{
                 "title":"Full-Stack Software Developer & Designer",
@@ -206,11 +237,9 @@
                 "intro": [
                     "Designed and Developed the agency’s website. Designed and Developed a Property management application ( with photos, database )"
                 ],
-                "list": [],
                 "closing":"Used: php, mySQL, HTML and VB.NET."
             }
-        ],
-        "button": "Download my resume"
+        ]
     },
     "education": {
         "title": "EDUCATION",
@@ -239,7 +268,8 @@
         "content": [
             {
                 "list": [
-                    "DEVit - The 360° Web Development Conference (Thessaloniki)"
+                    "DEVit - The 360° Web Development Conference (Thessaloniki)",
+                    "Voxxed Days Thessaloniki 2017"
                 ],
                 "year": "2017"
             },{
