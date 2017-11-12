@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { EducationConferencesComponent } from './educationConferences';
-import { ListModule } from "app/components";
+import { ListModule } from '../../components/index';
 
 @NgModule({
     imports: [ CommonModule, ListModule ],

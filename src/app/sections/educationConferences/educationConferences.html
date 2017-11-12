@@ -1,9 +1,19 @@
-
-<div class="education">
-
-    <div class="title">{{(portfolio.texts.education)?.title}}</div>
-
-    <div>
-        <component-list [item]="education" type="education" *ngFor="let education of (portfolio.texts.education)?.content"></component-list>
+<div class="educationConferencesWrapper">
+    <div class="education">
+            
+        <div class="title left">{{(portfolio.texts.education)?.title}}</div>
+    
+        <div>
+            <component-list [item]="education" type="education" *ngFor="let education of (portfolio.texts.education)?.content"></component-list>
+        </div>
+    </div>
+    
+    <div class="conferences">
+        
+        <div class="title right">{{(portfolio.texts.conferences)?.title}}</div>
+    
+        <div>
+            <component-list [item]="conference" type="conference" *ngFor="let conference of (portfolio.texts.conferences)?.content"></component-list>
+        </div>
     </div>
 </div>

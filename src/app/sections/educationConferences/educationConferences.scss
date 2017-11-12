@@ -1,3 +1,12 @@
-.education{
+.education,.conferences,.educationConferencesWrapper{
     background-color: #FFFFFF;
+}
+.title.right{
+    text-align: right;
+}
+.title.left{
+    text-align: left;
+}
+.educationConferencesWrapper{
+    padding: 0 10%;
 }

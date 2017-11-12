@@ -1,3 +1,21 @@
 
-
+<div class="education" *ngIf="type == 'education'">
+    <div class="title">
+        {{ item.title }}
+    </div>
+    <div class="subtitle">
+        {{ item.subtitle }}
+    </div>
+    <div class="year">
+        {{ item.year }}
+    </div>
+</div>
+<div class="conferences" *ngIf="type == 'conference'">
+    <div class="title">
+        {{ item.year }}
+    </div>
+    <div *ngFor="let conference of item.list" class="conference">
+        {{ conference }}
+    </div>
+</div>
 
