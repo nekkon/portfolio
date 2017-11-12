@@ -159,8 +159,9 @@
         "title": "EXPERIENCE",
         "content": [
             {
-                "title":"Senior Web Developer (Front End)",
-                "subtitle":"May 2017 - PRESENT, OR-CO LTD.",
+                "title":"Senior Web Developer",
+                "subtitle":"Front End (Angular), OR-CO LTD.",
+                "year":"May 2017 - PRESENT",
                 "intro": [
                     "Developed a number of web applications used by most private and public hospitals throughout Greece. They were either rebuilt based on existing implementation ( Powerbuilder ) or created from scratch (using Angular and Java)."
                 ],
@@ -185,10 +186,11 @@
                         ]
                     }
                 ],
-                "closing":"Used: Angular, TypeScript, Websockets, Material2, PrimeNG, CSS3, Html5"
+                "used":["Angular" ,"Typescript" ,"Websockets" ,"Material2" ,"PrimeNG" ,"HTML5" ,"CSS3" ,"FlexLayout" ]
             },{
-                "title":"Web Developer (Front End)",
-                "subtitle":"July 2015 - April 2017, S2 Development LTD.",
+                "title":"Web Developer",
+                "subtitle":"Front End, S2 Development LTD.",
+                "year":"July 2015 - April 2017",
                 "intro": [
                     "Worked in a multidisciplinary Scrum team to build a cutting edge Facebook App for Appointment Bookings. A member of a motivated team which co-operated successfully in an ambitious and innovative environment. Used Git and collaborated following continuous deployment principles and achieved:"
                 ],
@@ -209,35 +211,39 @@
                         ]
                     }
                 ],
-                "closing":"Used: javascript, jQuery, Angular, TypeScript, Facebook SDK, Google API, Gulp, RecurlyJS, Bootstrap, HTML5, CSS3, php, python, MongoDB"
+                "used":["Angular" ,"Typescript" ,"Javascript" ,"jQuery" ,"Facebook SDK" ,"HTML5" ,"CSS3" ,"Bootstrap", "Google API", "GUlp", "RecurlyJS",  "PHP", "Python", "MongoDB"]
             },{
-                "title":"Full-Stack Software Developer & Designer",
-                "subtitle":"JAN 2015 - JUN 2015, Freelance",
+                "title":"Web Developer & Designer",
+                "subtitle":"Full-Stack & Designer, Freelance",
+                "year":"JAN 2015 - JUN 2015",
                 "intro": [
                     "Designed and Developed a web application used as a Service management tool by Media Ram. The web application included a custom dashboard and CRM."
                 ],
-                "closing":"Used: php, HTML5, CSS, javascript and jQuery (select2 and datatables)."
+                "used":["PHP", "MySQL", "HTML5", "CSS3", "Javascript", "jQuery", "Select2", "Datatables"]
             },{
-                "title":"Full-Stack Software Developer & Designer",
-                "subtitle":"SEP 2014 - DEC 2014, Inrealty.gr",
+                "title":"Web Developer & Designer",
+                "subtitle":"Full-Stack & Designer, Inrealty.gr",
+                "year":"SEP 2014 - DEC 2014",
                 "intro": [
                     "Rebranded, Designed and Developed the website for a Real Estate agency. The website managed and displayed properties on Google maps with photos."
                 ],
-                "closing":"Used: Illustrator, Photoshop, php, mySQL, HTML5, CSS, javascript, Google Maps API and jQuery."
+                "used":["Illustrator", "Photoshop", "PHP", "MySQL", "HTML5", "CSS3", "Javascript", "Google API","jQuery"]
             },{
                 "title":"Full-Stack Software Developer & Designer",
-                "subtitle":"OCT 2010 - JUN 2013, Freelance",
+                "subtitle":"Full-Stack & Designer, Freelance",
+                "year":"OCT 2010 - JUN 2013",
                 "intro": [
-                    "Developed and Designed Websites, Mobile and Desktop applications for businesses."
+                    "Developed and Designed Websites (custom sites and Wordpress), iPhone Apps, Mobile and Desktop applications for businesses."
                 ],
-                "closing":"Used: XCode and Objective-C (iphone apps), Html, CSS and javascript (custom sites and wordpress), VB.Net (Desktop application)."
+                "used":["XCode", "Objective-C", "HTML5", "CSS3", "Javascript"]
             },{
-                "title":"Full-Stack Software Developer & Designer",
-                "subtitle":"SEP 2004 - AUG 2007, International Real Estate",
+                "title":"Web Developer & Designer",
+                "subtitle":"Full-Stack & Designer, International Real Estate",
+                "year":"SEP 2004 - AUG 2007",
                 "intro": [
                     "Designed and Developed the agency’s website. Designed and Developed a Property management application ( with photos, database )"
                 ],
-                "closing":"Used: php, mySQL, HTML and VB.NET."
+                "used":["PHP", "MySQL", "HTML5", "VB.NET"]
             }
         ]
     },

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
+import { Shared } from '../../providers/shared';
 
 @Component({
     selector: 'component-timeline',
@@ -7,13 +8,18 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class TimelineComponent implements OnInit {
     @Input() job;
+    @Input() index;
 
-    constructor(){
+    constructor(public portfolio:Shared){
         
     }
 
     ngOnInit(){
 
+    }
+
+    getIcon(icon){
+        //this.portfolio.texts.
     }
 
 }

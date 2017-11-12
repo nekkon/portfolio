@@ -1,14 +1,18 @@
-<div>
-    <div class="left">
+<div fxLayout="row" fxLayoutAlign="start stretch">
+    <div [fxFlexOrder]="((index % 2) == 0)?1:3" fxFlex="45" [ngClass]="{'left':(index % 2) == 0,'right':(index % 2) == 1}">
         <div class="title">{{ job.title }}</div>
         <div class="subtitle">{{ job.subtitle }}</div>
-        <div class="description">{{ job.subtitle }}</div>
+        <div *ngFor="let paragraph of job.intro" class="paragraph">{{ paragraph }}</div>
     </div>
-    <div class="middle">
-        
+    <div fxFlexOrder="2" fxFlex="10" class="middle">
+        <div class="line top"></div>
+        <div class="line bottom">
+            <mat-icon class="midIcon">adjust</mat-icon>
+        </div>
     </div>
-    <div class="right">
-        
+    <div [fxFlexOrder]="((index % 2) == 0)?3:1" fxFlex="45" [ngClass]="{'right':(index % 2) == 0,'left':(index % 2) == 1}">
+        <div class="title year">{{ job.year }}</div>
+        <div class="used">{{ job.used }}</div>
     </div>
 </div>
 

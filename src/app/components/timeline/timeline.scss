@@ -1,0 +1,31 @@
+.middle{
+    padding-top: 20px;
+}
+.middle .line{
+    background-color: rgba(238,239,240,1);
+    width: 2px;
+    height: 100%;
+    overflow: auto;
+    margin: 0 auto;
+}
+.middle .line.top{
+    height: 16px;
+}
+.middle .line.bottom{
+    margin-top: 20px;
+}
+.middle .midIcon{
+    color: rgba(238,239,240,1);
+    position: absolute;
+    color: #eeeff0;
+    margin: -22px 0 0 -11px;
+}
+.left,.left .title{
+    text-align: right;
+}
+.right,.right .title{
+    text-align: left;
+}
+.left,.right{
+    padding-top: 24px;
+}
