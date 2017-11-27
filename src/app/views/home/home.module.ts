@@ -7,8 +7,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeView } from './home';
 
 import { AboutModule, ContactModule, EducationConferencesModule, ExperienceModule, VideoModule, PortfolioModule, ExpertinModule, AccomplishmentsModule } from './../../sections';
-import { scrollTrigger } from "app/providers/scrollTrigger";
-import { MenuModule } from "app/components";
+import { MenuModule } from '../../components/index';
+import { scrollTrigger } from '../../providers/scrollTrigger';
+
 
 @NgModule({
     imports: [ CommonModule, FlexLayoutModule, FormsModule, 

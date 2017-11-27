@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Shared } from "app/providers/shared";
+import { Shared } from '../../providers/shared';
+
 
 @Component({
     selector: 'component-project',

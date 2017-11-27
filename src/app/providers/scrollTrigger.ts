@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Shared } from "app/providers/shared";
+import { Shared } from './shared';
 
 @Injectable()
 export class scrollTrigger {

@@ -7,14 +7,14 @@ describe('AppComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
-        aboutComponent
+        AboutComponent
       ],
     });
     TestBed.compileComponents();
   });
 
   it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(aboutComponent);
+    const fixture = TestBed.createComponent(AboutComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));

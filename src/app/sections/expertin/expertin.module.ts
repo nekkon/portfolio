@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ExpertinComponent } from './expertin';
-import { MasteryModule } from "app/components";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { MasteryModule } from '../../components/index';
 
 @NgModule({
     imports: [ CommonModule, MasteryModule, FlexLayoutModule ],

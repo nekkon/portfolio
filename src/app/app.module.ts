@@ -4,11 +4,9 @@ import * as Raven from 'raven-js';
 import { RouterModule } from '@angular/router';
 import { App } from './app';
 import { Routing } from './app.routes';
-import { Shared } from "app/providers/shared";
 import { HttpModule } from "@angular/http";
-
-import 'hammerjs';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { Shared } from './providers/shared';
 
 Raven
   .config('https://4cbb01e3731e4f0bbf13b4ce25b16fba@sentry.io/145646')
@@ -25,7 +23,7 @@ export class RavenErrorHandler implements ErrorHandler {
       App
   ],
   imports: [
-      BrowserModule,
+      BrowserModule.withServerTransition({appId: 'portfolio'}),
       BrowserAnimationsModule,
       HttpModule,
       RouterModule.forRoot( Routing )

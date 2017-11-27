@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Shared } from "app/providers/shared";
+import { Shared } from '../../providers/shared';
 
 
 @Component({

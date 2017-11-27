@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, NgZone } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
-import { Shared } from "app/providers/shared";
+import { Shared } from './providers/shared';
 
 
 @Component({
@@ -17,7 +17,7 @@ export class App{
   
     getTexts(){
           let $this = this;
-          this.http.get('/assets/json/texts_en.json')
+          this.http.get('http://localhost:4000' + '/assets/json/texts_en.json')
               .map((res:Response) => res.json())
               .subscribe(
                   data => { 
