@@ -25,15 +25,17 @@
         ],
     "video" : {
         "title": "Nektarios Konstantinidis",
-        "subtitle": "Senior Web Developer (Front-End)"
+        "subtitle": "Senior Developer ( Web / Front-End )"
     }, 
     "about" : {
         "title": "ABOUT ME",
         "content": [
-                "As confirmed by my portfolio, I combine my advanced knowledge, experience and skills with technology in order to develop professional and innovative web applications which help companies grow.",
-                "I use test-driven development principles and Agile methodologies with after-release error monitoring to produce professional and bug-free applications. I follow best practices and produce “clean code” which is comprehensive, easy to debug and maintain."
+                "As conﬁrmed by my portfolio content and code ( https://github.com/nekkon/portfolio ), I combine my advanced knowledge, experience and skills with technology in order to develop professional and innovative web applications.",
+                "I follow OAUTH, REST and SOLID software engineering principles. I am also a fan of TDD, Agile, 12-Factor App and Block-Element-Modifier methodologies. I use after-release error logging to ensure my applications are bug-free.",
+                "By following the best practices above, I produce “clean code” which is comprehensive, easy to debug and maintain.",
+                "I have been passionate with development since childhood and enjoy learning about the latest technological advancements."
         ],
-        "button": "Download CV/Resume"
+        "button": "Download my CV/Resume"
     },
     "expertin" : {
         "title": "EXPERT IN",
