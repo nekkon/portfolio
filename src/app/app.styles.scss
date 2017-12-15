@@ -1,21 +1,12 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-button.mat-raised-button{
-    background-color: #0084FB;
-    color: #FFFFFF;
-}
-
-.MenuButton.mat-fab .mat-button-wrapper{
-    padding: 0;
-    line-height: 56px;
-}
-
+/* General Theming */
 .center{
     text-align: center;
 }
 .h1{
-    font-size: 32px;
+    font-size: 40px;
     color: rgb(27,40,48);
     font-weight: bold;
 }
@@ -42,4 +33,22 @@ button.mat-raised-button{
 }
 .colorBlue{
     color: #0084FB;
+}
+
+/* Material CSS Fixes */
+button.mat-raised-button{
+    background-color: #0084FB;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 12px 24px;
+}
+.MenuButton.mat-fab .mat-button-wrapper{
+    padding: 0;
+    line-height: 56px;
+}
+.mat-form-field-underline{
+    background: rgb(89,97,103);
+}
+.mat-form-field-ripple{
+    background-color: #0084FB;
 }
