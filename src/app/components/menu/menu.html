@@ -49,7 +49,7 @@
 <div class="MenuFullscreen" *ngIf="visible">
     <nav>
         <div *ngFor="let item of (portfolio.texts)?.menu">
-            <a [ngClass]="{'unhovered':( hovered && hovered!==item.link )}" (mousemove)="onHover(item.link)" (mouseout)="onMouseOut()" href="main#{{item.link}}">{{ item.name }}</a>
+            <a [ngClass]="{'unhovered':( hovered && hovered!==item.link )}" (mousemove)="onHover(item.link)" (mouseout)="onMouseOut()" (click)="scrollTo(item.link)" class="h2">{{ item.name }}</a>
         </div>
     </nav>
 </div>

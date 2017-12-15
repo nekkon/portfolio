@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { Shared } from '../../providers/shared';
 
 
@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
     public visible:boolean = false;
     public atTop = true;
 
-    constructor(public portfolio:Shared){
+    constructor(public portfolio:Shared, public el: ElementRef){
         
     }
 
@@ -41,6 +41,14 @@ export class MenuComponent implements OnInit {
         } else {
             this.atTop = false;
         }
+    }
+
+    scrollTo(element) {
+        console.log(element);
+        this.visible = false;
+        console.log(this.el);
+        let section = this.el.nativeElement.select('#' + element);
+        section.scrollIntoView();
     }
 
 }
