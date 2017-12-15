@@ -10,10 +10,36 @@ button.mat-raised-button{
     padding: 0;
     line-height: 56px;
 }
-.title{
-    font-weight: bold;
-    box-sizing: border-box;
-    width: 100%;
+
+.center{
     text-align: center;
+}
+.h1{
+    font-size: 32px;
+    color: rgb(27,40,48);
+    font-weight: bold;
+}
+.h2{
+    font-size: 26px;
+    color: rgb(27,40,48);
+    font-weight: bold;
+}
+.h3{
     font-size: 20px;
+    color: rgb(27,40,48);
+    font-weight: bold;
+}
+.h4{
+    font-size: 16px;
+    color: rgb(27,40,48);
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
+.colorWhite{
+    color: #FFFFFF;
+}
+.colorBlue{
+    color: #0084FB;
 }
