@@ -1,5 +1,11 @@
+.educationItem,.conferenceItem{
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 10;
+}
 .education,.conferences,.educationConferencesWrapper{
     background-color: #FFFFFF;
+    position: relative;
 }
 .title.right{
     text-align: right;
@@ -8,5 +14,22 @@
     text-align: left;
 }
 .educationConferencesWrapper{
-    padding: 0 10%;
+    padding: 64px 10%;
+}
+.title{
+    position: relative;
+    z-index: 10;
+    margin-bottom: 64px;
+    margin-top: 96px;
+}
+.educationSVG{
+    position: absolute;
+    right:0;
+    z-index: 5;
+}
+.conferencesSVG{
+    position: absolute;
+    margin-top: 280px;
+    left:0;
+    z-index: 5;
 }
