@@ -1,6 +1,6 @@
 
 
-<button mat-fab class="MenuButton" (click)="toggleMenu()">       
+<button mat-fab class="MenuButton" (click)="toggleMenu()" (window:scroll)="onScroll($event)" [ngClass]="{'default':(atTop && !visible)}">       
     <svg
         xmlns:dc="http://purl.org/dc/elements/1.1/"
         xmlns:cc="http://creativecommons.org/ns#"
