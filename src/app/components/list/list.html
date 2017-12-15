@@ -1,6 +1,6 @@
 
 <div class="education" *ngIf="type == 'education'">
-    <div class="h4 title">
+    <div class="h3 title">
         {{ item.title }}
     </div>
     <div class="subtitle">
@@ -11,7 +11,7 @@
     </div>
 </div>
 <div class="conferences" *ngIf="type == 'conference'">
-    <div class="h4 title">
+    <div class="h3 title">
         {{ item.year }}
     </div>
     <div *ngFor="let conference of item.list" class="conference">
