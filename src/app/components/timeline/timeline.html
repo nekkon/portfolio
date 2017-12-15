@@ -1,7 +1,7 @@
 <div fxLayout="row" fxLayoutAlign="start stretch">
     <div [fxFlexOrder]="((index % 2) == 0)?1:3" fxFlex="45" [ngClass]="{'left':(index % 2) == 0,'right':(index % 2) == 1}">
-        <div class="title link">{{ job.title }}</div>
-        <div class="subtitle">{{ job.subtitle }}</div>
+        <div class="title h3 link colorBlue">{{ job.title }}</div>
+        <div class="subtitle h4">{{ job.subtitle }}</div>
         <div *ngFor="let paragraph of job.intro" class="paragraph">{{ paragraph }}</div>
     </div>
     <div fxFlexOrder="2" fxFlex="10" class="middle">
@@ -11,7 +11,7 @@
         </div>
     </div>
     <div [fxFlexOrder]="((index % 2) == 0)?3:1" fxFlex="45" [ngClass]="{'right':(index % 2) == 0,'left':(index % 2) == 1}">
-        <div class="title year">{{ job.year }}</div>
+        <div class="title h4 year">{{ job.year }}</div>
         <div class="used">{{ job.used }}</div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 
 <div class="experience">
 
-    <div class="title">{{(portfolio.texts.experience)?.title}}</div>
+    <div class="h2 center">{{(portfolio.texts.experience)?.title}}</div>
 
     <div>
         <component-timeline [job]="job" [index]="i" *ngFor="let job of (portfolio.texts.experience)?.content;let i = index"></component-timeline>

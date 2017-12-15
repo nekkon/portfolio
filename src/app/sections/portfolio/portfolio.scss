@@ -1,6 +1,10 @@
 .portfolio{
     background-color: #F4F7F9;
     width: 100%;
+    overflow: auto;
+}
+.portfolio .h2{
+    margin: 32px 0 80px 0;
 }
 .content{
     padding: 0 10%;

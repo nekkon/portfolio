@@ -3,15 +3,15 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    padding: 0 10%;
+    padding: 64px 10%;
     box-sizing: border-box;
 }
 .titleAbout{
     float: left;
     width: 30%;
     margin-top: 32px;
-    font-weight: bold;
-    box-sizing: border-box
+    box-sizing: border-box;
+    text-align: left;
 }
 .content{
     float: right;
@@ -19,7 +19,6 @@
     margin-top: 32px;
     padding: 24px 0 24px 24px;
     box-sizing: border-box;
-    color: #4E6AA2;
 }
 .content button{
     margin-top: 24px;
