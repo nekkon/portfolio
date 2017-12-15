@@ -13,16 +13,20 @@
     top: 40%;
     left: 10%;
     margin: 0;
+    line-height: 1;
 }
 .subtitle{
-    position: absolute;
-    top: 44%;
-    left: 10%;
-    margin: 0;
+    margin-top: 8px;
     color: rgba(255,255,255,0.5);
 }
 .divider1{
     background-color: #FFFFFF;
     height: 111px;
     width: 100%;
+}
+.links{
+    margin-top: 64px;
+}
+.links a{
+    margin: 8px;
 }
