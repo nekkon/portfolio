@@ -7,6 +7,8 @@ import { Routing } from './app.routes';
 import { HttpModule } from "@angular/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Shared } from './providers/shared';
+import { environment } from '../environments/environment';
+import { ServiceWorkerModule } from "@angular/service-worker";
 
 Raven
   .config('https://4cbb01e3731e4f0bbf13b4ce25b16fba@sentry.io/145646')
@@ -26,7 +28,8 @@ export class RavenErrorHandler implements ErrorHandler {
       BrowserModule.withServerTransition({appId: 'portfolio'}),
       BrowserAnimationsModule,
       HttpModule,
-      RouterModule.forRoot( Routing )
+      RouterModule.forRoot( Routing ),
+      ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
   ],
   providers: [ Shared , { provide: ErrorHandler, useClass: RavenErrorHandler } ],
   bootstrap: [ App ]
