@@ -7,10 +7,12 @@
     top: 5%;
     cursor: pointer;
     font-size: 0;
-    padding-top: 1px;
+    padding: 3px 0 0 0;
     z-index: 1000;
     background-color: #FFFFFF;
     color: #000000;
+
+    transition: all 0.35s;
 }
 .MenuButton.default{
     background-color: transparent;
@@ -69,4 +71,23 @@
         -webkit-flex-direction: column;
         flex-direction: column;
     }
+}
+
+/* Menu button animation */
+.animated #line1{
+    transform: translate(0px, 10px) rotate(-45deg);
+    transform-origin: 50% 50%;
+    fill: #252E38;
+}
+.animated #line2{
+    transform: translate(1px, 1px) rotate(45deg);
+    transform-origin: 50% 50%;
+    fill: #252E38;
+}
+.animated #line3{
+    opacity: 0;
+}
+#line1,#line2,#line3{
+    -webkit-transition: all 0.35s; /* Safari */
+    transition: all 0.35s;
 }

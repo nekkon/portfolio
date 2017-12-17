@@ -1,11 +1,22 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Shared } from '../../providers/shared';
-
+import {style, state, animate, transition, trigger} from '@angular/core';
 
 @Component({
     selector: 'component-menu',
     templateUrl: './menu.html',
-    styleUrls: ['./menu.scss']
+    styleUrls: ['./menu.scss'],
+    animations: [
+        trigger('fadeInOut', [
+            transition(':enter', [   // :enter is alias to 'void => *'
+                style({opacity:0}),
+                animate(350, style({opacity:1})) 
+            ]),
+            transition(':leave', [   // :leave is alias to '* => void'
+                animate(350, style({opacity:0})) 
+            ])
+        ])
+    ]
 })
 export class MenuComponent implements OnInit {
     public hovered:any;
