@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Shared } from '../../providers/shared';
 
 
@@ -7,10 +7,16 @@ import { Shared } from '../../providers/shared';
     templateUrl: './about.html',
     styleUrls: ['./about.scss']
 })
-export class AboutComponent {
+export class AboutComponent implements AfterViewInit {
+
+    @ViewChild('about') aboutSection: ElementRef;
 
     constructor(public portfolio:Shared){
         
+    }
+
+    ngAfterViewInit(){
+        this.portfolio.sections['about'] = this.aboutSection;
     }
 
 }

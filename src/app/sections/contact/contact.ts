@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { Shared } from '../../providers/shared';
 
 
@@ -7,10 +7,16 @@ import { Shared } from '../../providers/shared';
     templateUrl: './contact.html',
     styleUrls: ['./contact.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements AfterViewInit {
+
+    @ViewChild('contact') contactSection: ElementRef;
 
     constructor(public portfolio:Shared){
         
+    }
+
+    ngAfterViewInit(){
+        this.portfolio.sections['contact'] = this.contactSection;
     }
 
 }

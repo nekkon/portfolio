@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Shared } from '../../providers/shared';
 
 @Component({
@@ -6,9 +6,15 @@ import { Shared } from '../../providers/shared';
     templateUrl: './expertin.html',
     styleUrls: ['./expertin.scss']
 })
-export class ExpertinComponent {
+export class ExpertinComponent implements AfterViewInit {
+
+    @ViewChild('expertin') expertinSection: ElementRef;
 
     constructor(public portfolio:Shared){
 
+    }
+
+    ngAfterViewInit(){
+        this.portfolio.sections['expertin'] = this.expertinSection;
     }
 }

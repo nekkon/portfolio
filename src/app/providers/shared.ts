@@ -1,4 +1,4 @@
-import { Injectable, EventEmitter, Output } from '@angular/core';
+import { Injectable, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
 
 @Injectable()
 export class Shared {
@@ -17,4 +17,5 @@ export class Shared {
     }
 
     public texts;
+    public sections = {};
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { Shared } from '../../providers/shared';
 
 @Component({
@@ -6,9 +6,15 @@ import { Shared } from '../../providers/shared';
     templateUrl: './video.html',
     styleUrls: ['./video.scss']
 })
-export class VideoComponent {
+export class VideoComponent implements AfterViewInit {
+
+    @ViewChild('video') videoSection: ElementRef;
 
     constructor(public portfolio:Shared){
 
+    }
+
+    ngAfterViewInit(){
+        this.portfolio.sections['video'] = this.videoSection;
     }
 }

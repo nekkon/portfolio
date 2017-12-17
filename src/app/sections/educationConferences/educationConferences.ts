@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Shared } from '../../providers/shared';
 
 
@@ -9,7 +9,15 @@ import { Shared } from '../../providers/shared';
 })
 export class EducationConferencesComponent {
 
+    @ViewChild('education') educationSection: ElementRef;
+    @ViewChild('conferences') conferencesSection: ElementRef;
+
     constructor(public portfolio:Shared){
 
+    }
+
+    ngAfterViewInit(){
+        this.portfolio.sections['education'] = this.educationSection;
+        this.portfolio.sections['conferences'] = this.conferencesSection;
     }
 }

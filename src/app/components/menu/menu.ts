@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
     public visible:boolean = false;
     public atTop = true;
 
-    constructor(public portfolio:Shared, public el: ElementRef){
+    constructor(public portfolio:Shared){
         
     }
 
@@ -46,9 +46,9 @@ export class MenuComponent implements OnInit {
     scrollTo(element) {
         console.log(element);
         this.visible = false;
-        console.log(this.el);
-        let section = this.el.nativeElement.select('#' + element);
-        section.scrollIntoView();
+        let section = this.portfolio.sections[element];
+        console.log(section);
+        section.nativeElement.scrollIntoView();
     }
 
 }
