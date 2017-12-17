@@ -6,14 +6,14 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeView } from './home';
 
-import { AboutModule, ContactModule, EducationConferencesModule, ExperienceModule, VideoModule, PortfolioModule, ExpertinModule, AccomplishmentsModule } from './../../sections';
+import { AboutModule, ContactModule, EducationConferencesModule, ExperienceModule, VideoModule, ProjectsModule, ExpertinModule, AccomplishmentsModule } from './../../sections';
 import { MenuModule } from '../../components/index';
 import { scrollTrigger } from '../../providers/scrollTrigger';
 
 
 @NgModule({
     imports: [ CommonModule, FlexLayoutModule, FormsModule, 
-        MenuModule, AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, VideoModule, PortfolioModule,
+        MenuModule, AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, VideoModule, ProjectsModule,
         RouterModule.forChild([
             {
                 path: '',

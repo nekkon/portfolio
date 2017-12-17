@@ -2,15 +2,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PortfolioComponent } from './portfolio';
 import { MatButtonModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ProjectModule } from '../../components/index';
+import { ProjectsComponent } from './projects';
 
 @NgModule({
     imports: [ CommonModule, ProjectModule, FlexLayoutModule, MatButtonModule ],
-    declarations: [ PortfolioComponent ],
-    exports:      [ PortfolioComponent ]
+    declarations: [ ProjectsComponent ],
+    exports:      [ ProjectsComponent ]
 })
 
-export class PortfolioModule {};
+export class ProjectsModule {};

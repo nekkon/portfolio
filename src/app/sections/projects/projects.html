@@ -17,15 +17,15 @@
     </svg>     
 </div>
 
-<div #portfolio class="portfolio">
+<div #projects class="projects">
     <div class="h2 center">
-        {{(portfolio.texts.portfolio)?.title}}
+        {{ (portfolio.texts.projects)?.title }}
     </div>
     <div class="content" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
-        <component-project fxFlex="25" [project]="project" *ngFor="let project of (portfolio.texts.portfolio)?.projects | slice:0:projectsNumber"></component-project>
+        <component-project fxFlex="25" [project]="project" *ngFor="let project of (portfolio.texts.projects)?.projects | slice:0:projectsNumber"></component-project>
     </div>
     <div [hidden]="showMore" class="actions">
-        <button (click)="moreProjects()" mat-raised-button>{{(portfolio.texts.portfolio)?.button}}</button>
+        <button (click)="moreProjects()" mat-raised-button>{{ (portfolio.texts.projects)?.button }}</button>
     </div>
 </div>
 
