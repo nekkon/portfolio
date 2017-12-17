@@ -7,8 +7,8 @@
                 "name": "EXPERT IN",
                 "link": "expertin"
             },{
-                "name": "PORTFOLIO",
-                "link": "portfolio"
+                "name": "PROJECTS",
+                "link": "projects"
             },{
                 "name": "ACCOMPLISHMENTS",
                 "link": "accomplishments"
@@ -18,6 +18,9 @@
             },{
                 "name": "EDUCATION",
                 "link": "education"
+            },{
+                "name": "CONFERENCES ATTENDED",
+                "link": "conferences"
             },{
                 "name": "CONTACT ME",
                 "link": "contact"
@@ -99,8 +102,8 @@
             }
         ]
     },
-    "portfolio" : {
-        "title": "PORTFOLIO",
+    "projects" : {
+        "title": "PROJECTS",
         "projects": [
             {
                 "title": "Or-co.gr",
