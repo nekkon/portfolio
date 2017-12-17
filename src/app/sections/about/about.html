@@ -6,6 +6,8 @@
     </div>
     <div class="content">
         <p *ngFor="let paragraph of (portfolio.texts.about)?.content" >{{ paragraph }}</p>
-        <button mat-raised-button>{{(portfolio.texts.about)?.button}}</button>
+        <a href="/assets/pdf/nekkon_cv.pdf" target="_blank">
+            <button mat-raised-button >{{(portfolio.texts.about)?.button}}</button>
+        </a>
     </div>
 </div>

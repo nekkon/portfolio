@@ -38,12 +38,11 @@
                 "By following the best practices above, I produce “clean code” which is comprehensive, easy to debug and maintain.",
                 "I have been passionate with development since childhood and enjoy learning about the latest technological advancements."
         ],
-        "button": "Download my CV/Resume"
+        "button": "View my CV / Resume"
     },
     "expertin" : {
         "title": "EXPERT IN",
         "content": "",
-        "button": "Download my resume",
         "masteries": [
             {
                 "title": "Angular",
