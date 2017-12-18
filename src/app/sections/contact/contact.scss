@@ -11,23 +11,22 @@
 .intro{
     box-sizing: border-box;
     width: 100%;
-    padding-left: 10%;
 }
 .left{
     overflow: hidden;
 }
 .right{
-    padding-right: 10%;
+    padding: 0 10% 0 5%;
 }
 .inputs{
     float: right;
-    width: 80%;
+    width: 100%;
 }
 .input{
     width: 100%;
 }
-.example-form{
-    padding: 24px;
+.contact-form{
+    margin-top: 32px;
 }
 .message{
     margin-top: 24px;
