@@ -7,18 +7,20 @@
     box-sizing: border-box;
 }
 .titleAbout{
-    float: left;
-    width: 30%;
     margin-top: 32px;
     box-sizing: border-box;
     text-align: left;
 }
 .content{
-    float: right;
-    width: 70%;
     margin-top: 32px;
-    padding: 24px 0 24px 24px;
+    padding: 0 0 24px 24px;
     box-sizing: border-box;
+}
+.content p:first-child{
+    margin-top: 0;
+}
+.content p{
+    margin: 16px 0;
 }
 .content button{
     margin-top: 24px;
