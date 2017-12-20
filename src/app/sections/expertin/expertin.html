@@ -1,7 +1,12 @@
 
-<div #expertin class="expertin">
-    <div class="titleExpertin">
-        <div class="h2">{{(portfolio.texts.expertin)?.title}}</div>
+<div #expertin class="expertin" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
+    <div class="h2 titleExpertin" fxFlex="100" [ngStyle.sm]="{'text-align': 'center','padding':0}" [ngStyle.xs]="{'text-align': 'center','padding':0}">{{(portfolio.texts.expertin)?.title}}</div>
+    <div class="content" fxFlex="70" fxFlex.sm="100" fxFlex.xs="100">
+        <div fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
+            <component-mastery [item]="mastery" *ngFor="let mastery of (portfolio.texts.expertin)?.masteries"></component-mastery>
+        </div>
+    </div>
+    <div class="expertinSVG" fxFlex="30" fxFlex.sm="0" fxFlex.xs="0" fxHide.sm fxHide.xs>
         <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
             xmlns:cc="http://creativecommons.org/ns#"
@@ -94,8 +99,5 @@
                 </g>
             </g>
         </svg>
-    </div>
-    <div class="content" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
-        <component-mastery [item]="mastery" *ngFor="let mastery of (portfolio.texts.expertin)?.masteries"></component-mastery>
     </div>
 </div>
