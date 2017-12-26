@@ -46,58 +46,58 @@
         "masteries": [
             {
                 "title": "Angular",
-                "img": "/assets/img/angular.png"
+                "img": "bg-angular"
             },{
                 "title": "TypeScript",
-                "img": "/assets/img/typescript.png"
+                "img": "bg-typescript"
             },{
                 "title": "Javascript",
-                "img": "/assets/img/javascript.png"
+                "img": "bg-javascript"
             },{
                 "title": "jQuery",
-                "img": "/assets/img/jquery.png"
+                "img": "bg-jquery"
             },{
                 "title": "CSS3",
-                "img": "/assets/img/css.png"
+                "img": "bg-css"
             },{
                 "title": "Git",
-                "img": "/assets/img/git.png"
+                "img": "bg-git"
             },{
                 "title": "Gulp",
-                "img": "/assets/img/gulp.png"
+                "img": "bg-gulp"
             },{
                 "title": "Karma",
-                "img": "/assets/img/karma.png"
+                "img": "bg-karma"
             },{
                 "title": "Facebook SDK",
-                "img": "/assets/img/facebook.png"
+                "img": "bg-facebook"
             },{
                 "title": "Google API",
-                "img": "/assets/img/google.png"
+                "img": "bg-google"
             },{
                 "title": "Bootstrap",
-                "img": "/assets/img/bootstrap.png"
+                "img": "bg-bootstrap"
             },{
                 "title": "Foundation",
-                "img": "/assets/img/foundation.png"
+                "img": "bg-foundation"
             },{
                 "title": "HTML5",
-                "img": "/assets/img/html.png"
+                "img": "bg-html"
             },{
                 "title": "PHP",
-                "img": "/assets/img/php.png"
+                "img": "bg-php"
             },{
                 "title": "MongoDB",
-                "img": "/assets/img/mongo.png"
+                "img": "bg-mongo"
             },{
                 "title": "MySQL",
-                "img": "/assets/img/mysql.png"
+                "img": "bg-mysql"
             },{
                 "title": "Photoshop",
-                "img": "/assets/img/photoshop.png"
+                "img": "bg-photoshop"
             },{
                 "title": "Illustrator",
-                "img": "/assets/img/illustrator.png"
+                "img": "bg-illustrator"
             }
         ]
     },
@@ -107,39 +107,39 @@
             {
                 "title": "Or-co.gr",
                 "subtitle": "2017",
-                "img": "/assets/img/or_co.png"
+                "img": "bg-orco"
             },{
                 "title": "Book'n'Bloom",
                 "subtitle": "2016 - 2017",
-                "img": "/assets/img/booknbloom.png"
+                "img": "bg-booknbloom"
             },{
                 "title": "Media Ram",
                 "subtitle": "2016",
-                "img": "/assets/img/media_ram.png"
+                "img": "bg-media-ram"
             },{
                 "title": "Inrealty.gr",
                 "subtitle": "2015",
-                "img": "/assets/img/inrealty.png"
+                "img": "bg-inrealty"
             },{
                 "title": "Swinburne ",
                 "subtitle": "2014",
-                "img": "/assets/img/swinburne.png"
+                "img": "bg-swinburne"
             },{
                 "title": "Sonon website",
                 "subtitle": "2013",
-                "img": "/assets/img/sonon.jpg"
+                "img": "bg-sonon"
             },{
                 "title": "Tap it right!",
                 "subtitle": "2012",
-                "img": "/assets/img/tapitright.png"
+                "img": "bg-tapitright"
             },{
                 "title": "Help!!!",
                 "subtitle": "2011",
-                "img": "/assets/img/help.png"
+                "img": "bg-help"
             },{
                 "title": "Thesis",
                 "subtitle": "2008",
-                "img": "/assets/img/thesis.jpg"
+                "img": "bg-thesis"
             }
         ],
         "button": "Load more"
@@ -311,5 +311,4 @@
     "footer": {
         "content": "All righs reserved. Copyrights 2017"
     }
-    
 }
