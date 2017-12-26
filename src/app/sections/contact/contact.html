@@ -1,6 +1,6 @@
 
 <div class="divider4">
-    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1600" height="111">
+    <svg width="1600" height="111">
         <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
             <g
                 id="g5646"
@@ -18,7 +18,7 @@
 
 <div #contact class="contact colorWhite" fxLayout="row" fxLayoutAlign="start start" fxLayoutWrap>
     <div class="left" fxFlex="40" fxFlex.sm="0" fxFlex.xs="0" fxHide.sm fxHide.xs>
-        <svg class="envelope" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="764" height="408">
+        <svg class="envelope" width="764" height="408">
             <g
                 inkscape:label="Layer 1"
                 inkscape:groupmode="layer"
@@ -185,24 +185,24 @@
     </div>
 
     <div class="right" fxFlex="60" fxFlex.sm="100" fxFlex.xs="100" [ngStyle.sm]="{'padding': '0 5%'}" [ngStyle.xs]="{'padding': '0 5%'}">
-        <div class="intro">{{(portfolio.texts.contact)?.intro}}</div>
+        <div class="intro">{{(portfolio.texts)?.contact.intro}}</div>
 
         <div class="inputs">
             <form class="contact-form">
-                <div>{{(portfolio.texts.contact)?.input[0]}}</div>
+                <div>{{(portfolio.texts)?.contact.input[0]}}</div>
                 <mat-form-field class="input">                    
                     <input matInput value="">
                 </mat-form-field>
-                <div>{{(portfolio.texts.contact)?.input[1]}}</div>
+                <div>{{(portfolio.texts)?.contact.input[1]}}</div>
                 <mat-form-field class="input">
                     <input matInput value="">
                 </mat-form-field>
-                <div>{{(portfolio.texts.contact)?.input[2]}}</div>
+                <div>{{(portfolio.texts)?.contact.input[2]}}</div>
                 <mat-form-field class="input">
                     <textarea matInput placeholder=""></textarea>
                 </mat-form-field>
 
-                <button class="message" mat-raised-button [ngStyle.sm]="{'width': '100%'}" [ngStyle.xs]="{'width': '100%'}">{{(portfolio.texts.contact)?.button}}</button>
+                <button class="message" mat-raised-button [ngStyle.sm]="{'width': '100%'}" [ngStyle.xs]="{'width': '100%'}">{{(portfolio.texts)?.contact.button}}</button>
             </form>
         </div>
     </div>
@@ -211,9 +211,9 @@
 <div class="footer">
     <div class="horizontal-line">
         <div class="line"></div>
-        <img class="logo" src="/assets/img/logo.png" [ngStyle.xs]="{'width.px': 66,'height.px': 51}" [ngStyle.sm]="{'width.px': 66,'height.px': 51}">
+        <img class="logo" src="/assets/img/logo-min.png" [ngStyle.xs]="{'width.px': 66,'height.px': 51}" [ngStyle.sm]="{'width.px': 66,'height.px': 51}">
         <div class="copyrights colorWhite" [ngStyle.xs]="{'font-size.px': 14}" [ngStyle.sm]="{'font-size.px': 14}">
-            {{(portfolio.texts.footer)?.content}}
+            {{(portfolio.texts)?.footer.content}}
         </div>
     </div>
 </div>
