@@ -1,2 +1,15 @@
 
-    <router-outlet></router-outlet>
+    
+    <div [ngClass]="{'show':loading}" class="loading-screen" >
+        <div class="loading-text"></div>
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+    </div>
+
+    <component-menu></component-menu>
+    
+    <div class="viewWrapper" >
+        <section-video></section-video>
+        <router-outlet></router-outlet>
+    </div>
