@@ -1,10 +1,7 @@
-<div class="project" [ngStyle.sm]="{'height.px':160}" [ngStyle.xs]="{'height.px':120}">
-    <div class="logo" [ngStyle]="{'background-image': 'url(' + project.img + ')'}" [ngStyle.sm]="{'height.px':160}" [ngStyle.xs]="{'height.px':120}">
-        <div class="hover" [ngStyle.sm]="{'height.px':160,'padding':'32px 16px 16px 16px'}" [ngStyle.xs]="{'height.px':120,'padding':'32px 16px 16px 16px'}">
-            <div class="title h3">{{ (project)?.title }}</div>
-            <div class="subtitle">{{ (project)?.subtitle }}</div>
-        </div>
+<div class="project">
+    <div [ngStyle.sm]="{'padding-top':'20%'}" [ngStyle.xs]="{'padding-top':'20%'}" class="hover">
+        <div class="title h3">{{ (project)?.title }}</div>
+        <div class="subtitle">{{ (project)?.subtitle }}</div>
     </div>
+    <img [ngClass]="project.img" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAADmAQMAAACnC3/1AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACFJREFUeNrtwYEAAAAAw6D5U9/gBFUBAAAAAAAAAAAAPAMobgABCIE2tAAAAABJRU5ErkJggg==">
 </div>
-
-
