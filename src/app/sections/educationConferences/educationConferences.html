@@ -3,13 +3,6 @@
 
         <div class="educationSVG" [ngStyle.sm]="{'margin-right': -12.5 + '%'}" [ngStyle.xs]="{'margin-right': -12.5 + '%'}">
             <svg
-                xmlns:dc="http://purl.org/dc/elements/1.1/"
-                xmlns:cc="http://creativecommons.org/ns#"
-                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                xmlns:svg="http://www.w3.org/2000/svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                 width="220"
                 height="360">
                
@@ -80,9 +73,9 @@
              
         </div>
 
-        <div class="h2 title left">{{(portfolio.texts.education)?.title}}</div>
+        <div class="h2 title left">{{(portfolio.texts)?.education.title}}</div>
         
-        <div class="educationItem" *ngFor="let education of (portfolio.texts.education)?.content">
+        <div class="educationItem" *ngFor="let education of (portfolio.texts)?.education.content">
             <component-list [item]="education" type="education" ></component-list>
         </div>
     </div>
@@ -91,13 +84,6 @@
 
         <div class="conferencesSVG" [ngStyle.sm]="{'margin-left': -12.5 + '%'}" [ngStyle.xs]="{'margin-left': -12.5 + '%'}">
             <svg
-                xmlns:dc="http://purl.org/dc/elements/1.1/"
-                xmlns:cc="http://creativecommons.org/ns#"
-                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                xmlns:svg="http://www.w3.org/2000/svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                 width="194"
                 height="365">
                 <g
@@ -157,8 +143,8 @@
             </svg>
         </div>
         
-        <div class="title h2 right">{{(portfolio.texts.conferences)?.title}}</div>
-        <div class="conferenceItem" *ngFor="let conference of (portfolio.texts.conferences)?.content">
+        <div class="title h2 right">{{(portfolio.texts)?.conferences.title}}</div>
+        <div class="conferenceItem" *ngFor="let conference of (portfolio.texts)?.conferences.content">
             <component-list [item]="conference" type="conference" ></component-list>
         </div>
         
