@@ -1,6 +1,5 @@
-import { ChangeDetectionStrategy, Component, NgZone } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Shared } from './providers/shared';
 import { environment } from '../environments/environment';
 
@@ -9,26 +8,27 @@ import { environment } from '../environments/environment';
     templateUrl: './app.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class App{
+export class App implements OnInit{
+    public loading = true;
 
-    constructor(private http:Http, private zone:NgZone, private portfolio:Shared){
+    constructor(private http:HttpClient, public portfolio:Shared){
         this.getTexts();
     }
   
     getTexts(){
-          let $this = this;
-          this.http.get(environment.url + '/assets/json/texts_en.json')
-              .map((res:Response) => res.json())
-              .subscribe(
-                  data => { 
-                      console.log('Countries Loaded');
-                      console.log(data);
-                      $this.zone.run(()=>{
-                          $this.portfolio.texts = data;
-                      })
-                  },
-                  err => console.error(err)
-              );
-      };
+        let $this = this;
+        this.http.get(environment.assets + 'json/texts_en.min.json')
+            .subscribe(
+                data => { 
+                    console.log('Texts Loaded');
+                    console.log(data);
+                    this.portfolio.texts = data;
+                },
+                err => console.error(err)
+            );
+    };
 
+    ngOnInit(){
+        this.loading = false;
+    }
 }
