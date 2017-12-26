@@ -1,5 +1,5 @@
 
-<div #accomplishments class="accomplishments">
+<div [ngClass.sm]="['small']" [ngClass.xs]="['small']" #accomplishments class="accomplishments">
 
     <div class="h2 center">{{(portfolio.texts)?.accomplishments.title}}</div>
 
@@ -16,7 +16,7 @@
         <div class="content">{{(portfolio.texts)?.accomplishments.content[2].paragraph}}</div>
     </div>
 
-    <div class="accomplishmentIcon">
+    <div fxHide.sm fxHide.xs class="accomplishmentIcon">
         <svg
             width="540"
             height="560">

@@ -9,6 +9,18 @@
     text-align: center;
     padding: 32px 0 16px 0;
 }
+.small .accomplishment{
+    position: relative;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0 32px 32px 32px;
+    box-sizing: border-box;
+}
+.small .accomplishment.two{
+    text-align: right;
+}
 .accomplishment.one{
     position: absolute;
     left: 50%;
