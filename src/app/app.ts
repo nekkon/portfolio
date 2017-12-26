@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Shared } from './providers/shared';
 import { environment } from '../environments/environment';
@@ -8,11 +8,13 @@ import { environment } from '../environments/environment';
     templateUrl: './app.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class App implements OnInit{
+export class App{
     public loading = true;
 
-    constructor(private http:HttpClient, public portfolio:Shared){
-        this.getTexts();
+    constructor(private http:HttpClient, public portfolio:Shared, public ref: ChangeDetectorRef){
+        if(!this.portfolio.texts){
+            this.getTexts();
+        }
     }
   
     getTexts(){
@@ -23,12 +25,10 @@ export class App implements OnInit{
                     console.log('Texts Loaded');
                     console.log(data);
                     this.portfolio.texts = data;
+                    this.loading = false;
+                    this.ref.detectChanges();
                 },
                 err => console.error(err)
             );
     };
-
-    ngOnInit(){
-        this.loading = false;
-    }
 }
