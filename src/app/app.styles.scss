@@ -1,6 +1,15 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+.viewWrapper{
+    width: 100%;
+    max-width: 1600px;
+    min-width: 320px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
 /* General Theming */
 .center{
     text-align: center;
@@ -56,3 +65,179 @@ button.mat-raised-button{
 .mat-form-field-ripple{
     background-color: #0084FB;
 }
+
+body{
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+    color: rgb(78,93,107);
+    box-sizing: border-box;
+}
+
+/* Progress Bar */
+
+.loading-screen{
+    display: none;
+    width: 100vw;
+    //height: 100vh;
+    height: 8px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    background-color: rgba(66,128,247,0.9);
+}
+
+.loading-screen.show{
+    display: block;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    display: block;
+    width: 100vw;
+    background-color: rgba(244,54,76,1);
+    border-radius: 0px;
+    background-clip: padding-box;
+    margin: 0;
+    overflow: hidden;
+    z-index: 10001;
+    opacity: 0.75;
+}
+.hide{
+    display: none!important;
+}
+.progress .indeterminate {
+    background-color: #ffffff;
+    z-index: 10100;
+}
+.progress .indeterminate:before {
+    content: '';
+    z-index: 1002;
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+            animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+.progress .indeterminate:after {
+    content: '';
+    position: absolute;
+    z-index: 1002;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+            animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+            animation-delay: 1.15s;
+}
+
+@-webkit-keyframes indeterminate {
+    0% {
+        left: -35%;
+        right: 100%; 
+    }
+    60% {
+        left: 100%;
+        right: -90%; 
+    }
+    100% {
+        left: 100%;
+        right: -90%; 
+    }
+}
+
+@keyframes indeterminate {
+    0% {
+        left: -35%;
+        right: 100%; 
+    }
+    60% {
+        left: 100%;
+        right: -90%; 
+    }
+    100% {
+        left: 100%;
+        right: -90%; 
+    }
+}
+
+@-webkit-keyframes indeterminate-short {
+    0% {
+        left: -200%;
+        right: 100%; 
+    }
+    60% {
+        left: 107%;
+        right: -8%; 
+    }
+    100% {
+        left: 107%;
+        right: -8%; 
+    }
+}
+@keyframes indeterminate-short {
+    0% {
+        left: -200%;
+        right: 100%; 
+    }
+    60% {
+        left: 107%;
+        right: -8%; 
+    }
+    100% {
+        left: 107%;
+        right: -8%; 
+    }
+}
+
+/* Material Icons */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/MaterialIcons-Regular.ttf');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+
+/* Open Sans */
+
+    /* Regular */
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('/assets/fonts/OpenSans-Regular.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Bold */
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('/assets/fonts/OpenSans-Bold.ttf');
+        font-weight: 700;
+        font-style: normal;
+    }

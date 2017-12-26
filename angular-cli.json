@@ -44,7 +44,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "app/app.styles.scss"
+        { "input": "app/app.styles.scss", "lazy": true }
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
