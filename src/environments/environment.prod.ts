@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    url: 'http://localhost:8080'
+    assets: 'http://67.209.115.202/assets/'
 };
