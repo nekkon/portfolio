@@ -1,5 +1,5 @@
 <div class="divider2">
-    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1600" height="111">
+    <svg width="1600" height="111">
         <g
             inkscape:label="Layer 1"
             inkscape:groupmode="layer"
@@ -19,25 +19,18 @@
 
 <div #projects class="projects">
     <div class="h2 center">
-        {{ (portfolio.texts.projects)?.title }}
+        {{ (portfolio.texts)?.projects.title }}
     </div>
     <div class="content" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
-        <component-project fxFlex="25" fxFlex.xs="50" fxFlex.sm="33.33333" [project]="project" *ngFor="let project of (portfolio.texts.projects)?.projects | slice:0:projectsNumber"></component-project>
+        <component-project fxFlex="25" fxFlex.xs="50" fxFlex.sm="33.33333" [project]="project" *ngFor="let project of (portfolio.texts)?.projects.projects | slice:0:projectsNumber"></component-project>
     </div>
     <div [hidden]="showMore" class="actions">
-        <button (click)="moreProjects()" mat-raised-button [ngStyle.sm]="{'width':'100%'}" [ngStyle.xs]="{'width':'100%'}">{{ (portfolio.texts.projects)?.button }}</button>
+        <button (click)="moreProjects()" mat-raised-button [ngStyle.sm]="{'width':'100%'}" [ngStyle.xs]="{'width':'100%'}">{{ (portfolio.texts)?.projects.button }}</button>
     </div>
 </div>
 
 <div class="divider3">
     <svg
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-        xmlns:cc="http://creativecommons.org/ns#"
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:svg="http://www.w3.org/2000/svg"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
         width="1600"
         height="111">
 
