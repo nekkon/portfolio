@@ -15,7 +15,7 @@
    id="svg8142"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="favico.svg">
   <defs
      id="defs8144" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="29.292891"
-     inkscape:cy="875.00995"
+     inkscape:zoom="1.979899"
+     inkscape:cx="105.44334"
+     inkscape:cy="1001.7757"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,7 +54,7 @@
      id="layer1">
     <g
        id="g8174"
-       transform="matrix(0.55632765,0,0,0.55632765,12.820984,-377.12778)"
+       transform="translate(23.045743,-690.58246)"
        style="fill:#000000">
       <g
          transform="matrix(1.25,0,0,1.25,-157.60848,690.26206)"
