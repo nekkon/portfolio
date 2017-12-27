@@ -1,25 +1,11 @@
-import { Component, OnInit, Input} from '@angular/core';
-import { Shared } from '../../providers/shared';
+import { Component, Input} from '@angular/core';
 
 @Component({
     selector: 'component-timeline',
     templateUrl: './timeline.html',
     styleUrls: ['./timeline.scss']
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent{
     @Input() job;
     @Input() index;
-
-    constructor(public portfolio:Shared){
-        
-    }
-
-    ngOnInit(){
-
-    }
-
-    getIcon(icon){
-        //this.portfolio.texts.
-    }
-
 }
