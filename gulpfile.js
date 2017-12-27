@@ -4,5 +4,5 @@
     var sftp = require('gulp-sftp');
     
     gulp.task('deploy', function () {
-        return gulp.src('dist/**').pipe(sftp(settings));
+        return gulp.src('dist/**').pipe(sftp(settings.server));
     });
