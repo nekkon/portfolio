@@ -8,6 +8,11 @@ import { Shared } from '../../providers/shared';
     styleUrls: ['./contact.scss']
 })
 export class ContactComponent implements AfterViewInit {
+    public message = {
+        name : "",
+        email : "",
+        message : ""
+    };
 
     @ViewChild('contact') contactSection: ElementRef;
 
@@ -17,6 +22,13 @@ export class ContactComponent implements AfterViewInit {
 
     ngAfterViewInit(){
         this.portfolio.sections['contact'] = this.contactSection;
+    }
+
+    send(){
+        console.log(this.message);
+        this.portfolio.http.post('/contact',this.message).subscribe((res)=>{
+            console.log(res);
+        })
     }
 
 }

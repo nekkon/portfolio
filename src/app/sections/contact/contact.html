@@ -191,18 +191,18 @@
             <form class="contact-form">
                 <div>{{(portfolio.texts)?.contact.input[0]}}</div>
                 <mat-form-field class="input">                    
-                    <input matInput value="">
+                    <input name="name" [(ngModel)]="message.name" matInput value="">
                 </mat-form-field>
                 <div>{{(portfolio.texts)?.contact.input[1]}}</div>
                 <mat-form-field class="input">
-                    <input matInput value="">
+                    <input name="email" [(ngModel)]="message.email" matInput value="">
                 </mat-form-field>
                 <div>{{(portfolio.texts)?.contact.input[2]}}</div>
                 <mat-form-field class="input">
-                    <textarea matInput placeholder=""></textarea>
+                    <textarea name="message" [(ngModel)]="message.message" matInput placeholder=""></textarea>
                 </mat-form-field>
 
-                <button class="message" mat-raised-button [ngStyle.sm]="{'width': '100%'}" [ngStyle.xs]="{'width': '100%'}">{{(portfolio.texts)?.contact.button}}</button>
+                <button (click)="send()" class="message" mat-raised-button [ngStyle.sm]="{'width': '100%'}" [ngStyle.xs]="{'width': '100%'}">{{(portfolio.texts)?.contact.button}}</button>
             </form>
         </div>
     </div>

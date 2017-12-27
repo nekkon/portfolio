@@ -9,6 +9,10 @@ import * as express from 'express';
 import { join } from 'path';
 import { readFileSync } from 'fs';
 
+var mailer = require('./sendEmail');
+
+var bodyParser = require('body-parser');
+
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 
@@ -27,17 +31,17 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/mai
 const { provideModuleMap } = require('@nguniversal/module-map-ngfactory-loader');
 
 app.engine('html', (_, options, callback) => {
-  renderModuleFactory(AppServerModuleNgFactory, {
-    // Our index.html
-    document: template,
-    url: options.req.url,
-    // DI so that we can get lazy-loading to work differently (since we need it to just instantly render it)
-    extraProviders: [
-      provideModuleMap(LAZY_MODULE_MAP)
-    ]
-  }).then(html => {
-    callback(null, html);
-  });
+    renderModuleFactory(AppServerModuleNgFactory, {
+        // Our index.html
+        document: template,
+        url: options.req.url,
+        // DI so that we can get lazy-loading to work differently (since we need it to just instantly render it)
+        extraProviders: [
+            provideModuleMap(LAZY_MODULE_MAP)
+        ]
+    }).then(html => {
+        callback(null, html);
+    });
 });
 
 app.set('view engine', 'html');
@@ -48,10 +52,19 @@ app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {
-  res.render(join(DIST_FOLDER, 'browser', 'index.html'), { req });
+    res.render(join(DIST_FOLDER, 'browser', 'index.html'), { req });
+});
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
+// Handle message post, send Email
+app.post('/contact', function(req, res) {
+    console.log(req);
+    mailer.sendEmail(req.body);
 });
 
 // Start up the Node server
 app.listen(PORT, () => {
-  console.log(`Node server listening on http://localhost:${PORT}`);
+    console.log(`Node server listening on http://localhost:${PORT}`);
 });
