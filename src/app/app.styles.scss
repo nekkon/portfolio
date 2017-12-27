@@ -65,6 +65,12 @@ button.mat-raised-button{
 .mat-form-field-ripple{
     background-color: #0084FB;
 }
+.left .gapTop .mat-chip-list-wrapper{
+    justify-content: flex-end;
+}
+.right .chipsAlign .mat-chip-list-wrapper{
+    justify-content: flex-end;
+}
 
 body{
     margin: 0;

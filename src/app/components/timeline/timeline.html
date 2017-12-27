@@ -1,18 +1,23 @@
-<div fxLayout="row" fxLayoutAlign="start stretch">
-    <div [fxFlexOrder]="((index % 2) == 0)?1:3" fxFlex="45" [ngClass]="{'left':(index % 2) == 0,'right':(index % 2) == 1}">
+<div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutWrap>
+    <div [fxFlexOrder]="((index % 2) == 0)?1:3" fxFlexOrder.sm="-1" fxFlexOrder.xs="-1" fxFlex="45" fxFlex.sm="100" fxFlex.xs="100" [ngClass]="{'left':(index % 2) == 0,'right':(index % 2) == 1}">
         <div class="title h3 link colorBlue">{{ job.title }}</div>
         <div class="subtitle h4">{{ job.subtitle }}</div>
+        <div fxHide fxShow.sm fxShow.xs class="title h4 year">{{ job.year }}</div>
         <div *ngFor="let paragraph of job.intro" class="paragraph">{{ paragraph }}</div>
     </div>
-    <div fxFlexOrder="2" fxFlex="10" class="middle">
+    <div fxFlexOrder="2" fxFlex="10" class="middle" fxHide.sm fxHide.xs>
         <div class="line top"></div>
         <div class="line bottom">
             <mat-icon class="midIcon">adjust</mat-icon>
         </div>
     </div>
-    <div [fxFlexOrder]="((index % 2) == 0)?3:1" fxFlex="45" [ngClass]="{'right':(index % 2) == 0,'left':(index % 2) == 1}">
-        <div class="title h4 year">{{ job.year }}</div>
-        <div class="used">{{ job.used }}</div>
+    <div [fxFlexOrder]="((index % 2) == 0)?3:1" fxFlexOrder.sm="-1" fxFlexOrder.xs="-1" fxFlex="45" fxFlex.sm="100" fxFlex.xs="100" [ngClass]="{'right':(index % 2) == 0,'left':(index % 2) == 1}">
+        <div fxHide.sm fxHide.xs class="title h4 year gapTop">{{ job.year }}</div>
+        <div class="used" [ngClass.sm]="['chipsAlign']" [ngClass.xs]="['chipsAlign']" [ngClass.md]="['gapTop']" [ngClass.lg]="['gapTop']" [ngClass.xl]="['gapTop']">
+            <mat-chip-list>
+                <mat-chip *ngFor="let technology of job.used" class="chip">{{ technology }}</mat-chip>
+            </mat-chip-list>
+        </div>
     </div>
 </div>
 

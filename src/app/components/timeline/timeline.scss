@@ -27,7 +27,7 @@
     text-align: left;
 }
 .left,.right{
-    padding-top: 24px;
+    padding-top: 20px;
 }
 .title.link{
     cursor: pointer;
@@ -35,4 +35,11 @@
 .used{
     word-wrap: break-word;
     word-break: break-word;
+}
+.chip{
+    background-color:#F4F7F9;
+    margin: 4px!important;
+}
+.gapTop{
+    padding-top: 15px;
 }
