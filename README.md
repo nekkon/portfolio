@@ -29,6 +29,17 @@ Due to the fact that most projects I have implemented so far are copyrighted, I 
 
 This project can NOT be used for any purpose without written permission by me.
 
+## Server settings
+
+Server settings are hidden. You need to create your own server settings json for your own server. Server settings must follow the following format:
+
+{
+    "email":{
+        "email": "example@gmail.com",
+        "password": "********"
+    }
+}
+
 ## How to Run locally
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 

@@ -1,4 +1,4 @@
-    var settings = require('./gulp.server.json');
+    var settings = require('./server.settings.json');
 
     var gulp = require('gulp');
     var sftp = require('gulp-sftp');

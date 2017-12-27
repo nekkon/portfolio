@@ -23,7 +23,7 @@
 !.vscode/extensions.json
 
 # misc
-gulp.server.json
+server.settings.json
 /.sass-cache
 /connect.lock
 /coverage/*
