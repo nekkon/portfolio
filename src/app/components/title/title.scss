@@ -1,0 +1,39 @@
+.title .line #line{
+    animation: line-scale 3s infinite ease-in-out, line-move 3s infinite ease-in-out;
+}
+.title .line{
+    position: absolute;
+    margin-top: 8px;
+}
+.title{
+    position: relative;
+}
+
+@keyframes line-scale {
+    /* You could think of as "step 1" */
+    0% {
+        transform: scaleX(0.1);
+    }
+    /* You could think of as "step 2" */
+    20% {
+        transform: scaleX(1);
+    }
+
+    80% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0.1);
+    }
+}
+@keyframes line-move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

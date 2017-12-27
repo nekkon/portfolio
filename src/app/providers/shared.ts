@@ -35,6 +35,7 @@ export class Shared {
                 err => console.error(err)
             );
     };
+    
 
     public texts;
     public sections = {};

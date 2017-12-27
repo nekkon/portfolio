@@ -1,6 +1,8 @@
 
 <div #about class="about" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
-    <div class="h2" fxFlex="100">{{(portfolio.texts)?.about.title}}</div>
+    <div class="h2" fxFlex="100">
+        <component-title [title]="portfolio.texts.about.title" lineWidth="140"></component-title>
+    </div>
     <div class="titleAbout" fxFlex="30" fxFlex.sm="0" fxFlex.xs="0" fxHide.sm fxHide.xs>
         <div class="profile"></div>
     </div>
