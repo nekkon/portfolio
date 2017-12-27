@@ -36,7 +36,7 @@
 </button>
 <div class="MenuFullscreen" *ngIf="visible" [@fadeInOut]>
     <nav>
-        <div *ngFor="let item of (portfolio.texts)?.menu">
+        <div class="wrapper" *ngFor="let item of (portfolio.texts)?.menu">
             <a [ngClass]="{'unhovered':( hovered && hovered!==item.link )}" (mousemove)="onHover(item.link)" (mouseout)="onMouseOut()" (click)="scrollTo(item.link)" class="h2">{{ item.name }}</a>
         </div>
     </nav>
