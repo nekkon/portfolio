@@ -37,6 +37,13 @@ Server settings are hidden. You need to create your own server settings json for
     "email":{
         "email": "example@gmail.com",
         "password": "********"
+    },
+    "server":{
+        "host": ip / host,
+        "user": username,
+        "port": 22,
+        "pass": "******",
+        "remotePath": "/path"
     }
 }
 
