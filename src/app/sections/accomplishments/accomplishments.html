@@ -1,18 +1,26 @@
 
 <div [ngClass.sm]="['small']" [ngClass.xs]="['small']" #accomplishments class="accomplishments">
 
-    <div class="h2 center">{{(portfolio.texts)?.accomplishments.title}}</div>
+    <div class="h2 center">
+        <component-title [title]="portfolio.texts.accomplishments.title" lineWidth="260" color="#f286b6" inverse="true"></component-title>
+    </div>
 
     <div class="accomplishment one">
-        <div class="h3 subtitle">{{(portfolio.texts)?.accomplishments.content[0].title}}</div>
+        <div class="h3 subtitle">
+            <component-title [title]="portfolio.texts.accomplishments.content[0].title" lineWidth="98" color="#d7d7d7"></component-title>
+        </div>
         <div class="content">{{(portfolio.texts)?.accomplishments.content[0].paragraph}}</div>
     </div>
     <div class="accomplishment two">
-        <div class="h3 subtitle">{{(portfolio.texts)?.accomplishments.content[1].title}}</div>
+        <div class="h3 subtitle">
+            <component-title [title]="portfolio.texts.accomplishments.content[1].title" lineWidth="45" color="#d7d7d7" inverse="true"></component-title>
+        </div>
         <div class="content">{{(portfolio.texts)?.accomplishments.content[1].paragraph}}</div>
     </div>
     <div class="accomplishment three">
-        <div class="h3 subtitle">{{(portfolio.texts)?.accomplishments.content[2].title}}</div>
+        <div class="h3 subtitle">
+            <component-title [title]="portfolio.texts.accomplishments.content[2].title" lineWidth="45" color="#d7d7d7"></component-title>
+        </div>
         <div class="content">{{(portfolio.texts)?.accomplishments.content[2].paragraph}}</div>
     </div>
 

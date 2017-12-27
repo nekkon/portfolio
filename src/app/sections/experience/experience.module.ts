@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ExperienceComponent } from './experience';
-import { TimelineModule } from '../../components/index';
+import { TimelineModule, TitleModule } from '../../components/index';
 
 @NgModule({
-    imports: [ CommonModule, TimelineModule ],
+    imports: [ CommonModule, TimelineModule, TitleModule ],
     declarations: [ ExperienceComponent ],
     exports:      [ ExperienceComponent ]
 })

@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 
 import { MatButtonModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { ProjectModule } from '../../components/index';
+import { ProjectModule, TitleModule } from '../../components/index';
 import { ProjectsComponent } from './projects';
 
 @NgModule({
-    imports: [ CommonModule, ProjectModule, FlexLayoutModule, MatButtonModule ],
+    imports: [ CommonModule, ProjectModule, FlexLayoutModule, MatButtonModule, TitleModule ],
     declarations: [ ProjectsComponent ],
     exports:      [ ProjectsComponent ]
 })
