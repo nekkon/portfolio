@@ -76,12 +76,12 @@
 /* Menu button animation */
 .animated #line1{
     transform: translateY(7px) translateX(9px) rotate(-45deg);
-    transform-origin: 50% 50%;
+    transform-origin: 15px 15px;
     fill: #252E38;
 }
 .animated #line2{
     transform: translateY(-3px) translateX(-9px) rotate(45deg);
-    transform-origin: 50% 50%;
+    transform-origin: 15px 15px;
     fill: #252E38;
 }
 .animated #line3{
