@@ -19,7 +19,7 @@
 
 <div #projects class="projects">
     <div class="h2 center">
-        <component-title [title]="portfolio.texts.projects.title" lineWidth="120" color="#4280f7"></component-title>
+        <component-title title="{{(portfolio.texts)?.projects.title}}" lineWidth="120" color="#4280f7"></component-title>
     </div>
     <div class="content" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
         <component-project fxFlex="25" fxFlex.xs="50" fxFlex.sm="33.33333" [project]="project" *ngFor="let project of (portfolio.texts)?.projects.projects | slice:0:projectsNumber"></component-project>
