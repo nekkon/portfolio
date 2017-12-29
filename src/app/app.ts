@@ -13,7 +13,10 @@ export class App implements OnInit{
         this.meta.addTags([
             {name: 'description', content: 'Hello, my name is Nektarios Konstantinidis. I am a Senior Developer ( Web / FE - Angular ) and this is my portfolio page.'},
             {name: 'author', content: 'nekkon'},
-            {name: 'keywords', content: 'Angular, Portfolio, nekkon, Nektarios, Konstantinidis'}
+            {name: 'keywords', content: 'Angular, Portfolio, nekkon, Nektarios, Konstantinidis'},
+            {name: 'og:title', content: 'Nekkon | portfolio'},
+            {name: 'og:description', content: 'Hello, my name is Nektarios Konstantinidis. I am a Senior Developer ( Web / FE - Angular ) and this is my portfolio page.'},
+            {name: 'og:image', content: 'nekkon'}
         ]);
     }
     ngOnInit(){
