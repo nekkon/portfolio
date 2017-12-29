@@ -74,7 +74,7 @@
         </div>
 
         <div class="h2 title left">
-            <component-title [title]="portfolio.texts.education.title" lineWidth="150" inverse="true"></component-title>
+            <component-title title="{{(portfolio.texts)?.education.title}}" lineWidth="150" inverse="true"></component-title>
         </div>
         
         <div class="educationItem" *ngFor="let education of (portfolio.texts)?.education.content">
@@ -146,7 +146,7 @@
         </div>
         
         <div class="title h2 right">
-            <component-title [title]="portfolio.texts.conferences.title" lineWidth="185"></component-title>
+            <component-title title="{{(portfolio.texts)?.conferences.title}}" lineWidth="185"></component-title>
         </div>
         <div class="conferenceItem" *ngFor="let conference of (portfolio.texts)?.conferences.content">
             <component-list [item]="conference" type="conference" ></component-list>
