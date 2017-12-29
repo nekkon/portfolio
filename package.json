@@ -31,6 +31,7 @@
         "@angular/platform-server": "^5.1.1",
         "@angular/router": "^5.1.1",
         "@angular/service-worker": "^5.1.1",
+        "@nguniversal/common": "^5.0.0-beta.5",
         "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
         "body-parser": "^1.18.2",
         "classlist.js": "^1.1.20150312",

@@ -12,6 +12,7 @@ import { MenuModule } from './components/index';
 import { AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, VideoModule, ProjectsModule } from './sections/index';
 import { scrollTrigger } from './providers/scrollTrigger';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
+import { TransferHttpCacheModule } from '@nguniversal/common';
 
 /*
 import { RouterModule } from '@angular/router';
@@ -36,6 +37,7 @@ export class RavenErrorHandler implements ErrorHandler {
   ],
   imports: [
       BrowserModule.withServerTransition({appId: 'portfolio'}),
+      TransferHttpCacheModule,
       BrowserTransferStateModule,
       BrowserAnimationsModule,
       HttpClientModule,
@@ -49,4 +51,4 @@ export class RavenErrorHandler implements ErrorHandler {
   ],
   bootstrap: [ App ]
 })
-export class AppModule {}
+export class AppBrowserModule {}
