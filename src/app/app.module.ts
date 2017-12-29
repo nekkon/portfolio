@@ -11,9 +11,12 @@ import { FormsModule } from '@angular/forms';
 import { MenuModule } from './components/index';
 import { AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, VideoModule, ProjectsModule } from './sections/index';
 import { scrollTrigger } from './providers/scrollTrigger';
+import { BrowserTransferStateModule } from '@angular/platform-browser';
+
+/*
 import { RouterModule } from '@angular/router';
 import { Routing } from './app.routes';
-
+*/
 /*
 import * as Raven from 'raven-js';
 
@@ -33,10 +36,12 @@ export class RavenErrorHandler implements ErrorHandler {
   ],
   imports: [
       BrowserModule.withServerTransition({appId: 'portfolio'}),
+      BrowserTransferStateModule,
       BrowserAnimationsModule,
       HttpClientModule,
-      RouterModule.forRoot( Routing ),
+      //RouterModule.forRoot( Routing ),
       MenuModule, VideoModule,
+      AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
       ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
   ],
   providers: [ Shared , scrollTrigger, 

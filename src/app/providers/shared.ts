@@ -20,23 +20,12 @@ export class Shared {
         this.menu.emit(this.menuVisible);
     }
 
-    getTexts(callback){
-        let $this = this;
-        this.http.get(environment.assets + 'json/texts_en.min.json')
-            .subscribe(
-                data => { 
-                    console.log('Texts Loaded');
-                    console.log(data);
-                    this.texts = data;
-                    if(callback){
-                        callback();
-                    }
-                },
-                err => console.error(err)
-            );
+    getTexts(){
+        return this.http.get(environment.assets + 'json/texts_en.min.json');
     };
     
 
     public texts;
+    public loading = false;
     public sections = {};
 }

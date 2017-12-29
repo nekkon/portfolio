@@ -1,5 +1,7 @@
 import { animate, style, transition, trigger, keyframes} from '@angular/animations';
 import { Component, Input, OnInit} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { PLATFORM_ID, Inject } from '@angular/core';
 
 @Component({
     selector: 'component-title',
@@ -34,25 +36,29 @@ export class TitleComponent implements OnInit{
     public direction = '';
     public data;
 
+    constructor(@Inject(PLATFORM_ID) public platformId: any){}
+
     onEnd(){
-        setTimeout(()=>{
-            //console.log(this.data);
-            if(this.direction == 'right'){
-                if(this.inverse){
-                    this.data = {value: 'right', params: {width:this.lineWidth,width2:Math.round(this.lineWidth * 0.2),width8:Math.round(this.lineWidth * 0.8)}};
-                } else {
-                    this.data = {value: 'left', params: {width:this.lineWidth,width2:Math.round(this.lineWidth * 0.2),width8:Math.round(this.lineWidth * 0.8)}};
+        if(isPlatformBrowser(this.platformId)){
+            setTimeout(()=>{
+                //console.log(this.data);
+                if(this.direction == 'right'){
+                    if(this.inverse){
+                        this.data = {value: 'right', params: {width:this.lineWidth,width2:Math.round(this.lineWidth * 0.2),width8:Math.round(this.lineWidth * 0.8)}};
+                    } else {
+                        this.data = {value: 'left', params: {width:this.lineWidth,width2:Math.round(this.lineWidth * 0.2),width8:Math.round(this.lineWidth * 0.8)}};
+                    }
+                    this.direction = 'left';
+                } else{
+                    if(this.inverse){
+                        this.data = {value: 'left', params: {width:this.lineWidth,width2:Math.round(this.lineWidth * 0.2),width8:Math.round(this.lineWidth * 0.8)}};
+                    } else {
+                        this.data = {value: 'right', params: {width:this.lineWidth,width2:Math.round(this.lineWidth * 0.2),width8:Math.round(this.lineWidth * 0.8)}};
+                    }
+                    this.direction = 'right';
                 }
-                this.direction = 'left';
-            } else{
-                if(this.inverse){
-                    this.data = {value: 'left', params: {width:this.lineWidth,width2:Math.round(this.lineWidth * 0.2),width8:Math.round(this.lineWidth * 0.8)}};
-                } else {
-                    this.data = {value: 'right', params: {width:this.lineWidth,width2:Math.round(this.lineWidth * 0.2),width8:Math.round(this.lineWidth * 0.8)}};
-                }
-                this.direction = 'right';
-            }
-        },500);
+            },500);
+        }
     }
 
     ngOnInit(){
