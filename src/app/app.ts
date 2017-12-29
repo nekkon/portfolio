@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit} from '@angular/core';
 import { Shared } from './providers/shared';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
     selector: 'app',
@@ -8,8 +9,12 @@ import { Shared } from './providers/shared';
 })
 export class App implements OnInit{
 
-    constructor(public portfolio:Shared, public ref: ChangeDetectorRef){
-        
+    constructor(public portfolio:Shared, public ref: ChangeDetectorRef, public meta: Meta){
+        this.meta.addTags([
+            {name: 'description', content: 'Hello, my name is Nektarios Konstantinidis. I am a Senior Developer ( Web / FE - Angular ) and this is my portfolio page.'},
+            {name: 'author', content: 'nekkon'},
+            {name: 'keywords', content: 'Angular, Portfolio, nekkon, Nektarios, Konstantinidis'}
+        ]);
     }
     ngOnInit(){
         if(!this.portfolio.texts){
