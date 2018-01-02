@@ -11,10 +11,10 @@
     @font-face {
         font-family: 'Open Sans';
         src: url('/assets/fonts/OpenSans-Bold.ttf');
-        font-weight: 700;
+        font-weight: bold;
         font-style: normal;
     }
 
-    body.loaded{
+    .wf-opensans-n4-active.wf-opensans-n7-active body{
         font-family: 'Open Sans', sans-serif;
     }

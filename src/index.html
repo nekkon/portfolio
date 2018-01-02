@@ -7,12 +7,23 @@
         <link href="./favicon.ico" rel="icon" type="image/x-icon" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-        <link rel="preload" href="/assets/css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/assets/css/fonts.css"></noscript>
-        <script src="assets/js/loadcss.js"></script>
     </head>
-    <body class="loaded">
+    <body>
+        <noscript>
+            <p>
+                Sorry, JavaScript must be enabled to use this app
+            </p>
+        </noscript>
+        <script>
+            WebFontConfig = {
+                custom: {
+                    families: ['Open Sans:n4,n7'],
+                    urls: ['/assets/css/fonts.css']
+                }
+            };
+        </script>
+        <script type='text/javascript' src='assets/js/loadcss.js'></script>
+        
         <app>
             <div class="loading-screen show" >
                 <div class="loading-text"></div>
@@ -21,11 +32,5 @@
                 </div>
             </div> 
         </app>
-
-        <noscript>
-            <p>
-              Sorry, JavaScript must be enabled to use this app
-            </p>
-        </noscript>
     </body>
 </html>
