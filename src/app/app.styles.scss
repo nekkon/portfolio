@@ -75,7 +75,7 @@ button.mat-raised-button{
 body{
     margin: 0;
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
     background-color: #eee;
     color: rgb(78,93,107);
     box-sizing: border-box;
@@ -230,20 +230,3 @@ body{
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
   }
-
-/* Open Sans */
-
-    /* Regular */
-    @font-face {
-        font-family: 'Open Sans';
-        src: url('/assets/fonts/OpenSans-Regular.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    /* Bold */
-    @font-face {
-        font-family: 'Open Sans';
-        src: url('/assets/fonts/OpenSans-Bold.ttf');
-        font-weight: 700;
-        font-style: normal;
-    }

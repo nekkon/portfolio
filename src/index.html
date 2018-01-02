@@ -7,8 +7,12 @@
         <link href="./favicon.ico" rel="icon" type="image/x-icon" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <link rel="preload" href="/assets/css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/assets/css/fonts.css"></noscript>
+        <script src="assets/js/loadcss.js"></script>
     </head>
-    <body>
+    <body class="loaded">
         <app>
             <div class="loading-screen show" >
                 <div class="loading-text"></div>

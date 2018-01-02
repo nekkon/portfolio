@@ -1,0 +1,20 @@
+/* Open Sans */
+
+    /* Regular */
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('/assets/fonts/OpenSans-Regular.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Bold */
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('/assets/fonts/OpenSans-Bold.ttf');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    body.loaded{
+        font-family: 'Open Sans', sans-serif;
+    }
