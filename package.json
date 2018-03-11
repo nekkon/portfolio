@@ -12,7 +12,7 @@
         "local": "cd dist/browser && http-server",
         "ssr:build": "npm run build:client-and-server-bundles && npm run webpack:server",
         "ssr": "npm run ssr:build && node dist/server.js",
-        "build:client-and-server-bundles": "ng build --prod --stats-json&& ng build --prod --app 1 --output-hashing=false --stats-json",
+        "build:client-and-server-bundles": "ng build --prod --stats-json && ng build --prod --app 1 --output-hashing=false --stats-json",
         "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
         "bundle-report-browser": "webpack-bundle-analyzer dist/browser/stats.json",
         "bundle-report-server": "webpack-bundle-analyzer dist/server/stats.json",
