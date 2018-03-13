@@ -29,13 +29,16 @@
 .bg-gulp,
 .bg-html,
 .bg-illustrator,
+.bg-jasmine,
 .bg-javascript,
 .bg-jquery,
 .bg-karma,
 .bg-mongo,
 .bg-mysql,
+.bg-nodejs,
 .bg-photoshop,
 .bg-php,
+.bg-sass,
 .bg-typescript {
     display: inline-block;
     background: url('/assets/img/expertin-min.png') no-repeat;
@@ -104,50 +107,68 @@
     height: 90px;
 }
 
-.bg-javascript {
+.bg-jasmine {
     background-position: -180px -180px;
     width: 90px;
     height: 90px;
 }
 
-.bg-jquery {
+.bg-javascript {
     background-position: -270px -180px;
     width: 90px;
     height: 90px;
 }
 
-.bg-karma {
+.bg-jquery {
     background-position: -0px -270px;
     width: 90px;
     height: 90px;
 }
 
-.bg-mongo {
+.bg-karma {
     background-position: -90px -270px;
     width: 90px;
     height: 90px;
 }
 
-.bg-mysql {
+.bg-mongo {
     background-position: -180px -270px;
     width: 90px;
     height: 90px;
 }
 
-.bg-photoshop {
+.bg-mysql {
     background-position: -270px -270px;
     width: 90px;
     height: 90px;
 }
 
-.bg-php {
+.bg-nodejs {
     background-position: -0px -360px;
     width: 90px;
     height: 90px;
 }
 
-.bg-typescript {
+.bg-photoshop {
     background-position: -90px -360px;
+    width: 90px;
+    height: 90px;
+}
+
+.bg-php {
+    background-position: -180px -360px;
+    width: 90px;
+    height: 90px;
+}
+
+.bg-sass {
+    background-position: -270px -360px;
+    width: 90px;
+    height: 90px;
+}
+
+.bg-typescript {
+    background-position: -0px -450px;
     width: 90px;
     height: 90px;
 }

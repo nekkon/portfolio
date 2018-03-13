@@ -60,14 +60,17 @@
             "title": "Node",
             "img": "bg-nodejs"
         }, {
-            "title": "jQuery",
-            "img": "bg-jquery"
-        }, {
             "title": "SASS",
             "img": "bg-sass"
         }, {
             "title": "CSS3",
             "img": "bg-css"
+        }, {
+            "title": "Bootstrap",
+            "img": "bg-bootstrap"
+        }, {
+            "title": "HTML5",
+            "img": "bg-html"
         }, {
             "title": "Git",
             "img": "bg-git"
@@ -81,11 +84,8 @@
             "title": "Google API",
             "img": "bg-google"
         }, {
-            "title": "Bootstrap",
-            "img": "bg-bootstrap"
-        }, {
-            "title": "HTML5",
-            "img": "bg-html"
+            "title": "jQuery",
+            "img": "bg-jquery"
         }, {
             "title": "PHP",
             "img": "bg-php"
