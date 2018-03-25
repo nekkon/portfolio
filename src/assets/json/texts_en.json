@@ -106,6 +106,10 @@
     "projects": {
         "title": "PROJECTS",
         "projects": [{
+            "title": "Quidco",
+            "subtitle": "2018",
+            "img": "bg-quidco"
+        }, {
             "title": "Or-co.gr",
             "subtitle": "2017",
             "img": "bg-orco"
@@ -160,9 +164,38 @@
     "experience": {
         "title": "EXPERIENCE",
         "content": [{
-            "title": "Senior Web Developer",
-            "subtitle": "Front End (Angular), OR-CO LTD.",
-            "year": "May 2017 - PRESENT",
+            "title": "Web Developer - Front End (Angular)",
+            "subtitle": "Quidco, London",
+            "year": "Jan 2018 - PRESENT",
+            "intro": [
+                "Front End Developer for UK's #1 Cashback & Voucher Codes Site."
+            ],
+            "elements": [{
+                "type": "list",
+                "header": "Experience gained but not limited to:",
+                "list": [
+                    "Worked for a company with millions of users per month.",
+                    "Worked effectively within an agile team ( with daily stand ups, sprints, ceremonies, bets etc. )",
+                    "JIRA ( completed tickets and sprints by using JIRA )",
+                    "Followed best practices and improved coding habits thanks to other Senior Developers' suggestions",
+                    "Built dynamic, adaptive, maintainable, and performant web experiences using Angular, CSS3, HTML5, Node.js and occasionally PHP with .twig templates.",
+                    "Followed Test Driven Development (TDD) and Behavior Driven Development (BDD) principles.",
+                    "Wrote and maintained appropriate unit, component, and integration tests with agreed testing frameworks ( Karma, Jasmine ) and high code coverage.",
+                    "Used Continuous Integration (CI) pipelines and automated test suites",
+                    "Managed code collaboratively in Git with feature branches",
+                    "Followed code review processes using Bitbucket pull requests",
+                    "Wrote and tested reliable asynchronous code integrating with a variety of Microservices and Endpoints.",
+                    "Involved in cross-functional scrum teams, working in an agile environment",
+                    "Expanded practical knowledge of cross-platform, cross-browser development and website testing techniques",
+                    "Improved communication skills and the ability to relate technical ideas and best practices to other developers/stakeholders",
+                    "Gained more knowledge on DevOps tools and processes"
+                ]
+            }],
+            "used": ["Angular", "Typescript", "Node", "Javascript", "Karma", "Jasmine", "SCSS", "CSS3", "Bootstrap", "HTML5", "PHP", "PHP .twig templates", "Kubernetes"]
+        }, {
+            "title": "Lead Angular Developer",
+            "subtitle": "OR-CO LTD.",
+            "year": "May 2017 - Dec 2017",
             "intro": [
                 "Developed a number of web applications used by most private and public hospitals throughout Greece. They were either rebuilt based on existing implementation ( Powerbuilder ) or created from scratch (using Angular and Java)."
             ],
@@ -187,8 +220,8 @@
             }],
             "used": ["Angular", "Typescript", "Websockets", "Material2", "PrimeNG", "HTML5", "CSS3", "FlexLayout"]
         }, {
-            "title": "Web Developer",
-            "subtitle": "Front End, S2 Development LTD.",
+            "title": "Web Developer - Front End",
+            "subtitle": "S2 Development LTD.",
             "year": "July 2015 - April 2017",
             "intro": [
                 "Worked in a multidisciplinary Scrum team to build a cutting edge Facebook App for Appointment Bookings. A member of a motivated team which co-operated successfully in an ambitious and innovative environment. Used Git and collaborated following continuous deployment principles and achieved:"
@@ -208,18 +241,18 @@
                     "Participated in decision making and provided counselling for the company’s projects."
                 ]
             }],
-            "used": ["Angular", "Typescript", "Javascript", "jQuery", "Facebook SDK", "HTML5", "CSS3", "Bootstrap", "Google API", "GUlp", "RecurlyJS", "PHP", "Python", "MongoDB"]
+            "used": ["Angular", "Typescript", "Javascript", "jQuery", "Facebook SDK", "HTML5", "CSS3", "Bootstrap", "Google API", "Gulp", "RecurlyJS", "PHP", "Python", "MongoDB"]
         }, {
-            "title": "Web Developer & Designer",
-            "subtitle": "Full-Stack & Designer, Freelance",
+            "title": "Full-Stack Web Developer & Designer",
+            "subtitle": "Freelance",
             "year": "JAN 2015 - JUN 2015",
             "intro": [
                 "Designed and Developed a web application used as a Service management tool by Media Ram. The web application included a custom dashboard and CRM."
             ],
             "used": ["PHP", "MySQL", "HTML5", "CSS3", "Javascript", "jQuery", "Select2", "Datatables"]
         }, {
-            "title": "Web Developer & Designer",
-            "subtitle": "Full-Stack & Designer, Inrealty.gr",
+            "title": "Full-Stack Web Developer & Designer",
+            "subtitle": "Inrealty.gr",
             "year": "SEP 2014 - DEC 2014",
             "intro": [
                 "Rebranded, Designed and Developed the website for a Real Estate agency. The website managed and displayed properties on Google maps with photos."
@@ -227,15 +260,15 @@
             "used": ["Illustrator", "Photoshop", "PHP", "MySQL", "HTML5", "CSS3", "Javascript", "Google API", "jQuery"]
         }, {
             "title": "Full-Stack Software Developer & Designer",
-            "subtitle": "Full-Stack & Designer, Freelance",
+            "subtitle": "Freelance",
             "year": "OCT 2010 - JUN 2013",
             "intro": [
                 "Developed and Designed Websites (custom sites and Wordpress), iPhone Apps, Mobile and Desktop applications for businesses."
             ],
             "used": ["XCode", "Objective-C", "HTML5", "CSS3", "Javascript"]
         }, {
-            "title": "Web Developer & Designer",
-            "subtitle": "Full-Stack & Designer, International Real Estate",
+            "title": "Full-Stack Web Developer & Designer",
+            "subtitle": "International Real Estate",
             "year": "SEP 2004 - AUG 2007",
             "intro": [
                 "Designed and Developed the agency’s website. Designed and Developed a Property management application ( with photos, database )"
