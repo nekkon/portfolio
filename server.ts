@@ -9,6 +9,14 @@ import * as express from 'express';
 import { join } from 'path';
 import { readFileSync } from 'fs';
 
+// Server and App monitoring
+var I = require('instrumental-agent');
+
+I.configure({
+  apiKey: '3fe8d8a0ad27c61d2c2dccde30ab1b80',
+  enabled: true
+});
+
 var mailer = require('./sendEmail');
 
 var bodyParser = require('body-parser');

@@ -41,6 +41,7 @@
         "core-js": "^2.4.1",
         "gulp-util": "^3.0.8",
         "hammerjs": "latest",
+        "instrumental-agent": "^2.1.0",
         "nodemailer": "^4.4.1",
         "raven": "^2.3.0",
         "raven-js": "latest",
