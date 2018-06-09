@@ -4,8 +4,8 @@ import { Shared } from './shared';
 @Injectable()
 export class scrollTrigger {
 
-    constructor(private portfolio:Shared){
-        
+    constructor(private portfolio: Shared) {
+
     }
 
 }

@@ -10,11 +10,11 @@ export class ExpertinComponent implements AfterViewInit {
 
     @ViewChild('expertin') expertinSection: ElementRef;
 
-    constructor(public portfolio:Shared){
+    constructor(public portfolio: Shared) {
 
     }
 
-    ngAfterViewInit(){
+    ngAfterViewInit() {
         this.portfolio.sections['expertin'] = this.expertinSection;
     }
 }

@@ -5,6 +5,6 @@ import { Component, Input } from '@angular/core';
     templateUrl: './project.html',
     styleUrls: ['./project.scss']
 })
-export class ProjectComponent{
+export class ProjectComponent {
     @Input('project') project;
 }

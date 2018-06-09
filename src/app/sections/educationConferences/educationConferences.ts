@@ -12,11 +12,11 @@ export class EducationConferencesComponent {
     @ViewChild('education') educationSection: ElementRef;
     @ViewChild('conferences') conferencesSection: ElementRef;
 
-    constructor(public portfolio:Shared){
+    constructor(public portfolio: Shared) {
 
     }
 
-    ngAfterViewInit(){
+    ngAfterViewInit() {
         this.portfolio.sections['education'] = this.educationSection;
         this.portfolio.sections['conferences'] = this.conferencesSection;
     }

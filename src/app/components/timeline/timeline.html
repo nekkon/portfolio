@@ -1,4 +1,4 @@
-<div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutWrap>
+<div fxLayout="row wrap" fxLayoutAlign="start stretch">
     <div [fxFlexOrder]="((index % 2) == 0)?1:3" fxFlexOrder.sm="-1" fxFlexOrder.xs="-1" fxFlex="45" fxFlex.sm="100" fxFlex.xs="100" [ngClass]="{'left':(index % 2) == 0,'right':(index % 2) == 1}">
         <div class="title h3 link colorBlue">{{ job.title }}</div>
         <div class="subtitle h4">{{ job.subtitle }}</div>
@@ -20,5 +20,3 @@
         </div>
     </div>
 </div>
-
-

@@ -7,22 +7,22 @@ import { Shared } from '../../providers/shared';
     styleUrls: ['./projects.scss']
 })
 export class ProjectsComponent implements AfterViewInit {
-    public showMore:boolean = false;
+    public showMore: boolean = false;
     public projectsNumber = 8;
 
     @ViewChild('projects') projectsSection: ElementRef;
 
-    constructor(public portfolio:Shared,public zone:NgZone){
+    constructor(public portfolio: Shared, public zone: NgZone) {
 
     }
-    moreProjects(){
-        this.zone.run(()=>{
+    moreProjects() {
+        this.zone.run(() => {
             this.showMore = true;
             this.projectsNumber = this.portfolio.texts.projects.projects.length;
             console.log(this.showMore);
         })
     }
-    ngAfterViewInit(){
+    ngAfterViewInit() {
         this.portfolio.sections['projects'] = this.projectsSection;
     }
 }

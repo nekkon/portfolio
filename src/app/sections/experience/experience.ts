@@ -11,11 +11,11 @@ export class ExperienceComponent implements AfterViewInit {
 
     @ViewChild('experience') experienceSection: ElementRef;
 
-    constructor(public portfolio:Shared){
+    constructor(public portfolio: Shared) {
 
     }
 
-    ngAfterViewInit(){
+    ngAfterViewInit() {
         this.portfolio.sections['experience'] = this.experienceSection;
     }
 }

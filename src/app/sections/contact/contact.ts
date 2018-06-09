@@ -9,24 +9,24 @@ import { Shared } from '../../providers/shared';
 })
 export class ContactComponent implements AfterViewInit {
     public message = {
-        name : "",
-        email : "",
-        message : ""
+        name: "",
+        email: "",
+        message: ""
     };
 
     @ViewChild('contact') contactSection: ElementRef;
 
-    constructor(public portfolio:Shared){
-        
+    constructor(public portfolio: Shared) {
+
     }
 
-    ngAfterViewInit(){
+    ngAfterViewInit() {
         this.portfolio.sections['contact'] = this.contactSection;
     }
 
-    send(){
+    send() {
         console.log(this.message);
-        this.portfolio.http.post('/contact',this.message).subscribe((res)=>{
+        this.portfolio.http.post('/contact', this.message).subscribe((res) => {
             console.log(res);
         })
     }

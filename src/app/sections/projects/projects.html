@@ -8,14 +8,14 @@
                 style="fill:#ECEFF1;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
             </g>
         </g>
-    </svg>     
+    </svg>
 </div>
 
 <div #projects class="projects">
     <div class="h2 center">
         <component-title title="{{(portfolio.texts)?.projects.title}}" lineWidth="120" color="#4280f7"></component-title>
     </div>
-    <div class="content" fxLayoutWrap fxLayout="row" fxLayoutAlign="start start">
+    <div class="content" fxLayout="row wrap" fxLayoutAlign="start start">
         <component-project fxFlex="25" fxFlex.xs="50" fxFlex.sm="33.33333" [project]="project" *ngFor="let project of (portfolio.texts)?.projects.projects | slice:0:projectsNumber"></component-project>
     </div>
     <div [hidden]="showMore" class="actions">
@@ -24,9 +24,7 @@
 </div>
 
 <div class="divider3">
-    <svg
-        width="1600"
-        height="111">
+    <svg width="1600" height="111">
         <g>
             <g transform="matrix(-1.25,0,0,-1.25,1600,111.25)">
                 <path

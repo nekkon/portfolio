@@ -10,11 +10,11 @@ export class VideoComponent implements AfterViewInit {
 
     @ViewChild('video') videoSection: ElementRef;
 
-    constructor(public portfolio:Shared){
+    constructor(public portfolio: Shared) {
 
     }
 
-    ngAfterViewInit(){
+    ngAfterViewInit() {
         this.portfolio.sections['video'] = this.videoSection;
     }
 }

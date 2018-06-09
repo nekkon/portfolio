@@ -11,11 +11,11 @@ export class AccomplishmentsComponent implements AfterViewInit {
 
     @ViewChild('accomplishments') accomplishmentsSection: ElementRef;
 
-    constructor(public portfolio:Shared){
+    constructor(public portfolio: Shared) {
 
     }
 
-    ngAfterViewInit(){
+    ngAfterViewInit() {
         this.portfolio.sections['accomplishments'] = this.accomplishmentsSection;
     }
 }

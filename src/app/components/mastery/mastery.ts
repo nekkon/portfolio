@@ -1,10 +1,10 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'component-mastery',
     templateUrl: './mastery.html',
     styleUrls: ['./mastery.scss']
 })
-export class MasteryComponent{
+export class MasteryComponent {
     @Input() item;
 }

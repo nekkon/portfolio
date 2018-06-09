@@ -11,11 +11,11 @@ export class AboutComponent implements AfterViewInit {
 
     @ViewChild('about') aboutSection: ElementRef;
 
-    constructor(public portfolio:Shared){
-        
+    constructor(public portfolio: Shared) {
+
     }
 
-    ngAfterViewInit(){
+    ngAfterViewInit() {
         this.portfolio.sections['about'] = this.aboutSection;
     }
 
