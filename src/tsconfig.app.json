@@ -10,8 +10,7 @@
         "test.ts",
         "**/*.spec.ts"
     ],
-    "include": [
-        "**/*",
-        "./app/app.browser.module.ts"
-    ]
+    "angularCompilerOptions": {
+        "entryModule": "./app/app.browser.module#AppBrowserModule"
+    }
 }

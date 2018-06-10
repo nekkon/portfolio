@@ -6,8 +6,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Shared } from './providers/shared';
 import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from "@angular/service-worker";
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
 import { MenuModule } from './components/index';
 import { AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, VideoModule, ProjectsModule } from './sections/index';
 import { scrollTrigger } from './providers/scrollTrigger';
