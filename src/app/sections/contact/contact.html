@@ -12,7 +12,7 @@
 
 </div>
 
-<div #contact class="contact colorWhite" fxLayout="row wrap" fxLayoutAlign="start start">
+<div class="contact colorWhite" fxLayout="row wrap" fxLayoutAlign="start start">
     <div class="left" fxFlex="40" fxFlex.sm="0" fxFlex.xs="0" fxHide.sm fxHide.xs>
         <svg class="envelope" width="764" height="408">
             <g>
@@ -129,19 +129,26 @@
         <div class="intro">{{(portfolio.texts)?.contact.intro}}</div>
 
         <div class="inputs">
-            <form class="contact-form">
+            <form class="contact-form" #contactForm="ngForm">
                 <div>{{(portfolio.texts)?.contact.input[0]}}</div>
+
                 <mat-form-field class="input">
-                    <input name="name" [(ngModel)]="message.name" matInput value="">
+                    <input required name="name" #name="ngModel" [(ngModel)]="message.name" matInput value="">
                 </mat-form-field>
                 <div>{{(portfolio.texts)?.contact.input[1]}}</div>
+
                 <mat-form-field class="input">
-                    <input name="email" [(ngModel)]="message.email" matInput value="">
+                    <input required name="email" #email="ngModel" [(ngModel)]="message.email" matInput value="">
                 </mat-form-field>
                 <div>{{(portfolio.texts)?.contact.input[2]}}</div>
+
                 <mat-form-field class="input">
-                    <textarea name="message" [(ngModel)]="message.message" matInput placeholder=""></textarea>
+                    <textarea required name="message" #message="ngModel" [(ngModel)]="message.message" matInput placeholder=""></textarea>
                 </mat-form-field>
+
+                <div class="recaptcha">
+                    <div class="g-recaptcha" data-sitekey="6LdyPF4UAAAAAHS55KfpoaJ0QX-0bhnkEHyZTuur"></div>
+                </div>
 
                 <button (click)="send()" class="message" mat-raised-button [ngStyle.sm]="{'width': '100%'}" [ngStyle.xs]="{'width': '100%'}">{{(portfolio.texts)?.contact.button}}</button>
             </form>

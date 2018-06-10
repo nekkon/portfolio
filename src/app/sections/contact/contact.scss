@@ -1,67 +1,94 @@
-.contact{
+.contact {
     background-color: #263038;
     width: 100%;
     overflow: auto;
     box-sizing: border-box;
     position: relative;
 }
-.envelope{
+
+.envelope {
     margin: 0 0 0 -140px;
 }
-.intro{
+
+.intro {
     box-sizing: border-box;
     width: 100%;
 }
-.left{
+
+.left {
     overflow: hidden;
 }
-.right{
+
+.right {
     padding: 0 10% 0 5%;
 }
-.inputs{
+
+.inputs {
     float: right;
     width: 100%;
 }
-.input{
+
+.input {
     width: 100%;
 }
-.contact-form{
+
+.contact-form {
     margin-top: 32px;
 }
-.message{
+
+.message {
     margin-top: 24px;
 }
-.mat-input-underline{
+
+.recaptcha {
+    margin: 16px 16px 32px 16px;
+}
+
+.recaptcha>.g-recaptcha {
+    text-align: center;
+}
+
+.recaptcha>.g-recaptcha>div {
+    display: inline-block;
+}
+
+.mat-input-underline {
     background-color: #596167;
 }
-.divider4{
+
+.divider4 {
     width: 100%;
     height: 111px;
     background-color: #FFFFFF;
 }
-.horizontal-line{
+
+.horizontal-line {
     width: 100%;
     padding: 0 10%;
     box-sizing: border-box;
 }
-.line{
+
+.line {
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid rgb(159,164,167);
+    border-bottom: 1px solid rgb(159, 164, 167);
     box-sizing: border-box;
     padding: 8px 0;
     margin-bottom: 8px;
 }
-.logo{
+
+.logo {
     float: left;
     width: 89px;
     height: 68px;
 }
-.copyrights{
+
+.copyrights {
     float: right;
     margin-top: 16px;
 }
-.footer{
+
+.footer {
     background-color: #263038;
     width: 100%;
     height: 100px;
