@@ -15,11 +15,11 @@
     width: 100%;
 }
 
-.left {
+.contact-left {
     overflow: hidden;
 }
 
-.right {
+.contact-right {
     padding: 0 10% 0 5%;
 }
 
@@ -41,15 +41,11 @@
 }
 
 .recaptcha {
-    margin: 16px 16px 32px 16px;
+    margin: 32px 8px 8px 8px;
 }
 
-.recaptcha>.g-recaptcha {
-    text-align: center;
-}
-
-.recaptcha>.g-recaptcha>div {
-    display: inline-block;
+.grecaptcha-badge {
+    margin: 0 auto;
 }
 
 .mat-input-underline {
@@ -66,6 +62,10 @@
     width: 100%;
     padding: 0 10%;
     box-sizing: border-box;
+}
+
+.align-right {
+    text-align: right;
 }
 
 .line {

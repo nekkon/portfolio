@@ -1,8 +1,6 @@
-
-
 <div class="title">
     <div #titleText class="text">{{title}}</div>
-    <svg class="line" height="6" [attr.width]="lineWidth">
+    <svg class="under-line" height="6" [attr.width]="lineWidth">
         <g [@lineAnimation]="data" (@lineAnimation.done)="onEnd()">
             <path [attr.fill]="color"
                 d="M 0,2 C 0,0.66666663 0.66666663,0 2,0 h 37 c 1.333332,0 2,0.66666663 2,2 0,1.3333335 -0.666668,2 -2,2 H 2 C 0.66666663,4 0,3.3333335 0,2 Z"
@@ -10,5 +8,3 @@
         </g>
     </svg>
 </div>
-
-
