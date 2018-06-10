@@ -1,19 +1,16 @@
 {
     "extends": "../tsconfig.json",
     "compilerOptions": {
-      "outDir": "../out-tsc/app",
-      "baseUrl": "./",
-      // Set the module format to "commonjs":
-      "module": "commonjs",
-      "types": []
+        "outDir": "../out-tsc/app",
+        "baseUrl": "./",
+        "module": "commonjs",
+        "types": []
     },
     "exclude": [
-      "test.ts",
-      "**/*.spec.ts"
+        "test.ts",
+        "**/*.spec.ts"
     ],
-    // Add "angularCompilerOptions" with the AppServerModule you wrote
-    // set as the "entryModule".
     "angularCompilerOptions": {
-      "entryModule": "app/app.server.module#AppServerModule"
+        "entryModule": "app/app.server.module#AppServerModule"
     }
-  }
+}

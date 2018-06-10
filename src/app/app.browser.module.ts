@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule , ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { App } from './app';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -13,11 +13,12 @@ import { AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, Educ
 import { scrollTrigger } from './providers/scrollTrigger';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { TransferHttpCacheModule } from '@nguniversal/common';
+import { RouterModule, Route } from '@angular/router';
 
-/*
-import { RouterModule } from '@angular/router';
-import { Routing } from './app.routes';
-*/
+const Routing: Route[] = [
+  { path: '', component: App }
+];
+
 /*
 import * as Raven from 'raven-js';
 
@@ -33,22 +34,22 @@ export class RavenErrorHandler implements ErrorHandler {
 
 @NgModule({
   declarations: [
-      App
+    App
   ],
   imports: [
-      BrowserModule.withServerTransition({appId: 'portfolio'}),
-      TransferHttpCacheModule,
-      BrowserTransferStateModule,
-      BrowserAnimationsModule,
-      HttpClientModule,
-      //RouterModule.forRoot( Routing ),
-      MenuModule, VideoModule,
-      AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
-      ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
+    BrowserModule.withServerTransition({ appId: 'portfolio' }),
+    TransferHttpCacheModule,
+    BrowserTransferStateModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    RouterModule.forRoot(Routing),
+    MenuModule, VideoModule,
+    AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [ Shared , scrollTrigger, 
-      // { provide: ErrorHandler, useClass: RavenErrorHandler } 
+  providers: [Shared, scrollTrigger,
+    // { provide: ErrorHandler, useClass: RavenErrorHandler } 
   ],
-  bootstrap: [ App ]
+  bootstrap: [App]
 })
-export class AppBrowserModule {}
+export class AppBrowserModule { }
