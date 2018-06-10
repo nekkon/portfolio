@@ -6,7 +6,7 @@ import { App } from './app';
 
 @NgModule({
   imports: [
-    // The AppServerModule should import your AppModule followed
+    // The AppServerModule should import your AppBrowserModule followed
     // by the ServerModule from @angular/platform-server.
     AppBrowserModule,
     ServerModule,

@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit} from '@angular/core';
-import { Shared } from './providers/shared';
 import { Meta } from '@angular/platform-browser';
+import { Shared } from './providers/shared';
+
 
 @Component({
     selector: 'app',
@@ -9,7 +10,7 @@ import { Meta } from '@angular/platform-browser';
 })
 export class App implements OnInit{
 
-    constructor(public portfolio:Shared, public ref: ChangeDetectorRef, public meta: Meta){
+    constructor(public portfolio:Shared, public meta: Meta){
         this.meta.addTags([
             {name: 'og:title', content: 'Nekkon | portfolio'},
             {name: 'og:description', content: 'Hello, my name is Nektarios Konstantinidis. I am a Senior Developer ( Web / FE - Angular ) and this is my portfolio page.'},

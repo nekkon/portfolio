@@ -4,11 +4,17 @@
         "outDir": "../out-tsc/app",
         "baseUrl": "./",
         "module": "commonjs",
-        "types": []
+        "types": [
+            "node"
+        ]
     },
     "exclude": [
         "test.ts",
         "**/*.spec.ts"
+    ],
+    "include": [
+        "**/*",
+        "./app/app.browser.module.ts"
     ],
     "angularCompilerOptions": {
         "entryModule": "app/app.server.module#AppServerModule"

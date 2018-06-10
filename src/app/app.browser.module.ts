@@ -13,11 +13,6 @@ import { AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, Educ
 import { scrollTrigger } from './providers/scrollTrigger';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { TransferHttpCacheModule } from '@nguniversal/common';
-import { RouterModule, Route } from '@angular/router';
-
-const Routing: Route[] = [
-  { path: '', component: App }
-];
 
 /*
 import * as Raven from 'raven-js';
@@ -42,7 +37,6 @@ export class RavenErrorHandler implements ErrorHandler {
     BrowserTransferStateModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    RouterModule.forRoot(Routing),
     MenuModule, VideoModule,
     AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })

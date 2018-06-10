@@ -157,7 +157,7 @@
                 </div>
 
                 <div class="form-group recaptcha">
-                    <re-captcha (resolved)="send()" #captchaRef="reCaptcha" size="invisible" data-badge="inline"></re-captcha>
+                    <re-captcha (resolved)="$event && send($event)" #captchaRef="reCaptcha" size="invisible" data-badge="inline"></re-captcha>
                 </div>
             </form>
         </div>

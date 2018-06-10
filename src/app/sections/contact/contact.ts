@@ -19,7 +19,8 @@ export class ContactComponent{
         });
     }
 
-    send() {
+    send(event?) {
+        if(event){ console.log(event); }
         if(this.contactForm.valid){
             const data = {
                 name: this.contactForm.controls['name'].value,
