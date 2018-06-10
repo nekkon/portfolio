@@ -26,7 +26,6 @@ export class App implements OnInit{
                 data => {
                     console.log(data);
                     this.portfolio.texts = data;
-                    this.ref.detectChanges();
                 },
                 err => console.error(err)
             );
