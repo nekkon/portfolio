@@ -24,6 +24,8 @@
 
 # misc
 server.settings.json
+.ftppass
+a2hosting
 /.sass-cache
 /connect.lock
 /coverage/*

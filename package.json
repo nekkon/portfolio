@@ -26,7 +26,7 @@
         "@angular/common": "^6.0.3",
         "@angular/compiler": "^6.0.3",
         "@angular/core": "^6.0.3",
-        "@angular/flex-layout": "latest",
+        "@angular/flex-layout": "6.0.0-beta.16",
         "@angular/forms": "^6.0.3",
         "@angular/http": "^6.0.3",
         "@angular/material": "6.2.1",
@@ -48,7 +48,7 @@
         "nodemailer": "4.6.5",
         "raven": "2.6.2",
         "raven-js": "latest",
-        "rxjs": "^6.2.0",
+        "rxjs": "~6.2.2",
         "rxjs-compat": "6.2.0",
         "ts-loader": "4.4.1",
         "web-animations-js": "2.3.1",
@@ -83,8 +83,8 @@
         "ts-loader": "^4.2.0",
         "ts-node": "~5.0.1",
         "tslint": "^5.7.0",
-        "typescript": "~2.7.2",
-        "webpack": "^4.12.0",
+        "typescript": "~2.8.0",
+        "webpack": "~4.12.0",
         "webpack-bundle-analyzer": "2.13.1",
         "webpack-cli": "^2.0.14"
     }
