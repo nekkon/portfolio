@@ -8,7 +8,6 @@ import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { MenuModule } from './components/index';
 import { AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, VideoModule, ProjectsModule } from './sections/index';
-import { scrollTrigger } from './providers/scrollTrigger';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 
