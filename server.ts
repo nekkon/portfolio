@@ -9,6 +9,14 @@ import { provideModuleMap } from "@nguniversal/module-map-ngfactory-loader";
 import * as express from "express";
 import { join } from "path";
 
+// Server and App monitoring
+var I = require("instrumental-agent");
+
+I.configure({
+  apiKey: "3fe8d8a0ad27c61d2c2dccde30ab1b80",
+  enabled: true
+});
+
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 
@@ -45,6 +53,15 @@ app.get("*.*", express.static(join(DIST_FOLDER, "browser")));
 // All regular routes use the Universal engine
 app.get("*", (req, res) => {
   res.render("index", { req });
+});
+
+// Handle message post, send Email
+
+const mailer = require("./sendEmail");
+
+app.post("/contact", function(req, res) {
+  console.log(req);
+  mailer.sendEmail(req.body);
 });
 
 // Start up the Node server
