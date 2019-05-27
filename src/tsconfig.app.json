@@ -1,15 +1,15 @@
 {
-    "extends": "../tsconfig.json",
-    "compilerOptions": {
-        "outDir": "../out-tsc/app",
-        "module": "es2015",
-        "types": []
-    },
-    "exclude": [
-        "test.ts",
-        "**/*.spec.ts"
-    ],
-    "angularCompilerOptions": {
-        "entryModule": "./app/app.browser.module#AppBrowserModule"
-    }
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "es2015",
+    "types": []
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "entryModule": "./app/app.browser.module#AppBrowserModule"
+  }
 }

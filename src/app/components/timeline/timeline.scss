@@ -1,46 +1,60 @@
-.middle{
+.middle {
     padding-top: 20px;
 }
-.middle .line{
-    background-color: rgba(238,239,240,1);
+
+.middle .line {
+    background-color: rgba(238, 239, 240, 1);
     width: 2px;
     height: 100%;
     overflow: auto;
     margin: 0 auto;
 }
-.middle .line.top{
+
+.middle .line.top {
     height: 16px;
 }
-.middle .line.bottom{
+
+.middle .line.bottom {
     margin-top: 20px;
 }
-.middle .midIcon{
-    color: rgba(238,239,240,1);
+
+.middle .midIcon {
+    color: rgba(238, 239, 240, 1);
     position: absolute;
     color: #eeeff0;
     margin: -22px 0 0 -11px;
 }
-.left,.left .title{
+
+.left,
+.left .title {
     text-align: right;
 }
-.right,.right .title{
+
+.right,
+.right .title {
     text-align: left;
 }
-.left,.right{
+
+.left,
+.right {
     padding-top: 20px;
 }
-.title.link{
+
+.title.link {
     cursor: pointer;
     margin-bottom: 8px;
 }
-.used{
+
+.used {
     word-wrap: break-word;
     word-break: break-word;
 }
-.chip{
-    background-color:#ECEFF1;
-    margin: 4px!important;
+
+.chip {
+    background-color: #ECEFF1;
+    margin: 4px !important;
 }
-.gapTop{
+
+.gapTop {
     padding-top: 15px;
 }

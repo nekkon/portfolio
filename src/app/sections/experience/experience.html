@@ -1,4 +1,3 @@
-
 <div #experience class="experience">
 
     <div class="h2 center">
@@ -6,6 +5,7 @@
     </div>
 
     <div>
-        <component-timeline [job]="job" [index]="i" *ngFor="let job of (portfolio.texts)?.experience.content;let i = index"></component-timeline>
+        <component-timeline [job]="job" [index]="i" *ngFor="let job of (portfolio.texts)?.experience.content;let i = index">
+        </component-timeline>
     </div>
 </div>

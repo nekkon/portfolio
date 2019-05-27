@@ -1,5 +1,4 @@
-
-.video{
+.video {
     position: relative;
     background-color: #4280F7;
     height: 100%;
@@ -9,7 +8,8 @@
     width: 100vw;
     height: calc(100vh - 150px);
 }
-.titleVideo{
+
+.titleVideo {
     position: absolute;
     top: 40%;
     left: 10%;
@@ -17,20 +17,24 @@
     line-height: 1;
     max-width: 80%;
 }
-.subtitle.h2{
+
+.subtitle.h2 {
     margin-top: 8px;
     font-weight: normal;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
-.divider1{
+
+.divider1 {
     background-color: #FFFFFF;
     height: 111px;
     width: 100%;
 }
-.links{
+
+.links {
     margin-top: 64px;
 }
-.links a{
+
+.links a {
     margin: 8px;
     text-decoration: none;
 }

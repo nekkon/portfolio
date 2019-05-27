@@ -1,41 +1,53 @@
-.educationItem,.conferenceItem{
+.educationItem,
+.conferenceItem {
     margin-bottom: 48px;
     position: relative;
     z-index: 10;
 }
-.education,.conferences,.educationConferencesWrapper{
+
+.education,
+.conferences,
+.educationConferencesWrapper {
     background-color: #FFFFFF;
     position: relative;
 }
-.title.right{
+
+.title.right {
     text-align: right;
 }
-.title.left{
+
+.title.left {
     text-align: left;
 }
-.educationConferencesWrapper{
+
+.educationConferencesWrapper {
     padding: 64px 10%;
 }
-.title{
+
+.title {
     position: relative;
     z-index: 10;
     margin-bottom: 64px;
     margin-top: 96px;
 }
-.educationSVG{
+
+.educationSVG {
     position: absolute;
-    right:0;
+    right: 0;
     z-index: 5;
 }
-.conferencesSVG{
+
+.conferencesSVG {
     position: absolute;
     margin-top: 280px;
-    left:0;
+    left: 0;
     z-index: 5;
 }
-.addRightMargin{
+
+.addRightMargin {
     margin-right: -10%;
 }
-.addLeftMargin{
+
+.addLeftMargin {
     margin-left: -10%;
 }
