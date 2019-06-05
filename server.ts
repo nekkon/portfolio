@@ -51,17 +51,31 @@ app.set("views", join(DIST_FOLDER, "browser"));
 app.get("*.*", express.static(join(DIST_FOLDER, "browser")));
 
 // All regular routes use the Universal engine
+
 app.get("*", (req, res) => {
   res.render("index", { req });
 });
+
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 // Handle message post, send Email
 
 const mailer = require("./sendEmail");
 
 app.post("/contact", function(req, res) {
-  console.log(req);
-  mailer.sendEmail(req.body);
+  try {
+    console.log(req.body);
+    mailer.sendEmail(req.body, res);
+  } catch (error) {
+    res.json({
+      errorMessage: "Error while sending email",
+      error: error,
+      status: 500
+    });
+  }
 });
 
 // Start up the Node server

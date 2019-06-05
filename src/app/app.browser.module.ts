@@ -19,6 +19,7 @@ import {
 } from "./sections/index";
 import { BrowserTransferStateModule } from "@angular/platform-browser";
 import { TransferHttpCacheModule } from "@nguniversal/common";
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 /*
 import * as Raven from 'raven-js';
@@ -41,11 +42,13 @@ export class RavenErrorHandler implements ErrorHandler {
     BrowserTransferStateModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FlexLayoutModule,
     MenuModule,
     VideoModule,
     AboutModule,
     ExpertinModule,
     ContactModule,
+    // RecaptchaModule,
     AccomplishmentsModule,
     EducationConferencesModule,
     ExperienceModule,

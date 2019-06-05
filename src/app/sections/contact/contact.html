@@ -115,15 +115,16 @@
                         <textarea class="form-control" formControlName="message" matInput></textarea>
                     </mat-form-field>
                 </div>
-
+                <!--
                 <div class="form-group align-right">
                     <button (click)="captchaRef.execute()" [disabled]="!contactForm.valid" class="message" mat-raised-button [ngStyle.sm]="{'width': '100%'}" [ngStyle.xs]="{'width': '100%'}">{{(portfolio.texts)?.contact.button}}</button>
                 </div>
 
                 <div class="form-group recaptcha">
-                    <re-captcha (resolved)="$event && send($event)" #captchaRef="reCaptcha" size="invisible" data-badge="inline">
+                     <re-captcha (resolved)="$event && send($event)" #captchaRef="reCaptcha" size="invisible" data-badge="inline">
                     </re-captcha>
                 </div>
+                -->
             </form>
         </div>
     </div>

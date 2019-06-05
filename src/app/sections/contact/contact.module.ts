@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { ContactComponent } from "./contact";
 import { MatInputModule, MatButtonModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
+/*
 import {
   RECAPTCHA_SETTINGS,
   RecaptchaSettings,
@@ -11,9 +12,11 @@ import {
   RecaptchaModule
 } from "ng-recaptcha";
 
+
 const globalSettings: RecaptchaSettings = {
   siteKey: "6LcGPl4UAAAAAHq1F0ZlJA46PRWgvOBmigAoQ1eI"
 };
+*/
 
 @NgModule({
   imports: [
@@ -21,16 +24,18 @@ const globalSettings: RecaptchaSettings = {
     ReactiveFormsModule,
     MatInputModule,
     MatButtonModule,
-    RecaptchaModule.forRoot(),
+    // RecaptchaModule,
     FlexLayoutModule
   ],
   declarations: [ContactComponent],
+  /*
   providers: [
     {
       provide: RECAPTCHA_SETTINGS,
       useValue: globalSettings
     }
   ],
+  */
   exports: [ContactComponent]
 })
 export class ContactModule {}
