@@ -48,7 +48,7 @@
       "title": "TypeScript",
       "img": "bg-typescript"
     }, {
-      "title": "Ngrx / Redux",
+      "title": "Ngrx",
       "img": "bg-ngrx"
     }, {
       "title": "Karma",
@@ -109,7 +109,7 @@
   "projects": {
     "title": "PROJECTS",
     "projects": [{
-      "title": "Universal Music",
+      "title": "Universal Music Publishing Group",
       "subtitle": "2018-2019",
       "img": "bg-universal"
     }, {
@@ -117,7 +117,7 @@
       "subtitle": "2018",
       "img": "bg-quidco"
     }, {
-      "title": "Or-co.gr",
+      "title": "Or-co",
       "subtitle": "2017",
       "img": "bg-orco"
     }, {
@@ -129,15 +129,15 @@
       "subtitle": "2016",
       "img": "bg-media-ram"
     }, {
-      "title": "Inrealty.gr",
+      "title": "Inrealty",
       "subtitle": "2015",
       "img": "bg-inrealty"
     }, {
-      "title": "Swinburne ",
+      "title": "Swinburne",
       "subtitle": "2014",
       "img": "bg-swinburne"
     }, {
-      "title": "Sonon website",
+      "title": "Sonon ",
       "subtitle": "2013",
       "img": "bg-sonon"
     }, {
@@ -184,9 +184,7 @@
         "header": "Worked on the rebuild of a complex Web application to Angular.",
         "list": [
           "Followed redux patterns and used ngrx for state management.",
-          "Created a library of reusable/decoupled components to be used in the Web",
-          "application and other future Web applications of the company. ( dropdowns,",
-          "tables, filters, modals, advanced search and more)",
+          "Created a library of reusable/decoupled components",
           "Developed new UI features, presentational/container components, services, directives etc.",
           "Followed best practises, TDD, BDD and redux / ngrx patterns (store, actions, reducers, effects etc).",
           "Worked effectively within an agile team ( with daily stand ups, sprints, ceremonies etc. )"
@@ -222,11 +220,11 @@
       }],
       "used": ["Angular v4", "TypeScript", "Node.js", "Rxjs", "Javascript", "Universal", "Karma", "Jasmine", "Bootstrap v4", "SASS", "CSS3", "Html5", "PHP", "PHP .twig templates", "Kubernetes"]
     }, {
-      "title": "Lead Angular Developer",
+      "title": "Senior Angular Developer",
       "subtitle": "(HealthTech) OR-CO LTD",
       "year": "May 2017 - Dec 2017",
       "intro": [
-        "Developed a number of web applications used by many private and public hospitals throughout Greece. They were either rebuilt based on existing implementation ( Powerbuilder ) or created from scratch (using Angular and Java)."
+        "Developed a number of web applications to be used by many private and public hospitals throughout Greece. They were either rebuilt based on existing implementation ( Powerbuilder ) or created from scratch (using Angular and Java)."
       ],
       "elements": [{
         "type": "list",
@@ -326,6 +324,7 @@
     "title": "CONFERENCES",
     "content": [{
       "list": [
+        "Angular Connect 2019 (UK, London)",
         "FOSDEM 2019 - open source conference, Belgium"
       ],
       "year": "2019"

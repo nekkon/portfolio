@@ -1,7 +1,19 @@
 <div class="project">
-    <div [ngStyle.sm]="{'padding-top':'20%'}" [ngStyle.xs]="{'padding-top':'20%'}" class="hover">
-        <div class="title h3">{{ (project)?.title }}</div>
-        <div class="subtitle">{{ (project)?.subtitle }}</div>
-    </div>
-    <img [ngClass]="project.img" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAADmAQMAAACnC3/1AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACFJREFUeNrtwYEAAAAAw6D5U9/gBFUBAAAAAAAAAAAAPAMobgABCIE2tAAAAABJRU5ErkJggg==">
+  <div
+    class="hover"
+  >
+    <ul>
+      <li class="title h3">
+        {{ project?.title }}
+      </li>
+      <li class="subtitle">
+        {{ project?.subtitle }}
+      </li>
+    </ul>
+  </div>
+  <img
+    [ngClass]="project.img"
+    alt=""
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAADmAQMAAACnC3/1AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACFJREFUeNrtwYEAAAAAw6D5U9/gBFUBAAAAAAAAAAAAPAMobgABCIE2tAAAAABJRU5ErkJggg=="
+  />
 </div>
