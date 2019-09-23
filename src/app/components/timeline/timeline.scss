@@ -1,60 +1,60 @@
 .middle {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .middle .line {
-    background-color: rgba(238, 239, 240, 1);
-    width: 2px;
-    height: 100%;
-    overflow: auto;
-    margin: 0 auto;
+  background-color: rgba(238, 239, 240, 1);
+  width: 2px;
+  height: 100%;
+  overflow: auto;
+  margin: 0 auto;
 }
 
 .middle .line.top {
-    height: 16px;
+  height: 16px;
 }
 
 .middle .line.bottom {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .middle .midIcon {
-    color: rgba(238, 239, 240, 1);
-    position: absolute;
-    color: #eeeff0;
-    margin: -22px 0 0 -11px;
+  color: rgba(238, 239, 240, 1);
+  position: absolute;
+  color: #eeeff0;
+  margin: -31px 0 0 -11px;
 }
 
 .left,
 .left .title {
-    text-align: right;
+  text-align: right;
 }
 
 .right,
 .right .title {
-    text-align: left;
+  text-align: left;
 }
 
 .left,
 .right {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .title.link {
-    cursor: pointer;
-    margin-bottom: 8px;
+  cursor: pointer;
+  margin-bottom: 8px;
 }
 
 .used {
-    word-wrap: break-word;
-    word-break: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .chip {
-    background-color: #ECEFF1;
-    margin: 4px !important;
+  background-color: #eceff1;
+  margin: 4px !important;
 }
 
 .gapTop {
-    padding-top: 15px;
+  padding-top: 15px;
 }
