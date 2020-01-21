@@ -1,4 +1,4 @@
-import { Component, ViewChild, ViewEncapsulation } from "@angular/core";
+import { Component, ViewEncapsulation } from "@angular/core";
 import { FormGroup, Validators, FormBuilder } from "@angular/forms";
 import { Shared } from "../../providers/shared";
 

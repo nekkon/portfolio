@@ -1,14 +1,41 @@
 <div #about class="about" fxLayout="row wrap" fxLayoutAlign="start start">
-    <div class="h2" fxFlex="100">
-        <component-title title="{{(portfolio.texts)?.about.title}}" lineWidth="140" color="#4280f7"></component-title>
-    </div>
-    <div class="titleAbout" fxFlex="30" fxFlex.sm="0" fxFlex.xs="0" fxHide.sm fxHide.xs>
-        <div class="profile"></div>
-    </div>
-    <div class="content" fxFlex="70" fxFlex.sm="100" fxFlex.xs="100" [ngStyle.sm]="{'padding':0}" [ngStyle.xs]="{'padding':0}">
-        <p *ngFor="let paragraph of (portfolio.texts)?.about.content" [innerHTML]="paragraph"></p>
-        <a href="/assets/pdf/nekkon_cv.pdf" target="_blank">
-            <button mat-raised-button [ngStyle.sm]="{'width':'100%'}" [ngStyle.xs]="{'width':'100%'}">{{(portfolio.texts)?.about.button}}</button>
-        </a>
-    </div>
+  <div class="h2" fxFlex="100">
+    <component-title
+      title="{{(portfolio.texts)?.about.title}}"
+      lineWidth="140"
+      color="#4280f7"
+    ></component-title>
+  </div>
+  <div
+    class="titleAbout"
+    fxFlex="30"
+    fxFlex.sm="0"
+    fxFlex.xs="0"
+    fxHide.sm
+    fxHide.xs
+  >
+    <div class="profile"></div>
+  </div>
+  <div
+    class="content"
+    fxFlex="70"
+    fxFlex.sm="100"
+    fxFlex.xs="100"
+    [ngStyle.sm]="{'padding':0}"
+    [ngStyle.xs]="{'padding':0}"
+  >
+    <p
+      *ngFor="let paragraph of (portfolio.texts)?.about.content"
+      [innerHTML]="paragraph"
+    ></p>
+    <a href="/assets/pdf/nekkon_cv.pdf" target="_blank">
+      <button
+        mat-raised-button
+        [ngStyle.sm]="{'width':'100%'}"
+        [ngStyle.xs]="{'width':'100%'}"
+      >
+        {{(portfolio.texts)?.about.button}}
+      </button>
+    </a>
+  </div>
 </div>

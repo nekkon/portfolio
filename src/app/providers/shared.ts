@@ -1,19 +1,21 @@
 import {
   Injectable,
   EventEmitter,
-  Output,
-  ViewChild,
-  ElementRef
+  Output
 } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { environment } from "../../environments/environment";
 
 @Injectable()
 export class Shared {
-  constructor(public http: HttpClient) {}
+  public texts;
+  public loading = false;
+  public sections = {};
+  public menuVisible: boolean = false;
+
   @Output() menu: EventEmitter<any> = new EventEmitter<any>();
 
-  menuVisible: boolean = false;
+  constructor(public http: HttpClient) {}
 
   toggleMenu(value?) {
     if (value || value == false) {
@@ -28,8 +30,4 @@ export class Shared {
   getTexts() {
     return this.http.get(environment.assets + "json/texts_en.min.json");
   }
-
-  public texts;
-  public loading = false;
-  public sections = {};
 }

@@ -1,104 +1,103 @@
 .MenuButton {
-    display: block;
-    position: fixed;
-    text-align: center;
-    right: 10%;
-    top: 5%;
-    cursor: pointer;
-    font-size: 0;
-    padding: 3px 0 0 0;
-    z-index: 1000;
-    background-color: #FFFFFF;
-    color: #000000;
-    transition: all 0.35s;
+  display: block;
+  position: fixed;
+  text-align: center;
+  right: 10%;
+  top: 5%;
+  cursor: pointer;
+  font-size: 0;
+  padding: 3px 0 0 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.35s;
 }
 
 .MenuButton.default {
-    background-color: transparent;
-    color: #FFFFFF;
-    box-shadow: none;
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 .MenuButton.default .icon {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .MenuButton .icon {
-    fill: #4280F7;
+  fill: #4280f7;
 }
 
 .MenuFullscreen {
-    display: block;
-    position: fixed;
-    z-index: 100;
-    background-color: #F8FAFF;
-    left: 0;
-    top: 0;
+  display: block;
+  position: fixed;
+  z-index: 100;
+  background-color: #f8faff;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  .MenuButton {
+    color: #252e38;
+  }
+  nav div {
+    margin: 16px 0;
+  }
+  nav a {
+    color: #252e38;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  nav a:hover {
+    color: #868c93;
+  }
+  nav a.active {
+    color: #bababa;
+  }
+  nav {
     width: 100%;
     height: 100%;
     overflow: auto;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    .MenuButton {
-        color: #252E38;
-    }
-    nav div {
-        margin: 16px 0;
-    }
-    nav a {
-        color: #252E38;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    nav a:hover {
-        color: #868C93;
-    }
-    nav a.active {
-        color: #bababa;
-    }
-    nav {
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-    }
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 .wrapper {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* Menu button animation */
 
 .animated #line1 {
-    transform: translateY(7px) translateX(9px) rotate(-45deg);
-    transform-origin: 15px 15px;
-    fill: #252E38;
+  transform: translateY(7px) translateX(9px) rotate(-45deg);
+  transform-origin: 15px 15px;
+  fill: #252e38;
 }
 
 .animated #line2 {
-    transform: translateY(-3px) translateX(-9px) rotate(45deg);
-    transform-origin: 15px 15px;
-    fill: #252E38;
+  transform: translateY(-3px) translateX(-9px) rotate(45deg);
+  transform-origin: 15px 15px;
+  fill: #252e38;
 }
 
 .animated #line3 {
-    opacity: 0;
+  opacity: 0;
 }
 
 #line1,
 #line2,
 #line3 {
-    -webkit-transition: all 0.35s;
-    /* Safari */
-    transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  /* Safari */
+  transition: all 0.35s;
 }
