@@ -1,9 +1,10 @@
 <button
   mat-fab
-  class="MenuButton"
+  [ngClass]="{'default':(atTop && !visible),'animated':visible}"
   (click)="toggleMenu()"
   (window:scroll)="onScroll($event)"
-  [ngClass]="{'default':(atTop && !visible),'animated':visible}"
+  class="MenuButton"
+  name="menu"
 >
   <svg width="30" height="30">
     <g>

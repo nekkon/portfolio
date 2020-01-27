@@ -194,16 +194,33 @@
             ></textarea>
           </mat-form-field>
         </div>
-        <!--
-                <div class="form-group align-right">
-                    <button (click)="captchaRef.execute()" [disabled]="!contactForm.valid" class="message" mat-raised-button [ngStyle.sm]="{'width': '100%'}" [ngStyle.xs]="{'width': '100%'}">{{(portfolio.texts)?.contact.button}}</button>
-                </div>
+        <div class="form-group align-right">
+          <button
+            mat-raised-button
+            [disabled]="!contactForm.valid"
+            [ngStyle.sm]="{'width': '100%'}"
+            [ngStyle.xs]="{'width': '100%'}"
+            (click)="handleExecute()"
+            class="message"
+            name="send email"
+          >
+            {{(portfolio.texts)?.contact.button}}
+          </button>
+        </div>
 
-                <div class="form-group recaptcha">
-                     <re-captcha (resolved)="$event && send($event)" #captchaRef="reCaptcha" size="invisible" data-badge="inline">
-                    </re-captcha>
-                </div>
-                -->
+        <ngx-invisible-recaptcha
+          #captchaElem
+          [siteKey]="siteRecaptchaKey"
+          [useGlobalDomain]="false"
+          [ngModel]="recaptcha"
+          [ngModelOptions]="{ standalone: true }"
+          (reset)="handleReset()"
+          (reload)="handleReload()"
+          (success)="handleSuccess($event)"
+          badge="bottomright"
+          type="image"
+        >
+        </ngx-invisible-recaptcha>
       </form>
     </div>
   </div>
