@@ -14,7 +14,10 @@ export class ContactComponent {
   siteRecaptchaKey: string = "6LcGPl4UAAAAAHq1F0ZlJA46PRWgvOBmigAoQ1eI";
   recaptcha: any = null;
 
-  @ViewChild("captchaElem", { static: false }) captchaElem: InvisibleReCaptchaComponent;
+  sentEmail: boolean;
+
+  @ViewChild("captchaElem", { static: false })
+  captchaElem: InvisibleReCaptchaComponent;
 
   constructor(public portfolio: Shared, private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -36,16 +39,10 @@ export class ContactComponent {
       };
       this.portfolio.http.post("/contact", data).subscribe(res => {
         console.log(res);
+        this.sentEmail = true;
+        this.captchaElem.resetCaptcha();
       });
     }
-  }
-
-  handleReload(): void {
-    this.captchaElem.reloadCaptcha();
-  }
-
-  handleReset(): void {
-    this.captchaElem.resetCaptcha();
   }
 
   handleExecute(): void {
