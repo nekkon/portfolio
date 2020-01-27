@@ -63,13 +63,13 @@
       </svg>
     </div>
 
-    <div class="h2 title left">
+    <h2 class="h2 title left">
       <component-title
         title="{{(portfolio.texts)?.education.title}}"
         lineWidth="150"
         inverse="true"
       ></component-title>
-    </div>
+    </h2>
 
     <div
       class="educationItem"
@@ -139,12 +139,12 @@
       </svg>
     </div>
 
-    <div class="title h2 right">
+    <h2 class="title h2 right">
       <component-title
         title="{{(portfolio.texts)?.conferences.title}}"
         lineWidth="185"
       ></component-title>
-    </div>
+    </h2>
     <div
       class="conferenceItem"
       *ngFor="let conference of (portfolio.texts)?.conferences.content"

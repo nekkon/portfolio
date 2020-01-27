@@ -3,8 +3,8 @@
   [ngClass]="{'default':(atTop && !visible),'animated':visible}"
   (click)="toggleMenu()"
   (window:scroll)="onScroll($event)"
-  class="MenuButton"
   name="menu"
+  class="MenuButton"
 >
   <svg width="30" height="30">
     <g>
@@ -37,14 +37,15 @@
 <div class="MenuFullscreen" *ngIf="visible" [@fadeInOut]>
   <nav>
     <div class="wrapper" *ngFor="let item of (portfolio.texts)?.menu">
-      <a
+      <h2
         [ngClass]="{'unhovered':( hovered && hovered!==item.link )}"
         (mousemove)="onHover(item.link)"
         (mouseout)="onMouseOut()"
         (click)="scrollTo(item.link)"
         class="h2"
-        >{{ item.name }}</a
       >
+        {{ item.name }}
+      </h2>
     </div>
   </nav>
 </div>

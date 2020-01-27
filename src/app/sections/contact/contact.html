@@ -172,23 +172,40 @@
     <div class="inputs">
       <form class="contact-form" [formGroup]="contactForm">
         <div class="form-group">
-          <div>{{(portfolio.texts)?.contact.input[0]}}</div>
+          <label for="contact-name"
+            >{{(portfolio.texts)?.contact.input[0]}}</label
+          >
           <mat-form-field class="input">
-            <input class="form-control" formControlName="name" matInput />
+            <input
+              id="contact-name"
+              class="form-control"
+              formControlName="name"
+              matInput
+            />
           </mat-form-field>
         </div>
 
         <div class="form-group">
-          <div>{{(portfolio.texts)?.contact.input[1]}}</div>
+          <label for="contact-email"
+            >{{(portfolio.texts)?.contact.input[1]}}</label
+          >
           <mat-form-field class="input">
-            <input class="form-control" formControlName="email" matInput />
+            <input
+              id="contact-email"
+              class="form-control"
+              formControlName="email"
+              matInput
+            />
           </mat-form-field>
         </div>
 
         <div class="form-group">
-          <div>{{(portfolio.texts)?.contact.input[2]}}</div>
+          <label for="contact-message"
+            >{{(portfolio.texts)?.contact.input[2]}}</label
+          >
           <mat-form-field class="input">
             <textarea
+              id="contact-message"
               class="form-control"
               formControlName="message"
               matInput
@@ -242,15 +259,16 @@
   <div class="horizontal-line">
     <div class="line"></div>
     <img
-      class="logo"
-      src="/assets/img/logo-min.png"
       [ngStyle.xs]="{'width.px': 66,'height.px': 51}"
       [ngStyle.sm]="{'width.px': 66,'height.px': 51}"
+      class="logo"
+      src="/assets/img/logo-min.png"
+      alt="logo"
     />
     <div
-      class="copyrights colorWhite"
       [ngStyle.xs]="{'font-size.px': 14}"
       [ngStyle.sm]="{'font-size.px': 14}"
+      class="copyrights colorWhite"
     >
       {{(portfolio.texts)?.footer.content}}
     </div>
