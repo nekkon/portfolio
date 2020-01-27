@@ -159,7 +159,6 @@
   </div>
 
   <div
-    *ngIf="!sentEmail"
     class="contact-right"
     fxFlex="60"
     fxFlex.sm="100"
@@ -221,7 +220,6 @@
             (click)="handleExecute()"
             class="message"
             name="send email"
-            formControlName="recaptcha"
           >
             {{(portfolio.texts)?.contact.button}}
           </button>
@@ -232,7 +230,7 @@
           [siteKey]="siteRecaptchaKey"
           [useGlobalDomain]="false"
           [ngModel]="recaptcha"
-          [ngModelOptions]="{ standalone: true }"
+          [ngModelOptions]="{standalone: true}"
           (success)="handleSuccess($event)"
           badge="bottomright"
           type="image"
@@ -241,18 +239,6 @@
       </form>
     </div>
   </div>
-</div>
-
-<div
-  *ngIf="sentEmail"
-  class="contact-right"
-  fxFlex="60"
-  fxFlex.sm="100"
-  fxFlex.xs="100"
-  [ngStyle.sm]="{'padding': '0 5%'}"
-  [ngStyle.xs]="{'padding': '0 5%'}"
->
-  <div class="intro">{{(portfolio.texts)?.contact.success}}</div>
 </div>
 
 <div class="footer">
