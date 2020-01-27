@@ -1,41 +1,22 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { ContactComponent } from "./contact";
 import { MatInputModule, MatButtonModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
-/*
-import {
-  RECAPTCHA_SETTINGS,
-  RecaptchaSettings,
-  RecaptchaLoaderService,
-  RecaptchaModule
-} from "ng-recaptcha";
-
-
-const globalSettings: RecaptchaSettings = {
-  siteKey: "6LcGPl4UAAAAAHq1F0ZlJA46PRWgvOBmigAoQ1eI"
-};
-*/
+import { NgxCaptchaModule } from "ngx-captcha";
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
     ReactiveFormsModule,
     MatInputModule,
     MatButtonModule,
-    // RecaptchaModule,
+    NgxCaptchaModule,
     FlexLayoutModule
   ],
   declarations: [ContactComponent],
-  /*
-  providers: [
-    {
-      provide: RECAPTCHA_SETTINGS,
-      useValue: globalSettings
-    }
-  ],
-  */
   exports: [ContactComponent]
 })
 export class ContactModule {}

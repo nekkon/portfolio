@@ -2,11 +2,12 @@
 
 import { TestBed, async } from "@angular/core/testing";
 import { ContactComponent } from "./contact";
+import { ContactModule } from "./contact.module";
 
 describe("AppComponent", () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ContactComponent]
+      imports: [ContactModule]
     });
     TestBed.compileComponents();
   });

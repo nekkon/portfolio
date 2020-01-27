@@ -1,6 +1,7 @@
-import { Component, ViewEncapsulation } from "@angular/core";
+import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
 import { FormGroup, Validators, FormBuilder } from "@angular/forms";
 import { Shared } from "../../providers/shared";
+import { InvisibleReCaptchaComponent } from "ngx-captcha";
 
 @Component({
   selector: "section-contact",
@@ -10,6 +11,10 @@ import { Shared } from "../../providers/shared";
 })
 export class ContactComponent {
   contactForm: FormGroup;
+  siteRecaptchaKey: string = "6LcGPl4UAAAAAHq1F0ZlJA46PRWgvOBmigAoQ1eI";
+  recaptcha: any = null;
+
+  @ViewChild("captchaElem", { static: false }) captchaElem: InvisibleReCaptchaComponent;
 
   constructor(public portfolio: Shared, private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -19,7 +24,7 @@ export class ContactComponent {
     });
   }
 
-  send(event?) {
+  handleSuccess(event?) {
     if (event) {
       console.log(event);
     }
@@ -33,5 +38,17 @@ export class ContactComponent {
         console.log(res);
       });
     }
+  }
+
+  handleReload(): void {
+    this.captchaElem.reloadCaptcha();
+  }
+
+  handleReset(): void {
+    this.captchaElem.resetCaptcha();
+  }
+
+  handleExecute(): void {
+    this.captchaElem.execute();
   }
 }
