@@ -16,7 +16,7 @@
     "generate:prerender": "cd dist && node prerender",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:prerender": "cd dist/browser && http-server",
-    "serve:ssr": "cd dist && node server.js",
+    "serve:ssr": "node dist/server.js",
     "deploy": "npm run build:ssr && gulp deploy"
   },
   "private": true,
