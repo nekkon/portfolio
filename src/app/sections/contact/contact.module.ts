@@ -2,7 +2,8 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { ContactComponent } from "./contact";
-import { MatInputModule, MatButtonModule } from "@angular/material";
+import { MatButtonModule } from "@angular/material/button";
+import { MatInputModule } from "@angular/material/input";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { NgxCaptchaModule } from "ngx-captcha";
 

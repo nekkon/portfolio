@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 
 import { AboutComponent } from "./about";
 import { TitleModule } from "../../components";
-import { MatButtonModule } from "@angular/material";
+import { MatButtonModule } from "@angular/material/button";
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
