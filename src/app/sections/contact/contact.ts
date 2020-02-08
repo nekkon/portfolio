@@ -16,7 +16,7 @@ export class ContactComponent {
 
   sentEmail: boolean;
 
-  @ViewChild("captchaElem", { static: false }) captchaElem: InvisibleReCaptchaComponent;
+  @ViewChild("captchaElem") captchaElem: InvisibleReCaptchaComponent;
 
   constructor(public portfolio: Shared, private fb: FormBuilder) {
     this.contactForm = this.fb.group({
