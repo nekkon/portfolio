@@ -1,4 +1,4 @@
-# Portfolio ( Angular version 8.2.14 )
+# Portfolio ( Angular version 9.0.1 )
 
 This portfolio is live on www.nekkon.com
 
