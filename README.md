@@ -49,6 +49,12 @@ Server settings are hidden. You need to create your own server settings json for
     }
 }
 
+## Server reset node
+
+To stop all node processes after a deploy:
+
+killall node
+
 ## How to Run locally
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
