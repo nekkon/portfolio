@@ -72,14 +72,14 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 const mailer = require("./sendEmail");
 
-app.post("/contact", function(req, res) {
+app.post("/contact", (req, res) => {
   try {
     console.log(req.body);
     mailer.sendEmail(req.body, res);
   } catch (error) {
     res.json({
       errorMessage: "Error while sending email",
-      error: error,
+      error,
       status: 500
     });
   }

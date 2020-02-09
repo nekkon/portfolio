@@ -1,4 +1,9 @@
-import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
+import {
+  Component,
+  ViewEncapsulation,
+  ViewChild,
+  ChangeDetectorRef
+} from "@angular/core";
 import { FormGroup, Validators, FormBuilder } from "@angular/forms";
 import { Shared } from "../../providers/shared";
 import { InvisibleReCaptchaComponent } from "ngx-captcha";
@@ -18,7 +23,11 @@ export class ContactComponent {
 
   @ViewChild("captchaElem") captchaElem: InvisibleReCaptchaComponent;
 
-  constructor(public portfolio: Shared, private fb: FormBuilder) {
+  constructor(
+    public portfolio: Shared,
+    private fb: FormBuilder,
+    private changeDetectorRef: ChangeDetectorRef
+  ) {
     this.contactForm = this.fb.group({
       name: ["", Validators.required],
       email: ["", Validators.required],
@@ -36,10 +45,12 @@ export class ContactComponent {
         email: this.contactForm.controls["email"].value,
         message: this.contactForm.controls["message"].value
       };
-      this.portfolio.http.post("/contact", data).subscribe(res => {
-        console.log(res);
-        this.sentEmail = true;
-        this.captchaElem.resetCaptcha();
+      this.portfolio.http.post("/contact", data).subscribe((response: any) => {
+        if (response.success) {
+          this.sentEmail = true;
+          this.captchaElem.resetCaptcha();
+          this.changeDetectorRef.detectChanges();
+        }
       });
     }
   }

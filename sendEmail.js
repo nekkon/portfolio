@@ -22,25 +22,25 @@ async function sendEmail(data, res) {
     text: data.message // plain text body
   };
 
-  // send mail with defined transport object
-  const response = await transporter.sendMail(mailOptions);
-  console.log(response);
-  if (response.err) {
-    res.json({
-      errorMessage: "Error while sending email",
-      error: response.err,
-      status: 500
-    });
-  } else {
+  try {
+    // send mail with defined transport object
+    const response = await transporter.sendMail(mailOptions);
+    console.log(response);
     res.json({
       success: "Email sent successfully",
       status: 200
+    });
+  } catch (error) {
+    res.json({
+      errorMessage: "Error while sending email",
+      error: error,
+      status: 500
     });
   }
 }
 
 module.exports = {
-  sendEmail: function(postData) {
-    sendEmail(postData);
+  sendEmail: function(postData, res) {
+    sendEmail(postData, res);
   }
 };
