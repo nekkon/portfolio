@@ -1,4 +1,4 @@
-<div #about class="about" fxLayout="row wrap" fxLayoutAlign="start start">
+<section #about class="about" fxLayout="row wrap" fxLayoutAlign="start start">
   <h2 class="h2" fxFlex="100">
     <component-title
       title="{{(portfolio.texts)?.about.title}}"
@@ -29,7 +29,8 @@
       [innerHTML]="paragraph"
     ></p>
     <a
-      aria-label="resume / cv"
+      title="CV / Resume"
+      aria-label="CV / Resume"
       href="/assets/pdf/nekkon_cv.pdf"
       target="_blank"
     >
@@ -43,4 +44,4 @@
       </button>
     </a>
   </div>
-</div>
+</section>
