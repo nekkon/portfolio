@@ -1,55 +1,54 @@
 .accomplishments {
   padding-top: 64px;
   background-color: #ffffff;
-}
+  .h2 {
+    margin: 32px 0 80px 0;
+  }
 
-.accomplishments .h2 {
-  margin: 32px 0 80px 0;
-}
+  .accomplishmentIcon {
+    text-align: center;
+    padding: 32px 0 16px 0;
+  }
 
-.accomplishmentIcon {
-  text-align: center;
-  padding: 32px 0 16px 0;
-}
+  .small .accomplishment {
+    position: relative;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0 32px 32px 32px;
+    box-sizing: border-box;
+  }
 
-.small .accomplishment {
-  position: relative;
-  left: 0;
-  margin: 0;
-  width: 100%;
-  text-align: left;
-  padding: 0 32px 32px 32px;
-  box-sizing: border-box;
-}
+  .small .accomplishment.two {
+    text-align: right;
+  }
 
-.small .accomplishment.two {
-  text-align: right;
-}
+  .accomplishment.one {
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -40%;
+    width: 25%;
+    text-align: right;
+  }
 
-.accomplishment.one {
-  position: absolute;
-  left: 50%;
-  margin: 0 0 0 -40%;
-  width: 25%;
-  text-align: right;
-}
+  .accomplishment.two {
+    position: absolute;
+    left: 50%;
+    margin: 164px 0 0 18.5%;
+    width: 20%;
+    text-align: left;
+  }
 
-.accomplishment.two {
-  position: absolute;
-  left: 50%;
-  margin: 164px 0 0 18.5%;
-  width: 20%;
-  text-align: left;
-}
+  .accomplishment.three {
+    position: absolute;
+    left: 50%;
+    margin: 308px 0 0 -38.5%;
+    width: 20%;
+    text-align: right;
+  }
 
-.accomplishment.three {
-  position: absolute;
-  left: 50%;
-  margin: 308px 0 0 -38.5%;
-  width: 20%;
-  text-align: right;
-}
-
-.accomplishment .subtitle {
-  margin-bottom: 32px;
+  .accomplishment .subtitle {
+    margin-bottom: 32px;
+  }
 }
