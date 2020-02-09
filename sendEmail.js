@@ -18,7 +18,7 @@ async function sendEmail(data, res) {
   let mailOptions = {
     from: data.email, // sender address
     to: settings.email, // list of receivers
-    subject: "Message from: " + data.name + " (portfolio / nekkon.com)", // Subject line
+    subject: "Message from: " + data.name + ", Email: " + data.email + " (portfolio / nekkon.com)", // Subject line
     text: data.message // plain text body
   };
 
