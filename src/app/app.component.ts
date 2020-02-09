@@ -1,18 +1,13 @@
-import {
-  Component,
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  OnInit
-} from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { Meta } from "@angular/platform-browser";
 import { Shared } from "./providers/shared";
 
 @Component({
-  selector: "app",
+  selector: "app-root",
   templateUrl: "./app.html",
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class App implements OnInit {
+export class AppComponent implements OnInit {
   constructor(public portfolio: Shared, public meta: Meta) {
     this.meta.addTags([
       { name: "og:title", content: "Nekkon | portfolio" },

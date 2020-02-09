@@ -1,6 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { App } from "./app";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Shared } from "./providers/shared";
@@ -11,6 +10,7 @@ import {
   AboutModule,
   ExpertinModule,
   ContactModule,
+  FooterModule,
   AccomplishmentsModule,
   EducationConferencesModule,
   ExperienceModule,
@@ -20,6 +20,8 @@ import {
 import { BrowserTransferStateModule } from "@angular/platform-browser";
 import { TransferHttpCacheModule } from "@nguniversal/common";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { SVGModule } from "./components/svg/svg.module";
+import { AppComponent } from "./app.component";
 
 /*
 import * as Raven from 'raven-js';
@@ -35,7 +37,7 @@ export class RavenErrorHandler implements ErrorHandler {
 }*/
 
 @NgModule({
-  declarations: [App],
+  declarations: [AppComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: "portfolio" }),
     TransferHttpCacheModule,
@@ -48,10 +50,12 @@ export class RavenErrorHandler implements ErrorHandler {
     AboutModule,
     ExpertinModule,
     ContactModule,
+    FooterModule,
     AccomplishmentsModule,
     EducationConferencesModule,
     ExperienceModule,
     ProjectsModule,
+    SVGModule,
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production
     })
@@ -60,6 +64,6 @@ export class RavenErrorHandler implements ErrorHandler {
     Shared
     // { provide: ErrorHandler, useClass: RavenErrorHandler }
   ],
-  bootstrap: [App]
+  bootstrap: [AppComponent]
 })
 export class AppBrowserModule {}
