@@ -52,7 +52,7 @@ export class RavenErrorHandler implements ErrorHandler {
     EducationConferencesModule,
     ExperienceModule,
     ProjectsModule,
-    ServiceWorkerModule.register("/ngsw-worker.js", {
+    ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production
     })
   ],
