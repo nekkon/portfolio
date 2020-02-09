@@ -7,34 +7,28 @@
   height: 100vh;
   width: 100vw;
   height: calc(100vh - 150px);
-}
 
-.titleVideo {
-  position: absolute;
-  top: 40%;
-  left: 10%;
-  margin: 0;
-  line-height: 1;
-  max-width: 80%;
-}
+  .titleVideo {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    margin: 0;
+    line-height: 1;
+    max-width: 80%;
+  }
 
-.h4 {
-  margin-top: 8px;
-  font-weight: normal;
-  color: rgba(255, 255, 255, 0.5);
-}
+  .h2 {
+    margin-top: 8px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.75);
+  }
 
-.divider1 {
-  background-color: #ffffff;
-  height: 111px;
-  width: 100%;
-}
+  .links {
+    margin-top: 64px;
+  }
 
-.links {
-  margin-top: 64px;
-}
-
-.links a {
-  margin: 8px;
-  text-decoration: none;
+  .links a {
+    margin: 8px;
+    text-decoration: none;
+  }
 }
