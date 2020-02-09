@@ -1,0 +1,59 @@
+<section
+  class="education-conferences"
+  fxLayout="row wrap"
+  fxLayoutAlign="start start"
+>
+  <div #education fxFlex="50" fxFlex.sm="100" fxFlex.xs="100" class="education">
+    <div
+      class="educationSVG"
+      [ngStyle.sm]="{'margin-right': -12.5 + '%'}"
+      [ngStyle.xs]="{'margin-right': -12.5 + '%'}"
+    >
+      <svg-education></svg-education>
+    </div>
+
+    <h2 class="h2 title left">
+      <component-title
+        title="{{(portfolio.texts)?.education.title}}"
+        lineWidth="150"
+        inverse="true"
+      ></component-title>
+    </h2>
+
+    <div
+      class="educationItem"
+      *ngFor="let education of (portfolio.texts)?.education.content"
+    >
+      <component-list [item]="education" type="education"></component-list>
+    </div>
+  </div>
+
+  <div
+    #conferences
+    fxFlex="50"
+    fxFlex.sm="100"
+    fxFlex.xs="100"
+    class="conferences"
+  >
+    <div
+      class="conferencesSVG"
+      [ngStyle.sm]="{'margin-left': -12.5 + '%'}"
+      [ngStyle.xs]="{'margin-left': -12.5 + '%'}"
+    >
+      <svg-conferences></svg-conferences>
+    </div>
+
+    <h2 class="title h2 right">
+      <component-title
+        title="{{(portfolio.texts)?.conferences.title}}"
+        lineWidth="185"
+      ></component-title>
+    </h2>
+    <div
+      class="conferenceItem"
+      *ngFor="let conference of (portfolio.texts)?.conferences.content"
+    >
+      <component-list [item]="conference" type="conference"></component-list>
+    </div>
+  </div>
+</section>

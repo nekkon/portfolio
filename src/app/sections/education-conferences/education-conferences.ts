@@ -3,8 +3,8 @@ import { Shared } from "../../providers/shared";
 
 @Component({
   selector: "section-education-conferences",
-  templateUrl: "./educationConferences.html",
-  styleUrls: ["./educationConferences.scss"]
+  templateUrl: "./education-conferences.html",
+  styleUrls: ["./education-conferences.scss"]
 })
 export class EducationConferencesComponent {
   constructor(public portfolio: Shared) {}
