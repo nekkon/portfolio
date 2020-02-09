@@ -5,5 +5,5 @@ export { ContactModule } from "./contact/contact.module";
 export { AccomplishmentsModule } from "./accomplishments/accomplishments.module";
 export { ProjectsModule } from "./projects/projects.module";
 export { ExperienceModule } from "./experience/experience.module";
-export { EducationConferencesModule } from "./educationConferences/educationConferences.module";
+export { EducationConferencesModule } from "./education-conferences/education-conferences.module";
 export { FooterModule } from "./footer/footer.module";
