@@ -6,12 +6,14 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from "@angular/material/input";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { NgxCaptchaModule } from "ngx-captcha";
+import { SVGModule } from "src/app/components/svg/svg.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    SVGModule,
     MatInputModule,
     MatButtonModule,
     NgxCaptchaModule,
