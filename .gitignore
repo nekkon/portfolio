@@ -23,7 +23,8 @@
 !.vscode/extensions.json
 
 # misc
-server.settings.json
+server.settings.js
+email.settings.js
 .ftppass
 a2hosting
 /.sass-cache

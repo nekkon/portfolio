@@ -1,24 +1,24 @@
-'use strict';
-var nodemailer = require('nodemailer');
-var settings = require('./server.settings.json');
+"use strict";
+var nodemailer = require("nodemailer");
+const settings = require("./email.settings.js");
 
 // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
 
 async function sendEmail(data, res) {
   var transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: "gmail",
     auth: {
-      user: settings.email.email,
-      pass: settings.email.password
+      user: settings.email,
+      pass: settings.password
     }
   });
 
   // setup email data with unicode symbols
   let mailOptions = {
     from: data.email, // sender address
-    to: settings.email.email, // list of receivers
-    subject: 'Message from: ' + data.name + ' (portfolio / nekkon.com)', // Subject line
+    to: settings.email, // list of receivers
+    subject: "Message from: " + data.name + " (portfolio / nekkon.com)", // Subject line
     text: data.message // plain text body
   };
 
@@ -40,7 +40,7 @@ async function sendEmail(data, res) {
 }
 
 module.exports = {
-  sendEmail: function (postData) {
-    sendEmail(postData)
+  sendEmail: function(postData) {
+    sendEmail(postData);
   }
-}
+};

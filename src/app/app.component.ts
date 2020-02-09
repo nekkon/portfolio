@@ -4,7 +4,7 @@ import { Shared } from "./providers/shared";
 
 @Component({
   selector: "app-root",
-  templateUrl: "./app.html",
+  templateUrl: "./app.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {

@@ -7,7 +7,7 @@ import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { ModuleMapLoaderModule } from "@nguniversal/module-map-ngfactory-loader";
 import { FlexLayoutServerModule } from "@angular/flex-layout/server";
 import { AppBrowserModule } from "./app.browser.module";
-import { App } from "./app";
+import { AppComponent } from "./app.component";
 
 @NgModule({
   imports: [
@@ -22,6 +22,6 @@ import { App } from "./app";
   ],
   // Since the bootstrapped component is not inherited from your
   // imported AppModule, it needs to be repeated here.
-  bootstrap: [App]
+  bootstrap: [AppComponent]
 })
 export class AppServerModule {}
