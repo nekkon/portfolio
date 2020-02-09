@@ -1,0 +1,19 @@
+<section class="footer">
+  <div class="horizontal-line">
+    <div class="line"></div>
+    <img
+      [ngStyle.xs]="{'width.px': 66,'height.px': 51}"
+      [ngStyle.sm]="{'width.px': 66,'height.px': 51}"
+      class="logo"
+      src="/assets/img/logo-min.png"
+      alt="logo"
+    />
+    <div
+      [ngStyle.xs]="{'font-size.px': 14}"
+      [ngStyle.sm]="{'font-size.px': 14}"
+      class="copyrights colorWhite"
+    >
+      {{(portfolio.texts)?.footer.content}}
+    </div>
+  </div>
+</section>

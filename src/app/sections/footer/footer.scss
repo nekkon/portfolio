@@ -1,0 +1,31 @@
+.footer {
+  background-color: #263038;
+  width: 100%;
+  height: 100px;
+
+  .copyrights {
+    float: right;
+    margin-top: 16px;
+  }
+
+  .horizontal-line {
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgb(159, 164, 167);
+    box-sizing: border-box;
+    padding: 8px 0;
+    margin-bottom: 8px;
+  }
+
+  .logo {
+    float: left;
+    width: 89px;
+    height: 68px;
+  }
+}
