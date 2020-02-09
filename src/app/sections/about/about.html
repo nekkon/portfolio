@@ -28,7 +28,11 @@
       *ngFor="let paragraph of (portfolio.texts)?.about.content"
       [innerHTML]="paragraph"
     ></p>
-    <a href="/assets/pdf/nekkon_cv.pdf" target="_blank">
+    <a
+      aria-label="resume / cv"
+      href="/assets/pdf/nekkon_cv.pdf"
+      target="_blank"
+    >
       <button
         mat-raised-button
         [ngStyle.sm]="{'width':'100%'}"
