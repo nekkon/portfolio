@@ -8,6 +8,12 @@
   width: 100vw;
   height: calc(100vh - 150px);
 
+  h2 {
+    margin-top: 8px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
   .titleVideo {
     position: absolute;
     top: 40%;
@@ -15,12 +21,6 @@
     margin: 0;
     line-height: 1;
     max-width: 80%;
-  }
-
-  .h2 {
-    margin-top: 8px;
-    font-weight: normal;
-    color: rgba(255, 255, 255, 0.75);
   }
 
   .links {

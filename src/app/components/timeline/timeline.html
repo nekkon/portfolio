@@ -8,9 +8,9 @@
     fxFlex.xs="100"
     [ngClass]="{'left':(index % 2) == 0,'right':(index % 2) == 1}"
   >
-    <div class="title h3 link colorBlue">{{ job.title }}</div>
-    <div class="subtitle h4">{{ job.subtitle }}</div>
-    <div fxHide fxShow.sm fxShow.xs class="title h4 year">{{ job.year }}</div>
+    <h3 class="title link colorBlue">{{ job.title }}</h3>
+    <h4 class="subtitle">{{ job.subtitle }}</h4>
+    <h4 fxHide fxShow.sm fxShow.xs class="title year">{{ job.year }}</h4>
     <div *ngFor="let paragraph of job?.intro" class="paragraph">
       {{ paragraph }}
     </div>
@@ -30,7 +30,7 @@
     fxFlex.xs="100"
     [ngClass]="{'right':(index % 2) == 0,'left':(index % 2) == 1}"
   >
-    <div fxHide.sm fxHide.xs class="title h4 year gapTop">{{ job.year }}</div>
+    <h4 fxHide.sm fxHide.xs class="title year gapTop">{{ job.year }}</h4>
     <div
       class="used"
       [ngClass.sm]="['chipsAlign']"
