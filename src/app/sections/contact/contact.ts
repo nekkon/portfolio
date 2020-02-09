@@ -20,6 +20,7 @@ export class ContactComponent {
   recaptcha: any = null;
 
   sentEmail: boolean;
+  sentEmailSuccess: boolean;
 
   @ViewChild("captchaElem") captchaElem: InvisibleReCaptchaComponent;
 
@@ -45,9 +46,10 @@ export class ContactComponent {
         email: this.contactForm.controls["email"].value,
         message: this.contactForm.controls["message"].value
       };
+      this.sentEmail = true;
       this.portfolio.http.post("/contact", data).subscribe((response: any) => {
         if (response.success) {
-          this.sentEmail = true;
+          this.sentEmailSuccess = true;
           this.captchaElem.resetCaptcha();
           this.changeDetectorRef.detectChanges();
         }

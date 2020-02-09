@@ -99,7 +99,7 @@
 </section>
 
 <section *ngIf="sentEmail" class="contact colorWhite">
-  <h1>
+  <h1 *ngIf="sentEmailSuccess">
     Thank you for contacting! I will reply to your message as soon as possible.
   </h1>
 </section>
