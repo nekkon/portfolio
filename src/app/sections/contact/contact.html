@@ -1,5 +1,6 @@
 <section
   *ngIf="!sentEmail"
+  id="contact"
   class="contact colorWhite"
   fxLayout="row wrap"
   fxLayoutAlign="start start"
@@ -98,7 +99,7 @@
   </div>
 </section>
 
-<section *ngIf="sentEmail" class="contact colorWhite">
+<section *ngIf="sentEmail" id="contact" class="contact colorWhite">
   <h1 *ngIf="sentEmailSuccess">
     Thank you for contacting! I will reply to your message as soon as possible.
   </h1>

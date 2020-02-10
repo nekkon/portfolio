@@ -7,7 +7,9 @@ const settings = require("./email.settings.js");
 
 async function sendEmail(data, res) {
   var transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
       user: settings.email,
       pass: settings.password
@@ -18,7 +20,12 @@ async function sendEmail(data, res) {
   let mailOptions = {
     from: data.email, // sender address
     to: settings.email, // list of receivers
-    subject: "Message from: " + data.name + ", Email: " + data.email + " (portfolio / nekkon.com)", // Subject line
+    subject:
+      "Message from: " +
+      data.name +
+      ", Email: " +
+      data.email +
+      " (portfolio / nekkon.com)", // Subject line
     text: data.message // plain text body
   };
 

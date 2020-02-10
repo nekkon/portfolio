@@ -1,12 +1,6 @@
-import { Component, OnInit, ElementRef } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Shared } from "../../providers/shared";
-import {
-  style,
-  state,
-  animate,
-  transition,
-  trigger
-} from "@angular/animations";
+import { style, animate, transition, trigger } from "@angular/animations";
 
 @Component({
   selector: "component-menu",
@@ -27,9 +21,8 @@ import {
   ]
 })
 export class MenuComponent implements OnInit {
-  public hovered: any;
   public visible: boolean = false;
-  public atTop = true;
+  public atTop: boolean = true;
 
   constructor(public portfolio: Shared) {}
 
@@ -39,32 +32,28 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  onHover(link) {
-    this.hovered = link;
-  }
-  onMouseOut() {
-    this.hovered = "";
-  }
-
   toggleMenu() {
     this.portfolio.toggleMenu(!this.visible);
   }
 
   onScroll(event) {
-    let scrollTop = event.srcElement.documentElement.scrollTop;
-    //console.log(scrollTop);
-    if (scrollTop == 0) {
+    const scrollTop = event.srcElement.documentElement.scrollTop;
+    if (scrollTop === 0) {
       this.atTop = true;
     } else {
       this.atTop = false;
     }
   }
 
-  scrollTo(element) {
-    console.log(element);
+  scrollTo(elementId) {
+    const element = document.querySelector(`#${elementId}`);
+    const top = element.getBoundingClientRect().top + window.pageYOffset - 10;
+
+    window.scrollTo({
+      top, // scroll so that the element is at the top of the view
+      behavior: "smooth" // smooth scroll
+    });
+
     this.visible = false;
-    let section = this.portfolio.sections[element];
-    console.log(section);
-    section.nativeElement.scrollIntoView();
   }
 }

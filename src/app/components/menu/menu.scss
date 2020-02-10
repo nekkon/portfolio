@@ -27,7 +27,7 @@
   fill: #0066cc;
 }
 
-.MenuFullscreen {
+.fullscreen-menu {
   display: block;
   position: fixed;
   z-index: 100;
@@ -43,16 +43,14 @@
   .MenuButton {
     color: #252e38;
   }
-  nav div {
-    margin: 16px 0;
-  }
   nav a {
+    margin: 8px 0;
     color: #252e38;
     text-decoration: none;
     cursor: pointer;
   }
   nav a:hover {
-    color: #868c93;
+    color: #0066cc;
   }
   nav a.active {
     color: #bababa;

@@ -1,8 +1,4 @@
-import {
-  Injectable,
-  EventEmitter,
-  Output
-} from "@angular/core";
+import { Injectable, EventEmitter, Output } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { environment } from "../../environments/environment";
 
@@ -18,10 +14,10 @@ export class Shared {
   constructor(public http: HttpClient) {}
 
   toggleMenu(value?) {
-    if (value || value == false) {
+    if (value || value === false) {
       this.menuVisible = value;
     } else {
-      this.menuVisible != this.menuVisible;
+      this.menuVisible = !this.menuVisible;
     }
 
     this.menu.emit(this.menuVisible);

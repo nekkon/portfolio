@@ -35,17 +35,15 @@
     </g>
   </svg>
 </button>
-<div class="MenuFullscreen" *ngIf="visible" [@fadeInOut]>
-  <nav>
-    <div class="wrapper" *ngFor="let item of (portfolio.texts)?.menu">
-      <h2
-        [ngClass]="{'unhovered':( hovered && hovered!==item.link )}"
-        (mousemove)="onHover(item.link)"
-        (mouseout)="onMouseOut()"
-        (click)="scrollTo(item.link)"
-      >
+<div class="fullscreen-menu" *ngIf="visible" [@fadeInOut]>
+  <nav class="wrapper">
+    <a
+      *ngFor="let item of (portfolio.texts)?.menu"
+      (click)="scrollTo(item.link)"
+    >
+      <h2>
         {{ item.name }}
       </h2>
-    </div>
+    </a>
   </nav>
 </div>
