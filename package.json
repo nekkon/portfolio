@@ -61,7 +61,7 @@
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "cpy-cli": "^3.0.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gulp": "4.0.2",
     "gulp-sftp": "git+https://github.com/naacp-portland/gulp-sftp.git",
     "http-server": "^0.12.1",
